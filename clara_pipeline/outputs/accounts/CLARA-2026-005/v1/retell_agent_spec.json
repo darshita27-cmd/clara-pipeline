@@ -1,0 +1,118 @@
+{
+  "version": "v1",
+  "system_prompt": "...",
+  "retell_agent_spec": {
+    "account_id": "CLARA-2026-005",
+    "version": "v1",
+    "extracted_at": "2026-03-06T09:54:27Z",
+    "extraction_confidence": "low",
+    "business_hours": {
+      "timezone": "America/Denver",
+      "days_of_week": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "start_time": "07:30",
+      "end_time": "17:30"
+    },
+    "business_hours_description": "Monday through Friday, 7:30 AM to 5:30 PM Mountain Time",
+    "company_name": "CLARA-2026-005",
+    "emergency_triggers_list": [
+      "no-heat"
+    ],
+    "non_emergency_list": [
+      "tune-up",
+      "repair",
+      "maintenance"
+    ],
+    "emergency_clarifying_question": "Is this an urgent situation where you need immediate assistance?",
+    "services_list": [
+      "no-heat",
+      "no-ac"
+    ],
+    "transfer_timeout_seconds": null,
+    "transfer_announcement": "Let me connect you with the appropriate team member.",
+    "during_hours_transfer_target": "on-duty tech",
+    "emergency_primary_transfer_target": "Dale",
+    "callback_assurance_window": null,
+    "transfer_fail_notification_action": null,
+    "escalation_chain": [
+      "Dale",
+      "Sandra",
+      "on-call tech"
+    ],
+    "integration_constraints": [
+      "Jobber"
+    ],
+    "changelog": [
+      {
+        "rule": "onboarding_call",
+        "action": "initial configuration",
+        "timestamp": "2026-03-06T09:54:27Z"
+      }
+    ],
+    "confidence_score_breakdown": {
+      "company_name": false,
+      "business_hours_schedule": false,
+      "business_hours_timezone": true,
+      "emergency_triggers": false,
+      "escalation_chain_with_phone": false,
+      "transfer_timeout": false,
+      "transfer_fail_action": false,
+      "after_hours_action": false
+    },
+    "questions_carried_forward": [],
+    "version_notes": "NOT READY FOR GO-LIVE"
+  },
+  "account_id": "CLARA-2026-005",
+  "source_memo_version": "v1",
+  "agent_name": "Clara - [COMPANY NAME]",
+  "retell_config": {
+    "voice_id": "eleven_labs_rachel",
+    "voice_speed": 1.0,
+    "voice_temperature": 0.7,
+    "responsiveness": 1.0,
+    "interruption_sensitivity": 0.8,
+    "enable_backchannel": true,
+    "language": "en-US",
+    "max_call_duration_ms": 600000
+  },
+  "tool_placeholders": [
+    {
+      "tool_name": "transfer_call",
+      "trigger": "emergency confirmed and caller info collected",
+      "target": "[UNCONFIRMED]",
+      "note": "Never mention to caller"
+    },
+    {
+      "tool_name": "end_call",
+      "trigger": "caller confirms nothing else needed"
+    },
+    {
+      "tool_name": "log_call_details",
+      "trigger": "any call where transfer fails or non-emergency after-hours",
+      "note": "Silent background logging"
+    }
+  ],
+  "data_collection_fields": {
+    "emergency": [
+      "caller_name",
+      "callback_number",
+      "property_address",
+      "issue_description"
+    ],
+    "non_emergency_after_hours": [
+      "caller_name",
+      "callback_number",
+      "service_description"
+    ],
+    "business_hours": [
+      "caller_name",
+      "callback_number"
+    ]
+  },
+  "questions_carried_forward": []
+}

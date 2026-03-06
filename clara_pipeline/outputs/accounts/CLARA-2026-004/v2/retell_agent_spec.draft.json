@@ -1,0 +1,94 @@
+{
+  "version": "v2",
+  "template_version": "v2",
+  "template_rendered_at": "2026-03-06T09:53:47Z",
+  "account_id": "CLARA-2026-004",
+  "company_name": "Not Confirmed \u2014 company_name",
+  "business_hours_schedule": "Monday through Friday, 8:00 AM to 5:30 PM Eastern Time",
+  "business_hours_timezone": "America/New_York",
+  "emergency_triggers_list": [
+    "Intrusion alarm",
+    "Fire alarm",
+    "System failure",
+    "Priority response"
+  ],
+  "non_emergency_list": [],
+  "emergency_clarifying_question": "Can you please specify if this is an emergency?",
+  "services_list": [
+    "Intrusion alarm",
+    "Fire alarm",
+    "System failure",
+    "Priority response"
+  ],
+  "transfer_announcement": "Let me connect you with the appropriate team member.",
+  "during_hours_transfer_target": "Internal transfer",
+  "transfer_timeout_seconds": "60",
+  "timezone": "America/New_York",
+  "escalation_chain": [
+    {
+      "role": "Kevin",
+      "phone_number": "614-555-0347",
+      "priority": "high"
+    },
+    {
+      "role": "Dave",
+      "phone_number": "614-555-0219",
+      "priority": "medium"
+    },
+    {
+      "role": "Linda",
+      "phone_number": null,
+      "priority": "low"
+    }
+  ],
+  "questions_carried_forward": [
+    "company_name"
+  ],
+  "version_notes": "NOT READY FOR GO-LIVE \u2014 company_name is still unknown",
+  "source_memo_version": "v2",
+  "agent_name": "Clara - [COMPANY NAME]",
+  "retell_config": {
+    "voice_id": "eleven_labs_rachel",
+    "voice_speed": 1.0,
+    "voice_temperature": 0.7,
+    "responsiveness": 1.0,
+    "interruption_sensitivity": 0.8,
+    "enable_backchannel": true,
+    "language": "en-US",
+    "max_call_duration_ms": 600000
+  },
+  "tool_placeholders": [
+    {
+      "tool_name": "transfer_call",
+      "trigger": "emergency confirmed and caller info collected",
+      "target": "[UNCONFIRMED]",
+      "note": "Never mention to caller"
+    },
+    {
+      "tool_name": "end_call",
+      "trigger": "caller confirms nothing else needed"
+    },
+    {
+      "tool_name": "log_call_details",
+      "trigger": "any call where transfer fails or non-emergency after-hours",
+      "note": "Silent background logging"
+    }
+  ],
+  "data_collection_fields": {
+    "emergency": [
+      "caller_name",
+      "callback_number",
+      "property_address",
+      "issue_description"
+    ],
+    "non_emergency_after_hours": [
+      "caller_name",
+      "callback_number",
+      "service_description"
+    ],
+    "business_hours": [
+      "caller_name",
+      "callback_number"
+    ]
+  }
+}

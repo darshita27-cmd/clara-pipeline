@@ -1,0 +1,71 @@
+{
+  "account_id": "CLARA-2026-005",
+  "version": "v2",
+  "extracted_at": "2026-03-06T09:56:37Z",
+  "extraction_confidence": "low",
+  "extraction_rules": "onboarding_call",
+  "business_hours": {
+    "timezone": "America/Denver",
+    "days_of_week": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "start_time": "07:30",
+    "end_time": "17:30"
+  },
+  "emergency_routing": {
+    "callback_assurance_window": null,
+    "transfer_fail_notification_action": null,
+    "escalation_chain": [
+      "Dale",
+      "Sandra",
+      "Marcus Chen"
+    ]
+  },
+  "services_supported": {
+    "triggers": [
+      "no-heat",
+      "no-ac",
+      "walk-in cooler failure",
+      "CO alarm",
+      "commercial system failure during operating hours",
+      "commercial refrigeration failure"
+    ],
+    "non_triggers": [
+      "tune-up",
+      "repair",
+      "maintenance"
+    ],
+    "integration_constraints": [
+      "Jobber"
+    ]
+  },
+  "changelog": [
+    {
+      "rule": "onboarding_call",
+      "action": "initial configuration",
+      "timestamp": "2026-03-06T09:54:27Z"
+    },
+    {
+      "rule": "onboarding_call",
+      "action": "partial update",
+      "timestamp": "2026-03-06T09:56:37Z",
+      "merge_rule": "PARTIAL OVERRIDE",
+      "changelog_entry": "Business hours: Monday through Friday, seven-thirty AM to five-thirty PM, Mountain Time with daylight saving. Address: 2244 North Pecos Street, Suite 8, Denver, Colorado, 80211. Main line: 720-555-0103. Business hours transfer: main line first, twenty-five second timeout, then Sandra's cell at 720-555-0237. Fallback message: two-hour callback commitment during business hours."
+    }
+  ],
+  "confidence_score_breakdown": {
+    "company_name": false,
+    "business_hours_schedule": false,
+    "business_hours_timezone": true,
+    "emergency_triggers": false,
+    "escalation_chain_with_phone": false,
+    "transfer_timeout": false,
+    "transfer_fail_action": false,
+    "after_hours_action": false
+  },
+  "questions_or_unknowns": []
+}

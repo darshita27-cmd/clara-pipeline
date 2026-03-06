@@ -1,0 +1,215 @@
+Demo Call Recording – Apex Fire Protection
+[Participants: Naveen (Clara Sales), Marcus Webb (Owner, Apex Fire Protection)]
+[Duration: Approx. 52 minutes]
+
+---
+
+Naveen: Good morning, Marcus. Can you hear me alright?
+
+Marcus Webb: Yeah, loud and clear. Good morning, Naveen. How are you doing?
+
+Naveen: Doing really well, thank you for asking. Really appreciate you making time for this. I know you mentioned last time that mornings are usually the better window before the field crews start calling in.
+
+Marcus Webb: Yeah, that's right. Once around nine-thirty it's like the phones just don't stop. So this is the right time.
+
+Naveen: Perfect, I'll make sure we're done well before then. So Marcus, just to set the stage for today — I want to show you what Clara Answers actually does, but more importantly I want to understand how your business runs today, because honestly the demo is most valuable when it's relevant to your actual situation. Does that make sense?
+
+Marcus Webb: Makes total sense. Yeah, I'm curious to see this. A buddy of mine over at Summit Sprinkler, he mentioned you guys. He said it's been a game changer for him on the after-hours stuff especially.
+
+Naveen: Oh that's great to hear. Yeah, after-hours is definitely one of the biggest pain points we solve — and for fire protection companies in particular it tends to be pretty acute because you're dealing with emergency calls that have real consequences if they're missed or misrouted. But I don't want to get ahead of myself. Tell me a little about Apex — how long have you been operating, what's your service area, and what does the business look like right now?
+
+Marcus Webb: Sure. So we started Apex about eleven years ago. I had been a tech for about seven years before that working for a larger regional company, and I just got to a point where I knew I could do it better and honestly just wanted to build something of my own. So we started small — just me and one other tech — and now we've got, let's see, eight field technicians, two office staff, and myself. We cover basically the greater Phoenix metro area. Some jobs we'll go out to Tucson if it's a big enough contract but that's not typical.
+
+Naveen: Got it. And what's the primary mix of work? Is it mostly commercial or do you do residential as well?
+
+Marcus Webb: Almost entirely commercial. Fire sprinkler systems — that's the bread and butter. Inspections, installs, service calls. We also do fire alarm systems. That side of the business has grown a lot actually over the last three years. We've got a couple of contracts with property management companies — multi-family housing, retail centers, a few restaurants. And then the inspection side, that's very cycle-driven, you know, quarterly and annual inspections, and that keeps us pretty busy through most of the year.
+
+Naveen: And then how does the phone situation work today? Walk me through what happens when a call comes in.
+
+Marcus Webb: Oh man. So right now it's a mess, to be honest. We have a main business line — it's a landline that rings to the front desk. That's Janet. She handles it during the day. But Janet's only in from eight to four-thirty. So anything outside that window either goes to voicemail, or it rings through to my cell. And I've got my cell number on the website because I — honestly I put it there years ago thinking it would help close more business and now I regret it because I get calls at ten, eleven at night, weekends.
+
+Naveen: I hear that a lot, especially from owners in your position. The cell phone number that was meant to be a feature becomes a liability pretty quickly.
+
+Marcus Webb: Exactly. And look, I don't mind taking the real emergency calls. If one of my commercial accounts has a sprinkler head go off or a fire alarm panel is throwing codes, I need to know about that. But I'm getting calls for things like — someone wants to know if we do residential, which we don't, or someone wants a quote for a new system and they're calling at nine PM on a Sunday. That can wait. I don't need to interrupt my weekend for that.
+
+Naveen: And is Janet handling the routing during the day, or is it all pretty manual — like she's doing it from memory?
+
+Marcus Webb: It's pretty manual. Janet's good, she's been with me for four years, so she knows a lot of the regular accounts. She knows that if AZ Property Group calls, that's a priority. She knows that if someone calls about a sprinkler system alarm, she needs to find me or the on-call tech right away. But it's all in her head. There's no real script. And when she's out — she's been out a couple of times this year — I have to either have my other office person, Renee, fill in, and Renee is great with the back office work but she doesn't know the routing rules the same way Janet does.
+
+Naveen: So there's a key person dependency that creates risk.
+
+Marcus Webb: Hundred percent. And I keep saying I'm going to document it, and then something comes up and I don't. So yeah, it's a real problem.
+
+Naveen: Alright. So let me show you how Clara would fit into this. Can I go ahead and share my screen?
+
+Marcus Webb: Go for it.
+
+Naveen: Great. So what you're seeing here is the Clara Answers dashboard. This is what you'd have access to once you're set up. Every call that comes in gets logged here — you can see the caller, the summary of what they called about, how it was handled, whether a transfer was attempted and whether it succeeded, and you get a recording and a transcript. So Janet still gets to have full visibility, and so do you. Nothing falls through the cracks in a black box.
+
+Marcus Webb: Okay, that's actually really helpful. So even if the call happens after hours, it's all logged?
+
+Naveen: Every single call. And then on top of that you get email and SMS notifications based on what the call was about. So you can configure it so that if an emergency call comes in after hours, you get a text immediately. But if it's someone calling for a quote, that just shows up in the morning summary.
+
+Marcus Webb: Right, right. That makes a lot of sense.
+
+Naveen: So let me actually have you listen to an example interaction. This is a sample call that simulates what a fire protection company's after-hours emergency scenario sounds like. I'm going to play it for you.
+
+[Audio demo plays — approximately 2 minutes]
+
+Marcus Webb: Okay. That's — yeah, that's impressive. It sounds pretty natural. I was honestly expecting it to sound more robotic, like those old phone trees, press one for this, press two for that.
+
+Naveen: Yeah, that's intentional. The goal is that callers feel like they're being heard, not just processed. And for emergency calls especially, the tone matters a lot. If someone's got a sprinkler head gushing water at two AM, they're already stressed — they don't need to be fighting a clunky phone system on top of it.
+
+Marcus Webb: That's a good point. Okay, so walk me through how the emergency routing would actually work for us. Like let's say it's a Saturday night at midnight, one of my commercial accounts has a fire alarm activation.
+
+Naveen: Great question. So the way we configure it, you'd define what constitutes an emergency — in your case that might be active sprinkler discharge, fire alarm panel activation, anything with an active fire or water event. When a caller describes that kind of situation, Clara immediately shifts into emergency mode. She collects the caller's name, their callback number, the property address and what they're seeing. And then she attempts to transfer the call to your designated emergency contact — which could be your cell, or an on-call rotation of techs. If the transfer goes through, great, you're connected in real time. If for some reason the transfer doesn't connect, Clara doesn't just hang up. She lets the caller know that she wasn't able to reach someone immediately but that she's flagging this as urgent and someone will call back within a specified timeframe — and she sends you that alert right away.
+
+Marcus Webb: And that timeframe, who sets that? Like can I say "within fifteen minutes"?
+
+Naveen: Exactly. You define what makes sense for your business and we configure it. Some clients say fifteen minutes for true life-safety emergencies, some say thirty. It just needs to be accurate — you don't want to promise fifteen if your on-call tech is sometimes unreachable.
+
+Marcus Webb: Yeah, that's fair. We try to always have someone on-call but honestly coverage gaps happen, especially in summer when half the team wants to take vacation at the same time.
+
+Naveen: Totally understandable. And it's worth noting that Clara isn't replacing human judgment for true emergencies — she's making sure the information gets to the right person as fast as possible, and nothing falls through the cracks in the gap between "call came in" and "human is aware."
+
+Marcus Webb: Yeah. Okay, I'm tracking that.
+
+Naveen: So let me ask you about your business hours setup a little more, because this affects how we configure the daytime behavior. You mentioned Janet is in from eight to four-thirty. Is that five days a week?
+
+Marcus Webb: Monday through Friday, yeah. We are technically closed on weekends, but like I said, I still end up taking calls on the weekends pretty regularly. We've got some accounts that are just always on — retail centers, properties with round-the-clock tenants. Those don't really recognize the concept of "closed."
+
+Naveen: Right. So for those weekend calls — is it always you personally who handles them, or do you have a tech on rotation?
+
+Marcus Webb: For true emergencies — like an alarm going off, a system activation — yeah, I want to know, and I usually have one of my senior techs also available to dispatch. For non-emergencies, I'd rather just have them get a call back Monday.
+
+Naveen: Makes sense. What about holidays? Do you close for federal holidays or is that ad hoc?
+
+Marcus Webb: We do close for the major ones. Thanksgiving, Christmas, New Year's. Fourth of July usually. But again, the accounts don't care.
+
+Naveen: Got it. We can handle that with holiday override settings — you'd be able to flag specific dates as after-hours and the same emergency logic applies.
+
+Marcus Webb: That would be great actually. Because I had a call Christmas Eve last year — panel fault at a restaurant in Scottsdale, not a true emergency but they were panicking — and I ended up spending two hours on the phone and driving out there when really, an annual inspection had lapsed and they just didn't know it. Totally avoidable with better triage.
+
+Naveen: And that's exactly where Clara can help — she'd ask enough questions to understand the nature of the issue before escalating. If it's a routine panel fault that can wait, she collects the info and routes it for the next business day. She doesn't dispatch you on Christmas Eve for a non-emergency.
+
+Marcus Webb: Yeah. I like that.
+
+Naveen: Let me ask about your current accounts — do you have a ServiceTrade setup or any field service management system?
+
+Marcus Webb: Yes, we use ServiceTrade. Been using it for about five years. Love it for the inspection workflow, job management, all that. It's pretty central to how we run things.
+
+Naveen: Good to know. And when a new service call comes in, does it typically get entered into ServiceTrade or is that handled separately?
+
+Marcus Webb: Janet enters new service requests into ServiceTrade. When a new customer calls in, she'll take their info, figure out what they need, and then create a job in the system. Same with existing customers calling about service.
+
+Naveen: And would you want Clara to be able to collect the info and have it fed into ServiceTrade, or are you more comfortable with Clara collecting the info, notifying Janet or you, and then one of you creates the job manually?
+
+Marcus Webb: Hmm. That's a good question. I mean, ideally the less manual work the better, right? But I'd want to make sure the data going in is accurate. I've seen bad data in ServiceTrade cause problems before — duplicate records, wrong addresses, that kind of thing.
+
+Naveen: That's a really sensible concern. What a lot of our clients in your situation do is have Clara collect everything — name, number, address, nature of the issue, best callback time — and it all comes through in a structured summary that goes to Janet. She reviews it and enters it, but she's not starting from scratch. She's just verifying and clicking.
+
+Marcus Webb: Yeah, that sounds more like what I'd want. At least to start.
+
+Naveen: Absolutely. And then over time as you trust the workflow, you can always look at automation options. But starting conservatively is the right move.
+
+Marcus Webb: Okay, yeah. I think so.
+
+Naveen: Tell me a little more about the after-hours emergency scenarios. You mentioned sprinkler discharge and fire alarm activation. Are there other things you'd classify as true emergencies?
+
+Marcus Webb: Yeah, so — active fire is obviously number one. Sprinkler head discharge — that's urgent because water damage can compound really fast. Fire alarm system fault, that depends — if it's an alarm that's currently sounding, that's urgent. If it's a supervisory signal or a trouble code, that can usually wait unless it's a critical system like a hospital or something. Suppression system discharge, we work on some kitchen suppression systems, Ansul systems in restaurants, if one of those goes off that's an emergency.
+
+Naveen: What about CO — carbon monoxide alarms?
+
+Marcus Webb: That's more fire alarm territory. We do handle some CO detection systems, yeah. If someone's CO alarm is going off and they're asking us about it, that's an emergency. We'd tell them to get out of the building first, obviously, and then we'd dispatch.
+
+Naveen: Right, life safety first. What about the opposite end — what's clearly not an emergency and should just wait for a callback?
+
+Marcus Webb: Quote requests — definitely not urgent. Annual inspection scheduling — not urgent. "I need a certificate of inspection for my insurance" — not urgent. Routine service questions. "What does it cost to replace a sprinkler head" — not urgent. Really anything that doesn't involve an active alarm or an active discharge.
+
+Naveen: And where does a situation like — "my fire alarm panel is showing a trouble light, no alarm, no evacuation" — fall?
+
+Marcus Webb: That's a grey area. Trouble light on a panel means something's not right but it's not an emergency. I'd want that logged and someone to call back the next business day, unless it's one of our high-priority accounts and they're particularly concerned. But generally, trouble lights are not emergencies.
+
+Naveen: Good, that's helpful context. We can configure Clara to ask a few follow-up questions in that scenario to determine whether it's a priority callback or a next-business-day item.
+
+Marcus Webb: Perfect.
+
+Naveen: And do you have any VIP accounts or contract customers where the handling should be different? Like you mentioned AZ Property Group — is there a set of named accounts that get elevated treatment?
+
+Marcus Webb: Yeah, a few. AZ Property Group is the big one — they manage about a dozen commercial properties for us, steady work, they've been with us for seven years. Then there's Pinnacle Retail Management, they've got some strip malls. And then Southwest Facilities Group — they're newer, but they're a big contract. Those are probably the top three in terms of revenue and relationship priority.
+
+Naveen: And when those accounts call in, what does "elevated treatment" look like? Is it that any request from them gets a faster callback commitment? Or is it that emergencies from them get routed to you directly versus to an on-call tech?
+
+Marcus Webb: Both, honestly. If AZ Property Group calls at two AM with any issue, I want to know. Even if it's a trouble light. Those relationships took years to build and I'm not going to risk one because they felt like they got the runaround.
+
+Naveen: Understood. We can build that in — so Clara would check if the caller is associated with one of those accounts and apply different routing logic accordingly.
+
+Marcus Webb: That's great. I didn't even think that was possible.
+
+Naveen: Yeah, it's one of those things that makes a real difference in practice. It's not just handling calls generically — it's handling the right calls in the right way.
+
+Marcus Webb: Okay. Yeah. I'm definitely interested.
+
+Naveen: So let's talk about what the configuration process looks like if you decide to move forward. We'd start with what I call a preliminary agent — basically version one, built on what we've learned in this conversation. Then we do an onboarding call where we go deep on the specifics — exact business hours, your routing chain for on-call techs, the exact wording you want Clara to use for things like pricing questions, and so on. That's where we lock in version two, which is the production-ready agent.
+
+Marcus Webb: How long does that whole process take?
+
+Naveen: From today to live, typically about a week to ten days. The onboarding call is the main variable — once that's done we can have the agent updated and ready for testing within twenty-four hours.
+
+Marcus Webb: And what does testing look like?
+
+Naveen: We give you a dedicated number — not your live business line — where you and anyone on your team can call in and interact with the agent. You test different scenarios, make sure it handles things the way you expect. Once you're happy, we flip the forwarding and it goes live.
+
+Marcus Webb: Okay. And what if after it's live I want to change something? Like the on-call rotation changes, or we add a new VIP account?
+
+Naveen: That's handled through a simple update request to us. For something straightforward like a routing number change, that's typically same-day. For anything that changes the actual logic of how calls are handled, we document the change, update the configuration, and version it so you have a record of what changed and when.
+
+Marcus Webb: That's good. Yeah I can see that being really useful especially if something goes wrong and you need to figure out what changed.
+
+Naveen: Exactly. The audit trail matters a lot in your industry.
+
+Marcus Webb: Alright. What about pricing? What are we looking at?
+
+Naveen: So we have a couple of plans depending on call volume and features. I can send you the full details after this call so you have it in writing. The short version is it's a monthly subscription model — no per-call fees, so you're not penalized for busy periods. Given your situation and what you've described in terms of volume, I'd probably put you in the mid-tier range. But I'll send you the specifics.
+
+Marcus Webb: Okay, that works. I don't need to nail that down this second. Let me think about it.
+
+Naveen: Absolutely. There's no pressure here. I'd rather you have the full picture and make the right decision for Apex than rush into something.
+
+Marcus Webb: I appreciate that. Honestly some of the other solutions I looked at, they were very pushy. It was kind of off-putting.
+
+Naveen: Yeah, that's not the approach we take. At the end of the day if Clara isn't the right fit, it's better to know that upfront. But based on what you've described — after-hours emergency routing, the key person dependency on Janet, the VIP accounts, the ServiceTrade workflow — I think there's a really strong fit here.
+
+Marcus Webb: Yeah, I'm thinking the same thing actually. The after-hours stuff especially is just — it's becoming a quality of life issue, honestly.
+
+Naveen: I hear that a lot. And it should be a quality of life issue. You built this business and you deserve to have some separation between work and personal time, especially for non-urgent things.
+
+Marcus Webb: Exactly. Okay. So what are the next steps?
+
+Naveen: I'll send you a follow-up email today with the pricing details, the onboarding process outline, and a link to schedule your onboarding call whenever you're ready. If you have any questions before then, reply to that email or just call me directly.
+
+Marcus Webb: Perfect. And what email are you sending to?
+
+Naveen: The one you gave me when we scheduled this — marcus.webb@apexfireprotection.com. Is that still the right one?
+
+Marcus Webb: Yeah that's right.
+
+Naveen: Perfect. Alright Marcus, I think we're in good shape. I want to make sure before I let you go — was there anything you were hoping we'd cover today that we didn't get to?
+
+Marcus Webb: No, I think you hit on everything I was thinking about. The after-hours piece, the routing, the fact that it can handle VIP accounts differently — that's all the stuff I was wondering if it could do.
+
+Naveen: Great. And just one thing I'll flag for you — because you're in fire protection and you deal with life safety situations — the configuration we build for you will be careful about not overpromising response times that you can't actually deliver, and not blocking callers from reaching emergency services if they truly need to. We always build in a "if this is a life-threatening emergency, please call 911" acknowledgment for any scenario where that's relevant.
+
+Marcus Webb: Yeah, absolutely. That's important. Can't have the agent accidentally becoming a barrier to someone getting help.
+
+Naveen: A hundred percent. That's never going to happen with how we build these. Alright, Marcus, I really appreciate your time today. This was a great conversation.
+
+Marcus Webb: Likewise. Looking forward to the email. And tell your guy at Summit Sprinkler — tell him Marcus says thanks for the referral.
+
+Naveen: Ha, I'll pass that along. Talk soon.
+
+Marcus Webb: Take care.
+
+---
+[End of Demo Call Recording – Apex Fire Protection]
+[Duration: 51 minutes 38 seconds]

@@ -1,0 +1,70 @@
+version: "3.9"
+
+# Clara Pipeline — n8n Orchestration Layer
+# Phase 3 | Zero-cost, fully local
+
+services:
+  # ─────────────────────────────────────────────────────────────────
+  # n8n: Workflow orchestrator
+  # Access UI at: http://localhost:5678
+  # ─────────────────────────────────────────────────────────────────
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: clara-n8n
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    environment:
+      # n8n basic config
+      - N8N_HOST=0.0.0.0
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      - WEBHOOK_URL=http://localhost:5678
+
+      # Security (change these for any shared environment)
+      - N8N_BASIC_AUTH_ACTIVE=false
+
+      # Execution settings
+      - EXECUTIONS_DATA_SAVE_ON_ERROR=all
+      - EXECUTIONS_DATA_SAVE_ON_SUCCESS=all
+      - EXECUTIONS_DATA_SAVE_MANUAL_EXECUTIONS=true
+      - EXECUTIONS_DATA_PRUNE=true
+      - EXECUTIONS_DATA_MAX_AGE=336          # 14 days
+
+      # Timezone
+      - GENERIC_TIMEZONE=America/New_York
+
+      # Clara pipeline config — passed into n8n Code nodes
+      - OLLAMA_URL=http://host.docker.internal:11434
+      - OLLAMA_MODEL=mistral
+
+      # Allow shell commands from Code nodes
+      - NODE_FUNCTION_ALLOW_BUILTIN=*
+      - NODE_FUNCTION_ALLOW_EXTERNAL=*
+
+    volumes:
+      # n8n data persistence
+      - n8n_data:/home/node/.n8n
+      # Clara pipeline scripts mounted read/write
+      - ./clara_pipeline:/app/clara_pipeline
+      # Pre-loaded workflows
+      - ./workflows:/app/workflows:ro
+
+    extra_hosts:
+      # Allows n8n container to reach Ollama running on the host
+      - "host.docker.internal:host-gateway"
+
+    command: >
+      sh -c "
+        echo '=== Clara n8n container starting ===' &&
+        echo 'Ollama URL: '${OLLAMA_URL} &&
+        echo 'Model:      '${OLLAMA_MODEL} &&
+        n8n start
+      "
+
+# ─────────────────────────────────────────────────────────────────
+# Volumes
+# ─────────────────────────────────────────────────────────────────
+volumes:
+  n8n_data:
+    driver: local

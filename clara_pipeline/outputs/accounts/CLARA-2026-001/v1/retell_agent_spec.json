@@ -1,0 +1,77 @@
+{
+  "version": "v1",
+  "timestamp": "2026-03-06T09:38:36Z",
+  "system_prompt": "...",
+  "retell_agent_spec": {
+    "account_id": "CLARA-2026-001",
+    "version": "v1",
+    "company_name": "Not confirmed \u2014 company_name",
+    "timezone": "America/Phoenix",
+    "business_hours_description": "Monday through Friday, 8:00 AM to 5:00 PM Central Time",
+    "emergency_triggers_list": [
+      "active sprinkler discharge",
+      "fire alarm panel activation",
+      "active fire",
+      "suppression system discharge",
+      "CO alarm"
+    ],
+    "services_list": [
+      "fire sprinkler systems",
+      "fire alarm systems"
+    ],
+    "emergency_primary_transfer_target": "Marcus Webb",
+    "during_hours_transfer_target": "on-call tech",
+    "transfer_announcement": "I'm transferring you to the on-call technician.",
+    "transfer_timeout_seconds": 120,
+    "questions_carried_forward": [],
+    "version_notes": "Initial configuration based on demo call. NOT READY FOR GO-LIVE."
+  },
+  "account_id": "CLARA-2026-001",
+  "source_memo_version": "v1",
+  "agent_name": "Clara - [COMPANY NAME]",
+  "retell_config": {
+    "voice_id": "eleven_labs_rachel",
+    "voice_speed": 1.0,
+    "voice_temperature": 0.7,
+    "responsiveness": 1.0,
+    "interruption_sensitivity": 0.8,
+    "enable_backchannel": true,
+    "language": "en-US",
+    "max_call_duration_ms": 600000
+  },
+  "tool_placeholders": [
+    {
+      "tool_name": "transfer_call",
+      "trigger": "emergency confirmed and caller info collected",
+      "target": "[UNCONFIRMED]",
+      "note": "Never mention to caller"
+    },
+    {
+      "tool_name": "end_call",
+      "trigger": "caller confirms nothing else needed"
+    },
+    {
+      "tool_name": "log_call_details",
+      "trigger": "any call where transfer fails or non-emergency after-hours",
+      "note": "Silent background logging"
+    }
+  ],
+  "data_collection_fields": {
+    "emergency": [
+      "caller_name",
+      "callback_number",
+      "property_address",
+      "issue_description"
+    ],
+    "non_emergency_after_hours": [
+      "caller_name",
+      "callback_number",
+      "service_description"
+    ],
+    "business_hours": [
+      "caller_name",
+      "callback_number"
+    ]
+  },
+  "questions_carried_forward": []
+}

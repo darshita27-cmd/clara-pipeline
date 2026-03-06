@@ -1,0 +1,1311 @@
+Speaker 1: 00:00
+All right, let's go ahead and let Sandra in. Three, two, one. And she's in.
+
+Speaker 2: 00:08
+Hey, Sandra, can you hear me okay?
+
+Speaker 3: 00:12
+Yes, I can hear you. Hi, how are you?
+
+Speaker 2: 00:14
+I'm doing great, thank you so much for asking. Really appreciate you making time for this today. Before we dive in, I just wanted to introduce myself properly. I'm Nick, I'm part of the Clara Answers team. We work with HVAC and service trade businesses across North America helping them handle their inbound calls more effectively. And with me today I also have our solutions specialist, Priya. She's going to be doing most of the heavy lifting on the demo side.
+
+Speaker 3: 00:38
+Perfect. Hi, Priya.
+
+Speaker 4: 00:40
+Hi, Sandra! Really excited to meet you and learn more about Summit HVAC. Nick told me a lot of good things. So I'm looking forward to this.
+
+Speaker 3: 00:47
+Great, great. Yeah, we've been hearing about AI answering services more and more and I figured it's worth at least seeing what's out there.
+
+Speaker 2: 00:55
+Absolutely, and I think that's the right mindset. You don't have to commit to anything today, this is really just about understanding what's possible and whether it makes sense for your business. So Sandra, before Priya gets into the demo, I'd love to just spend a few minutes learning about Summit HVAC, how you guys operate, what the phone situation looks like right now. Is that okay?
+
+Speaker 3: 01:13
+Yeah, of course, happy to share.
+
+Speaker 2: 01:15
+So tell me a little bit about Summit. How long have you been in operation, what's the service area, and what kind of work are you doing?
+
+Speaker 3: 01:22
+Sure. So Summit HVAC Services, we've been around for about sixteen years. My husband Dale and I started it together. He comes from the mechanical side, he's a master HVAC technician, and I handle the business side — operations, customer relations, billing, all of that. We're based in Denver, Colorado. We cover most of the Denver metro area. Sometimes we'll go out to Boulder or Fort Collins for a bigger commercial job, but Denver is really our core.
+
+Speaker 2: 01:48
+And what's the mix of work? Residential and commercial, or primarily one or the other?
+
+Speaker 3: 01:53
+It's about sixty-forty, residential to commercial. The residential side is a lot of tune-ups, seasonal maintenance, repairs. We do a lot of furnace work in the fall and AC work in the spring. The commercial side is a little different — we've got some property management contracts, a few office buildings, a couple of restaurants. Commercial tends to be bigger jobs and more ongoing relationships.
+
+Speaker 2: 02:15
+And how many technicians on the team right now?
+
+Speaker 3: 02:18
+We have six full-time techs. And we usually bring on two or three seasonal contractors during peak season. So right now going into fall we're starting to ramp up with furnace season, so we'll probably add a couple of people in the next few weeks.
+
+Speaker 2: 02:31
+Makes sense. And on the office side, who's handling the phones day-to-day?
+
+Speaker 3: 02:36
+That's mostly me. I have a part-time office assistant, her name is Tina, she comes in Monday Wednesday Friday. On the days she's in, she answers the phones and I handle everything else. On Tuesday and Thursday, and on any day she's out, it all comes to me. Which, you know, is fine, I'm used to it, but during peak season it gets really difficult because I'm trying to do billing and scheduling and handle calls at the same time.
+
+Speaker 2: 03:00
+Yeah, I hear that a lot from business owners in your position. The phone becomes the thing that interrupts everything else, especially when you're the only one handling it.
+
+Speaker 3: 03:08
+Exactly. And the worst part is a lot of those calls I'm interrupting what I'm doing for, they're not even actionable right then. Like someone's calling to ask if we can come out next week for a tune-up. I stop what I'm doing, take down all their info, tell them I'll call back to confirm a time, and then I have to go back to what I was doing. That interruption cycle is honestly exhausting during fall and spring.
+
+Speaker 2: 03:28
+Right. And what about after hours? What happens when calls come in outside business hours?
+
+Speaker 3: 03:34
+So we have a voicemail that kicks in after hours. Our hours are seven-thirty to five-thirty Monday through Friday. After five-thirty, calls go to voicemail. And then for emergency calls, we have an answering service that we've been using for about four years. It's a human answering service, not AI. They take a message, they text Dale or me, and then we decide whether to call back or whether it can wait until morning.
+
+Speaker 2: 03:58
+And how's that working for you — the human answering service?
+
+Speaker 3: 04:02
+It's okay. I mean, it works in the sense that we do get the messages. But there have been a few issues. One is the cost — it's not cheap, and we're paying per-interaction plus a monthly minimum. In peak season when we're getting a lot of after-hours calls, the bill goes up quite a bit. The second issue is accuracy. The operators don't know our business. So they'll take a message but sometimes they'll miss details that we actually need — like they'll forget to ask what kind of system the customer has, or they won't ask if the customer's heat or AC is completely out versus just underperforming. And then we call back and we're starting from scratch anyway.
+
+Speaker 2: 04:38
+That's a really common complaint. The cost variability and the information quality issue. Both of those affect you, it sounds like.
+
+Speaker 3: 04:45
+Both. And then the third thing, which is probably the most recent frustration, is we had an emergency call come through about six weeks ago — customer's furnace was completely out, it was like eighteen degrees outside, elderly couple. The answering service took the message, texted Dale at eleven PM. But Dale was asleep with his phone on silent. So the text sat there, the customer waited until one AM and called again. The second operator told them someone would call within the hour. Nobody called. They called us again at seven AM absolutely furious. And honestly I felt terrible about it. It wasn't like we intentionally ignored them but the system failed.
+
+Speaker 2: 05:22
+Wow. And that's the worst kind of scenario — it's a life-safety adjacent situation, elderly couple, freezing temperatures, and the process let them down.
+
+Speaker 3: 05:30
+Exactly. And those customers, we'd had them for six years. After that incident we offered a discount on the service but I don't know if they're going to call us again. It damaged the relationship.
+
+Speaker 2: 05:40
+Yeah, that's the real cost. Not just the reputation hit but the customer lifetime value. Okay, so I think I've got a good picture of where you're coming from. Let me ask a few more questions and then I'll hand it over to Priya to show you how Clara would actually address all of this.
+
+Speaker 3: 05:53
+Sure.
+
+Speaker 2: 05:54
+So when you think about what an ideal solution looks like — what are the two or three things it absolutely has to do to be worth switching?
+
+Speaker 3: 06:02
+Okay. So first, it has to handle after-hours emergency calls reliably. That's non-negotiable after what happened. If there's a no-heat situation in winter or a no-AC situation in summer — those are our two big emergency categories — I need to know about it immediately, not hope that someone's awake.
+
+Speaker 2: 06:20
+Yep.
+
+Speaker 3: 06:21
+Second, I'd love for it to take the load off during business hours too. Not just after hours. So if someone's calling to book a tune-up appointment, I'd love for the system to collect all the relevant info so that when I actually talk to them or when Tina calls back, we have everything we need to actually schedule the job. Name, address, what system they have, when they're available. All of that.
+
+Speaker 2: 06:44
+That pre-qualification is huge.
+
+Speaker 3: 06:46
+Yes. Third, I want it to sound professional. I know that might sound like a small thing but in this industry your brand matters and I don't want customers thinking they're calling some sketchy operation with a bad robot on the phone.
+
+Speaker 2: 06:57
+No, that's not a small thing at all. Perception matters, especially for a business that's been building relationships in a community for sixteen years.
+
+Speaker 3: 07:04
+Right. Exactly.
+
+Speaker 2: 07:05
+Okay. Those three — emergency reliability, business hours intake, professional presentation. Priya, I think we've got a great foundation here. Over to you.
+
+Speaker 4: 07:13
+Thanks, Nick. Sandra, this is honestly a really well-articulated picture of your situation and I think what I'm about to show you is going to feel very relevant. So let me share my screen and walk you through this.
+
+Speaker 3: 07:24
+Great.
+
+Speaker 4: 07:26
+Alright, can you see my screen?
+
+Speaker 3: 07:28
+Yes, I can see it.
+
+Speaker 4: 07:29
+Perfect. So what you're looking at is the Clara Answers dashboard. Think of this as your command center for every call that comes into Summit HVAC. Every single call — daytime, after hours, weekends, holidays — it all shows up here. You can see the caller's name, phone number, time of call, how long the conversation was, what they called about, what action was taken, and whether any transfer was attempted. And crucially, you have a full transcript and recording for every single call.
+
+Speaker 3: 07:56
+Okay. That's already an improvement. With our current service we just get a text summary.
+
+Speaker 4: 08:01
+Right, and a text summary is often not enough, especially when you need to go back and verify what was actually said. So let me scroll down here and show you what a typical post-call record looks like. So you can see here, this is a sample — "Caller: Linda Torres, residential, furnace maintenance inquiry, called Monday 8:47 AM, spoke for three minutes forty seconds, call summary: caller is requesting annual furnace tune-up, has a two-stage gas furnace, last serviced eighteen months ago, preferred appointment window Tuesday or Wednesday afternoon, callback number collected, follow-up required." So that's what lands in your dashboard after every call.
+
+Speaker 3: 08:42
+And who generated that summary? Like is that the AI or did someone type it?
+
+Speaker 4: 08:47
+The AI generated it automatically at the end of the call. No human involved. It's pulled directly from the conversation transcript and structured into a clean summary that your office can act on. So when Tina comes in on Monday morning, she's not starting from scratch on any of those calls. She's got a queue of structured summaries she can work through.
+
+Speaker 3: 09:04
+That's — yeah, I mean, that's basically what I was describing. The pre-qualification piece.
+
+Speaker 4: 09:09
+Exactly. That's Clara doing the intake work so your team just needs to handle the follow-through. Now let me show you what the actual call experience sounds like. I'm going to play a sample interaction. This simulates an inbound call to an HVAC company during business hours — a customer wanting to schedule a service call. Listen to how Clara handles it.
+
+Speaker 3: 09:27
+Okay.
+
+Speaker 4: 09:28
+[Sample audio plays — approximately 2 minutes 15 seconds. Clara greets caller, identifies the need, asks about equipment type, collects name address and contact number, confirms preferred callback window, and closes warmly.]
+
+Speaker 3: 11:44
+Okay. I'm honestly impressed. It sounds like a real person. Like I genuinely would not have known that wasn't a person if I didn't know.
+
+Speaker 4: 11:52
+That's the goal. And the voice is fully customizable — we have different tone styles. Some businesses prefer a slightly warmer, more casual tone. Others prefer something more formal and professional. For an HVAC company with a mix of residential and commercial clients, I'd probably suggest something in the middle — friendly but competent.
+
+Speaker 3: 12:10
+Yeah, that makes sense. We have customers that are like elderly homeowners who like a friendly voice and then we have property managers who just want to know it's going to get done.
+
+Speaker 4: 12:19
+Exactly. And the beauty of the configuration is we can set it up to handle both. The same Clara instance can adapt her approach based on context cues in the conversation. If someone says "I manage a thirty-unit apartment complex," Clara's going to handle that differently than if someone says "Hi, this is my first time calling, I just moved to Denver."
+
+Speaker 3: 12:36
+Interesting. Okay. I want to ask about the emergency piece because that's really the core of what I was describing.
+
+Speaker 4: 12:43
+Yes, let's go there. So for emergency handling, this is where Clara really differentiates from a traditional answering service. Let me pull up the emergency call flow diagram. So you can see here — the first thing Clara does when someone calls after hours is she greets them and asks the purpose of the call. "Thank you for calling Summit HVAC Services. Our office is currently closed, but I can help. What's the nature of your call today?" Now if the caller says something like "my heat is out" or "my furnace isn't working" or "it's freezing in my house" — Clara immediately recognizes that as a potential emergency trigger. She then asks one or two quick follow-up questions to confirm severity. "Is your heat completely out or is it underperforming? Are there any vulnerable people in the home, like elderly or very young?" And based on those answers, she either escalates to emergency routing or treats it as a next-business-day follow-up.
+
+Speaker 3: 13:40
+And when she escalates — what does that mean exactly? She calls someone?
+
+Speaker 4: 13:45
+She attempts a live call transfer. So you'd define the routing chain for us. That could be Dale first, then you, then an on-call tech. Clara will attempt each number in sequence, with a configurable timeout — usually thirty seconds per attempt. If someone picks up, the call transfers live and you're connected in real time with the customer. If everyone in the chain is unavailable, Clara does not abandon the caller. She tells them something like: "I was unable to reach our on-call team immediately, but this has been flagged as a priority emergency and someone from Summit HVAC will call you back within fifteen minutes. If you are in immediate danger, please call 911." And at the same time, she sends an urgent text and email notification to you and Dale.
+
+Speaker 3: 14:32
+Okay. So the fifteen minutes — we'd be responsible for that promise. We'd need to actually call back within fifteen minutes.
+
+Speaker 4: 14:39
+Correct. The commitment the agent makes is your commitment. So we'd work with you on what's realistic. Some clients say fifteen minutes, some say thirty, some say one hour for non-life-safety emergencies. It needs to be accurate because the worst thing is the agent promises fifteen minutes and the customer waits an hour.
+
+Speaker 3: 14:57
+No, that's fair. I think for true no-heat or no-AC emergencies, fifteen minutes is what I'd want. If we're talking about a commercial system that's not critical, maybe thirty.
+
+Speaker 4: 15:07
+Perfect. And we can set different response commitments for different emergency tiers. You define the tiers, we configure accordingly.
+
+Speaker 3: 15:14
+Okay, and then the notification to me and Dale — is that a text? An app notification? Both?
+
+Speaker 4: 15:20
+Both. Text to the numbers you designate, and it also shows up in the dashboard so you have a permanent log. The text is immediate, the dashboard is there for later reference and audit trail.
+
+Speaker 3: 15:29
+That's much better than what we have now. Right now the answering service just sends a single text and if you miss it, you miss it.
+
+Speaker 4: 15:35
+Yeah, and there's no retry on that. Clara will resend the alert after a configurable interval if there's no acknowledgment. So it's not a set-it-and-forget-it notification, it's persistent until it's acknowledged.
+
+Speaker 3: 15:46
+That's the feature we needed six weeks ago. If that had existed, that whole situation with the elderly couple wouldn't have happened.
+
+Speaker 4: 15:53
+That's exactly right. And the reason it matters so much is that one incident can undo years of goodwill. Your business has a reputation built over sixteen years and a single process failure shouldn't be able to erase that.
+
+Speaker 3: 16:04
+Yeah. Okay. I'm really liking this.
+
+Speaker 4: 16:06
+Let me show you a couple more things. Let me walk through the business hours flow because you mentioned that's important too. So during your operating hours — you said seven-thirty to five-thirty Monday through Friday — Clara would be the first point of contact. Now you have a couple of options for how you want to configure this. Option one is Clara handles all calls from the first ring, collects info, and routes or transfers. Option two is Clara only picks up if your team doesn't answer after a few rings — like a backup. Which model appeals to you more?
+
+Speaker 3: 16:36
+Honestly, I think option one makes more sense. Like if Tina's on another call or I'm dealing with something, I don't want callers sitting on hold. I'd rather Clara pick up right away and at least get the conversation going.
+
+Speaker 4: 16:48
+That's what most of our clients prefer. Okay, so Clara picks up every call. During business hours, after she understands what the caller needs, she'll either attempt a transfer to your office line or to your direct line, depending on what you configure. If the transfer goes through, great. If not, she collects all the details and promises a callback. The caller never gets dumped into a voicemail black hole.
+
+Speaker 3: 17:07
+What about situations where someone just really wants to talk to a person and they don't want to go through the AI? Like "I just want to talk to someone."
+
+Speaker 4: 17:15
+Clara handles that gracefully. She acknowledges it — "Absolutely, let me connect you with our team right now" — and immediately attempts the transfer. She doesn't argue, she doesn't try to collect info first if the caller is pushing. The goal is to serve the customer, not to hold them in a script.
+
+Speaker 3: 17:28
+Okay, good. That's important to me. I don't want customers feeling like they're being blocked.
+
+Speaker 4: 17:33
+Understood. And that's a setting we can tune. Some businesses prefer Clara to collect at least a name and number before transferring, just in case the transfer fails. Others say no, just connect them immediately. We'd set it to whatever you're most comfortable with.
+
+Speaker 3: 17:46
+I think at minimum a name and number before transferring makes sense. Just so if the call drops we can call back.
+
+Speaker 4: 17:52
+Perfect. Name and number, then transfer. Standard best practice.
+
+Speaker 3: 17:55
+What about scheduling? I know some of these AI systems can actually book appointments. Can Clara do that?
+
+Speaker 4: 18:01
+Great question. Clara has the ability to integrate with scheduling and field service management systems. What system are you currently using for job scheduling?
+
+Speaker 3: 18:10
+We use Jobber. We've been on Jobber for about two years. It handles our scheduling, work orders, invoicing.
+
+Speaker 4: 18:18
+Good news — we work with Jobber. So there are a few ways this can go. One is full integration where Clara can actually access your Jobber calendar, check availability, and book appointments directly. The second is a lighter integration where Clara collects all the info needed to book and sends it to Jobber via a structured summary, but the actual booking is done by your team. The third is Clara collects info and your team handles everything in Jobber manually.
+
+Speaker 3: 18:43
+I think I'd want to start somewhere in the middle. Like, have Clara collect everything so well that when Tina opens Jobber in the morning, she basically just needs to click confirm. But I don't want the AI booking directly into our calendar yet. We have some nuance in how we schedule — like certain techs are better for certain job types, or we try to cluster jobs geographically to reduce drive time. I don't think the AI would know all of that.
+
+Speaker 4: 19:06
+That's very sound thinking, honestly. Especially at the start. You can always add more automation later once you trust the workflow. Starting conservative and then expanding is always better than over-automating and having to pull back.
+
+Speaker 3: 19:17
+Yeah. I've made the mistake of over-automating before and it usually makes a mess.
+
+Speaker 4: 19:22
+Ha, you're not alone in that. Okay, so for now — Clara collects full intake info, structured summary to your team, Tina enters it in Jobber. Over time you can expand.
+
+Speaker 3: 19:31
+Perfect. And what info would Clara collect? Like what fields?
+
+Speaker 4: 19:35
+We'd configure it based on what your team needs. For a typical HVAC service call, that would be customer name, callback number, property address, type of system — gas furnace, heat pump, central AC, what have you — approximate age of the system if they know, description of the issue, preferred appointment window, and whether they're a new or existing customer.
+
+Speaker 3: 19:55
+Yeah, that's basically our intake checklist. We have a sheet that Tina fills out manually. If Clara can basically fill out that sheet through the conversation, that's exactly what I need.
+
+Speaker 4: 20:04
+We can replicate your intake form in the call flow. If you share it with us during onboarding, we'll build the questions right in.
+
+Speaker 3: 20:10
+Oh, that's great. Yeah, I can send that over.
+
+Speaker 4: 20:12
+Perfect. Now let me ask about your existing customers versus new customers. Do you want Clara to handle them differently? Like for an existing customer who's calling to say their system is acting up again, do you want the intake to be shorter because their info is already in Jobber?
+
+Speaker 3: 20:27
+Ideally yes, but I don't know how realistic that is. Like can Clara look up an existing customer?
+
+Speaker 4: 20:33
+With a Jobber integration, potentially yes — Clara can check if the phone number matches an existing record. But again, for a starting point, the simpler approach is just to collect the callback number early and then when your team follows up, they can pull the existing customer record themselves. You don't have to have the AI doing database lookups on day one.
+
+Speaker 3: 20:52
+Yeah. Let's keep it simple to start.
+
+Speaker 4: 20:54
+Smart. And actually, I want to back up just one second to the Jobber question because I think there's something worth saying about how that integration matures over time, just so you have the full picture.
+
+Speaker 3: 21:03
+Okay.
+
+Speaker 4: 21:04
+So right now, the way you described it — Clara collects, Tina enters — that's essentially a Phase One setup. It solves the intake quality problem and it removes the need for Tina to be on the phone gathering information that Clara can gather automatically. The Phase Two version, which a lot of our HVAC clients move to after about three months, is what we call structured handoff. Clara still doesn't book directly into Jobber, but the summary she generates is formatted exactly like a Jobber work order template. So Tina isn't interpreting notes — she's literally copy-pasting fields into a pre-built work order form. The data quality is clean enough that there are almost no errors.
+
+Speaker 3: 21:39
+So it's not full automation but it's very close.
+
+Speaker 4: 21:42
+Right. And then Phase Three — which some clients do and some don't — is Clara actually creates a draft work order in Jobber, Tina reviews and approves it, then it goes live. The human is still in the loop for approval, but the creation step is automated.
+
+Speaker 3: 21:55
+Okay. And what would determine whether I'd want to do Phase Three or not?
+
+Speaker 4: 22:00
+Honestly, it comes down to how much you trust the accuracy of the data coming in and how often you have exceptions. If ninety percent of your service calls are straightforward — residential tune-up, furnace repair, AC service — then Phase Three makes a lot of sense because the data is predictable. If you have a lot of complex commercial jobs with special terms, custom pricing, particular tech assignments, then you'd probably stay at Phase Two indefinitely because there's too much judgment required.
+
+Speaker 3: 22:24
+Yeah. For the commercial accounts, I think Phase Two would be as far as we'd want to go. For the residential side, Phase Three is interesting.
+
+Speaker 4: 22:32
+That actually maps to what a lot of mixed businesses do — Phase Three for residential, Phase Two for commercial. You can configure it that way.
+
+Speaker 3: 22:39
+Good to know. Okay. That gives me a roadmap.
+
+Speaker 4: 22:42
+And the point is you're not locked into Phase One forever. It's a progression that we build together as you get comfortable.
+
+Speaker 3: 22:48
+I appreciate that framing. It doesn't feel like I'm jumping off a cliff.
+
+Speaker 4: 22:52
+Ha! No cliffs. Very gentle ramp.
+
+Speaker 3: 22:55
+Okay, good. So let me actually go back and ask something I meant to ask earlier. The live demo call that you played — is that Clara being played back from a recording, or was that an actual real-time interaction?
+
+Speaker 4: 23:06
+That was a recording of a real test call. It was a Clara agent configured for an HVAC company — not Summit, a different client — and we use it as a demo sample because the interaction was really clean. The real-time version is exactly the same, just happening live in the moment.
+
+Speaker 3: 23:21
+And the voice — is that one of those AI voices that sounds okay at first but then starts to feel a little robotic the longer you listen? Because I've noticed that with some AI assistants.
+
+Speaker 4: 23:31
+That's a fair observation and it's been true for a lot of AI voice systems. The older voice synthesis technology had that "uncanny valley" quality where it sounded almost natural but not quite. What Clara uses is a newer generation of voice — the pauses, the pace, the slight natural variations — they're more human. I'd say you'd probably notice it's not human if you were paying close attention, but most callers in the middle of explaining their furnace problem are not scrutinizing the voice quality.
+
+Speaker 3: 23:56
+Ha! Yeah. When my heat is out at midnight I'm not doing a voice quality review.
+
+Speaker 4: 23:59
+Exactly. And that's the context that matters. The call experience in the moment — when someone is stressed, has a problem, needs help — that's when the quality matters most, and that's exactly when Clara is most consistent.
+
+Speaker 3: 24:10
+Okay. And can customers ask to speak to a person partway through? Like if they started with Clara but then they decide they want a human?
+
+Speaker 4: 24:18
+Yes, at any point. If a caller says "I want to talk to a real person" or "can I speak to someone?" Clara immediately says "of course, let me connect you now" and initiates the transfer. She doesn't argue, she doesn't ask why, she doesn't try to keep them in the automated flow. The caller's preference is always respected.
+
+Speaker 3: 24:34
+And if nobody answers the transfer, then what?
+
+Speaker 4: 24:37
+Then Clara comes back on, acknowledges that she wasn't able to connect them, collects their name and number if she hasn't already, and promises a callback. She never just drops the call. There's always a graceful resolution.
+
+Speaker 3: 24:49
+Okay. That's important to me. I've had customers tell me they called a business and the phone just went dead after the transfer failed. That's really damaging.
+
+Speaker 4: 24:57
+It is, and it's unfortunately common with cheap phone systems. Clara handles transfer failure as a first-class scenario, not an edge case. It's built into every single call flow.
+
+Speaker 3: 25:06
+Good.
+
+Speaker 2: 25:07
+Sandra, I want to ask you something that I think will help me tailor the proposal. You mentioned you've been using the current answering service for four years. What's kept you with them despite the frustrations?
+
+Speaker 3: 25:18
+Honestly? Inertia, partly. Switching vendors takes time and energy and I'm already stretched thin. And also, to be fair, it works most of the time. It's only when the edge cases happen — like that emergency incident — that the gaps show up. The day-to-day, most of the time, it functions.
+
+Speaker 2: 25:35
+Right. It's the "good enough most of the time" problem. And the cost of the failures is distributed — you don't see it as a line item on your P&L, you see it as a customer you lost six months ago who you didn't even know you lost.
+
+Speaker 3: 25:47
+Yeah. That's exactly it. The invisible cost. The call I never got because someone called and got the runaround and just called a competitor instead. I don't know how many of those there are.
+
+Speaker 2: 25:57
+And in a market like Denver where you have real competition for HVAC services, that invisible cost compounds over sixteen years.
+
+Speaker 3: 26:04
+Yeah. I don't want to be dramatic about it but honestly it does keep me up at night sometimes. Like, are we leaving business on the table because our phone handling isn't as good as it should be?
+
+Speaker 2: 26:14
+It's the right question to be asking. And one of the things that our clients consistently tell us after the first month is that they didn't realize how many calls they were partially losing — not completely dropping but not maximizing — because the intake was incomplete or the response time was inconsistent.
+
+Speaker 3: 26:28
+Partially losing. Yeah, that's a real category. Someone calls, gets a mediocre interaction, and they don't necessarily go to a competitor immediately but they don't feel great about Summit. And then next time something happens they make a different call.
+
+Speaker 2: 26:40
+Exactly. Brand erosion at the margin, one call at a time.
+
+Speaker 3: 26:44
+Yeah. Okay. That framing is actually helpful because it makes the ROI case more concrete.
+
+Speaker 2: 26:49
+It does. And we can actually help you think through that during the proposal review if you want. Like, how many calls are you getting per day on average, what's your close rate on new service inquiries, what's your average job value — from that you can back-calculate what improving call quality might mean in revenue terms.
+
+Speaker 3: 27:04
+Oh, that'd be useful. Dale loves a good spreadsheet. Ha.
+
+Speaker 2: 27:07
+Ha! We'll put one together for you.
+
+Speaker 4: 27:09
+Actually, can I ask — do you know roughly how many inbound calls Summit gets per week on average? Just a rough number.
+
+Speaker 3: 27:17
+In a normal week, maybe sixty to seventy calls. In peak season — October, November, May, June — it's probably more like a hundred and forty, a hundred and fifty. So it roughly doubles.
+
+Speaker 4: 27:27
+And of those, how many are new customers versus existing customers calling in?
+
+Speaker 3: 27:32
+Hmm. In normal season, maybe thirty percent new, seventy percent existing. In peak season, the new customer ratio goes up because that's when people are discovering problems and calling around for the first time.
+
+Speaker 4: 27:43
+So peak season you might be getting forty, fifty new customer calls a week. At your average job value, that's significant revenue at stake per week in terms of conversion.
+
+Speaker 3: 27:52
+Yeah. And we don't convert all of them. Some people are just shopping around, which is fine. But the ones we lose because of a poor call experience — those are the frustrating ones.
+
+Speaker 4: 28:00
+Right. And with Clara, you'd know about every single one of them because every call is logged and categorized. You'd actually be able to see: fifty-two new customer calls this week, forty-three converted to a scheduled callback, nine did not. And you could look at the transcripts of the nine and understand why.
+
+Speaker 3: 28:17
+That kind of visibility — I don't have that right now at all. I have no idea what happens on calls that don't convert.
+
+Speaker 4: 28:23
+With Clara, you will. And that's business intelligence you can act on.
+
+Speaker 3: 28:27
+Okay. Yeah. That's compelling.
+
+Speaker 2: 28:29
+Let me also quickly flag something about the seasonal ramp-up you mentioned. You said you bring on seasonal contractors in fall. Do those contractors ever interact with the phone system? Like do they need to be able to receive transferred calls?
+
+Speaker 3: 28:41
+Sometimes. If a call comes in for a specific job that one of the contractors is handling, Tina might transfer them. But it's ad hoc. It's not like we have a formal extension system for contractors.
+
+Speaker 2: 28:51
+Good to know. Because if in the future you want Clara to be able to route to specific techs — not just you and Dale — we can add those numbers to the routing configuration. It's not something you'd need at the start but good to know it's possible.
+
+Speaker 3: 29:03
+Yeah. That would be interesting eventually. Like if a commercial client always works with a specific tech, and they call in, being able to route to that tech specifically would be nice.
+
+Speaker 2: 29:11
+Totally doable. That's a more advanced configuration but it's on the roadmap for clients who get there.
+
+Speaker 3: 29:16
+Okay. Good to know.
+
+Speaker 4: 29:18
+And speaking of routing — one thing I want to make sure we configure correctly is what happens when Dale is not on-call. You mentioned you alternate weeks. Is there a way for us to know week to week who's primary?
+
+Speaker 3: 29:29
+I mean, we'd have to tell you. Is there a way to update the routing in the dashboard ourselves?
+
+Speaker 4: 29:34
+Yes. You can update routing configurations directly in the dashboard without needing to contact us. So at the start of each week, whoever is going on-call that week would update their position in the routing chain. It's a simple drag-and-drop. Or, if you want, you can email your account manager and they'll update it.
+
+Speaker 3: 29:49
+The drag-and-drop sounds good. I'd rather have control over that in real-time.
+
+Speaker 4: 29:53
+Absolutely. And there's also an override feature — so if Dale is primary on-call but he has a night where he really needs to not be disturbed, he can set a temporary override for that night that routes to you first. All self-service in the dashboard.
+
+Speaker 3: 30:05
+Oh, that's nice. Because sometimes we'll have a situation where Dale's traveling and his phone reception is spotty. He'd want to put me as primary for those few days.
+
+Speaker 4: 30:13
+Yep. It's all configurable in real-time. You're never locked into a static routing chain.
+
+Speaker 3: 30:18
+Great. Okay. I feel like we've really covered the routing stuff thoroughly.
+
+Speaker 4: 30:23
+I think we have. Let me shift to something you might not have thought about but that I think would be really useful for Summit given your seasonal business. You mentioned you ramp up in fall for furnace season and spring for AC season. Those are also the periods when your call volume spikes dramatically, right?
+
+Speaker 3: 21:10
+Oh yes. October and November are insane. Same with May and June. It's like the whole city remembers their HVAC system at the same time.
+
+Speaker 4: 21:19
+Ha. And during those periods, your current setup — you and Tina handling calls — that's under the most strain right when you need it most.
+
+Speaker 3: 21:27
+Exactly. Those are the months where I end up missing calls or putting people on hold for too long and I lose jobs I didn't even know I lost.
+
+Speaker 4: 21:34
+Clara doesn't have a peak season problem. The same system that handles twelve calls on a slow Tuesday in January handles a hundred and twelve calls on a busy Monday in October. No degradation in quality, no hold times, no calls missed.
+
+Speaker 3: 21:46
+That's — I mean, that's actually a really compelling point. Because hiring seasonal staff to handle call volume is expensive and they take time to train and they're often not very good when they're brand new.
+
+Speaker 4: 21:57
+And they still have bad days, and they still put people on hold, and they still miss information. Clara is consistent. That's one of her biggest value props — not that she's necessarily better than your best human in every situation, but she's consistently good, every time, at scale.
+
+Speaker 3: 22:12
+Yeah. Consistent is actually really valuable in this business. Our reputation is built on reliability.
+
+Speaker 4: 22:18
+Exactly. And consistent intake quality means your tech shows up to every job knowing what to expect. That saves time in the field too.
+
+Speaker 3: 22:26
+Oh, that's a good point I hadn't thought of. When the info collected is better, the techs are better prepared.
+
+Speaker 4: 22:31
+Yep. Dale would probably appreciate that.
+
+Speaker 3: 22:33
+Ha. Yeah, he'd definitely appreciate that. He gets frustrated when he shows up somewhere and doesn't have the right parts because we didn't know what system they had.
+
+Speaker 4: 22:41
+Exactly. Okay, let me show you one more thing and then I want to open it up for questions. Let me pull up the notification and escalation settings page.
+
+Speaker 3: 22:50
+Sure.
+
+Speaker 4: 22:51
+So this is where you'd configure who gets notified, when, and how. You can see there are different notification types. Emergency alert — this is the immediate text and email for no-heat, no-AC, any life-safety adjacent situation. Priority alert — this is for situations that need attention soon but aren't immediate emergencies. For example, a commercial client whose system is down but it's a business and not a residence. Standard follow-up — this is the morning queue that goes to your inbox with everything from the previous evening. And then there's a general activity digest — this is optional, a daily summary of all call activity, volumes, categories. Good for business intelligence.
+
+Speaker 3: 23:29
+Can I turn some of these off? Like I don't necessarily want an email every time a standard call comes in at two in the morning.
+
+Speaker 4: 23:36
+Absolutely. You configure each type separately. So emergency alerts — on, immediate, text and email, always. Priority alerts — on, immediate, text only. Standard follow-up — batched, next morning, email only. Digest — once a week, email only. You set each independently.
+
+Speaker 3: 23:52
+Okay. That's good. I don't want to create a new problem where I'm now being bombarded with notifications instead of calls.
+
+Speaker 4: 23:58
+That's a super valid concern and we've seen people over-configure notifications at the start. My recommendation is start with minimal notifications — just emergencies — and add more only if you find you need them.
+
+Speaker 3: 24:09
+Yeah, that makes a lot of sense.
+
+Speaker 4: 24:11
+Alright, let me pause here because I've covered a lot. What questions are coming up for you?
+
+Speaker 3: 24:16
+Okay. A few things. First, what about calls in languages other than English? We do have some Spanish-speaking customers. Denver has a significant Spanish-speaking population.
+
+Speaker 4: 24:27
+Really good question. Clara supports multiple languages. Spanish is fully supported. The way it works is either Clara is configured to be bilingual from the start — she can switch to Spanish if a caller speaks Spanish — or you can have a separate Spanish-language number that routes to a Spanish-configured Clara. Given your customer base, the bilingual option probably makes more sense.
+
+Speaker 3: 24:47
+Yeah, absolutely. I'd want her to be able to switch seamlessly. Like if someone starts speaking Spanish, she should just go with it.
+
+Speaker 4: 24:53
+She will. She'll detect the language and respond accordingly. And the call summaries and transcripts will be translated to English so your team can still work with them.
+
+Speaker 3: 25:00
+Oh, that's actually really thoughtful. Okay.
+
+Speaker 4: 25:03
+Next question?
+
+Speaker 3: 25:04
+The cost. I'm paying per-interaction with the human answering service and it adds up fast in peak season. How does Clara price?
+
+Speaker 4: 25:12
+So Clara is a flat monthly subscription. No per-interaction fees. So you're not penalized for peak season. The cost is predictable every month regardless of how many calls come in. Nick can go into the specifics with you after this call, but the short version is it's much more predictable than a per-interaction model.
+
+Speaker 3: 25:30
+Okay. That's already better. Because when I look at October's bill from the answering service, I kind of dread it.
+
+Speaker 2: 25:37
+Yeah, and to add to that, Sandra — a lot of our clients in seasonal businesses specifically called out the cost predictability as one of the main reasons they switched. When your call volume triples in peak season, your Clara cost stays the same.
+
+Speaker 3: 25:50
+That makes sense financially, yeah.
+
+Speaker 4: 25:52
+Any other questions?
+
+Speaker 3: 25:53
+Yeah. What happens if Clara mishandles a call? Like what's the process for correcting a mistake?
+
+Speaker 4: 26:00
+Great question. So every call is recorded and transcribed. If you hear a call where Clara said something incorrect or handled something in a way you didn't like, you flag it. You can do that directly from the dashboard — there's a flag button on every call record. Your account manager reviews it, the issue is identified, and we update the configuration. The corrections are versioned so you have a record of what changed. And in the early weeks especially, we actively review flagged calls and sometimes proactively suggest improvements before you even notice.
+
+Speaker 3: 26:30
+And how long does it take to push a correction?
+
+Speaker 4: 26:33
+For something like correcting a piece of information Clara is sharing — like a service fee or a callback timeframe — that can be same-day. For changes to the actual call logic — like a new routing rule or a new emergency trigger — that's typically within twenty-four hours.
+
+Speaker 3: 26:46
+Okay. That's reasonable.
+
+Speaker 4: 26:48
+And just to be clear — in the early weeks you'd probably see some edge cases that need tuning. That's totally normal and expected. The agent gets better the more you interact with it and flag things. Think of it like a new employee who's very competent but needs a week or two to fully understand your specific business context.
+
+Speaker 3: 27:04
+That's a good analogy actually.
+
+Speaker 4: 27:06
+Any other questions coming up?
+
+Speaker 3: 27:08
+Um, one more big one. We work with a company called Colorado Facilities Management — they manage about eight commercial properties that we service. They call regularly and they've always gotten priority treatment from our team. Is there any way to make sure they still feel like a priority even when they're talking to an AI?
+
+Speaker 4: 27:26
+Yes, absolutely. This is something we configure as VIP account handling. You'd give us the details of Colorado Facilities Management — their phone numbers, any contact names — and Clara will flag them immediately when they call. The behavior can be different — for example, after hours any call from them gets routed for a callback rather than just dumped in the morning queue. And we can configure the greeting to feel slightly more personal if they've been identified. Something like acknowledging that they're an existing commercial client.
+
+Speaker 3: 27:52
+Would they know they're getting special treatment?
+
+Speaker 4: 27:55
+In the sense that they'd feel it, yes. In the sense that we're announcing it, no. It would just feel like a company that really has its act together.
+
+Speaker 3: 28:02
+Ha. Yeah, that's what I want. I want them to feel that Summit is on top of things.
+
+Speaker 4: 28:07
+Exactly. And that's what consistently good call handling does — it's a brand touchpoint every time someone calls.
+
+Speaker 3: 28:14
+Yeah. You know what, I came into this thinking this might be too impersonal for our business and I'm actually coming out thinking it could be more consistent than what we have now.
+
+Speaker 2: 28:23
+That's the realization a lot of our clients have. It's counterintuitive at first. You think "my customers know us personally, they want to talk to a person." And that's true in some ways. But what they actually want is to feel heard and to get their issue resolved quickly. And a well-configured AI that collects the right information and routes appropriately does that very reliably.
+
+Speaker 3: 28:43
+Yeah. I think you're right.
+
+Speaker 4: 28:44
+Okay. I want to cover a couple more things before we wrap up and then we'll talk about next steps. Let me show you the dispatcher feature quickly, because I think this might be relevant for your peak season workflow.
+
+Speaker 3: 28:54
+Sure.
+
+Speaker 4: 28:55
+So the dispatcher is a separate Clara agent — think of it as an outbound companion to the inbound answering agent. The use case is this: you have a job scheduled for tomorrow. You want the customer to get a confirmation call. Or you have a tech running late and you want the customer to be notified automatically. Or you want to do appointment reminders the day before. Instead of Tina making those calls, Clara dispatcher does it. She calls the customer, delivers the message, and logs the response.
+
+Speaker 3: 29:22
+Okay. Tina does spend a lot of time on outbound reminder calls. Like she'll spend two hours on a Wednesday just calling to confirm Thursday appointments.
+
+Speaker 4: 29:30
+So if that two hours becomes twenty minutes — because Clara handles the calls and Tina just reviews the outcomes — that's time Tina can spend on things that actually need human judgment.
+
+Speaker 3: 29:39
+Yeah. That's — I mean, I'm already thinking about what Tina would do with two extra hours a day.
+
+Speaker 4: 29:44
+Ha, she'd probably be happy to hear it too.
+
+Speaker 3: 29:46
+She would. Okay, yeah. That's an interesting add-on.
+
+Speaker 4: 29:49
+And then there's a reviews module as well. After a job is completed, Clara can make a follow-up call to the customer — "Hi, this is Clara from Summit HVAC, just checking in to make sure everything is working well. How was your experience?" And the response gets logged, positive reviews can be directed to your Google listing, negative feedback gets flagged for follow-up.
+
+Speaker 3: 30:08
+Oh, that's smart. We don't have a good review generation process right now. We get reviews occasionally but it's not systematic.
+
+Speaker 4: 30:16
+And for a sixteen-year business like yours, systematic review generation could be a significant driver. Your reputation in Denver is already strong — a good review push could really amplify that.
+
+Speaker 3: 30:26
+Yeah. Dale would love that actually.
+
+Speaker 4: 30:28
+And one more — collections. I don't know how your billing works, but if you have outstanding invoices, Clara can make automated follow-up calls. "Hi, this is Clara from Summit HVAC, just a friendly reminder about invoice number whatever from your service on this date, just checking in about the balance." It's softer for newer invoices and can be calibrated to be firmer for older ones.
+
+Speaker 3: 30:50
+We do have some outstanding invoices. It's a soft spot for me because I hate the awkward "you owe us money" conversation.
+
+Speaker 4: 30:57
+Clara doesn't find it awkward. She makes the call every time, consistently, without hesitation.
+
+Speaker 3: 31:02
+Ha. That might be worth its weight in gold right there.
+
+Speaker 2: 31:06
+Ha! We hear that one a lot.
+
+Speaker 3: 31:08
+Actually wait — on the collections piece, I want to understand that a little better because I'm a bit sensitive about this. Our customers are mostly residential homeowners and small business owners. They're not corporations. If someone's a month late on a five hundred dollar invoice it might just be an oversight. I don't want them to feel like they're being chased by a debt collector.
+
+Speaker 4: 31:27
+That's a completely valid concern and I should have addressed it more explicitly. So the collections module has very granular tone calibration. You'd define thresholds. For example: invoices under thirty days overdue — the call is very warm and friendly, almost like a gentle check-in. "Hi, this is Clara from Summit HVAC, I'm just following up on your recent service visit to make sure everything's still working well. I also noticed there was an invoice from that visit — did you receive it okay? We just want to make sure it didn't slip through." It's barely even a collections call, it's more like a customer care call that also mentions the invoice.
+
+Speaker 3: 32:00
+Okay, I love that framing.
+
+Speaker 4: 32:02
+For invoices thirty to sixty days out — the tone shifts slightly. Still friendly, but a bit more direct. "Hi, this is Clara from Summit HVAC following up regarding invoice number such-and-such for your furnace service on this date. The balance of amount is still outstanding. Could we get that taken care of or would you like to arrange a payment schedule?" Still polite, but there's a clear ask.
+
+Speaker 3: 32:22
+Yeah, that's appropriate for that window.
+
+Speaker 4: 32:24
+And for sixty-plus days — you'd configure whether you want Clara to continue, or whether those get flagged for you to handle personally or escalate to collections. We'd never make a call that misrepresents the situation or uses pressure tactics. The calibration is firm but always professional and factual.
+
+Speaker 3: 32:40
+That sounds really good actually. I think the thirty-days-and-under scenario — where it's framed as a check-in — that would catch ninety percent of our late invoices because most of the time it really is just that they forgot or the email went to spam.
+
+Speaker 4: 32:52
+Exactly. And the beauty of Clara making those calls is it removes the personal awkwardness. You're not calling a customer and feeling weird about asking for money. Clara does it with zero emotional weight.
+
+Speaker 3: 33:01
+Dale is going to love this. He is absolutely terrible at asking for money. I'm the one who usually has to do it and I still don't enjoy it.
+
+Speaker 4: 33:09
+Ha! Sounds like Clara is going to be a very popular employee at Summit.
+
+Speaker 3: 33:13
+Ha! She might replace both of us at this rate.
+
+Speaker 2: 33:16
+Ha, well — we'd say Clara handles the tasks that take your time without requiring your judgment. The judgment part is very much still yours.
+
+Speaker 3: 33:23
+Ha, good qualifier. Okay. So I want to ask about something more specific. You've talked about Clara being configured for HVAC. But Summit isn't just HVAC — we also do some light commercial refrigeration work. Not a lot, maybe ten percent of the business, but we have a few commercial kitchen clients who call us for walk-in cooler repairs, refrigeration systems. Would Clara understand that context or would she get confused?
+
+Speaker 4: 33:47
+Great question. Commercial refrigeration is a service vertical that Clara is familiar with from a vocabulary and context standpoint. She knows the difference between an HVAC unit and a refrigeration compressor, she knows that a walk-in cooler failure is a business-critical emergency for a food service operation, she understands the terminology. You'd configure it in the onboarding — just like you'd tell us your emergency triggers for HVAC, you'd also tell us your emergency triggers for refrigeration. Like, "walk-in cooler failure at a restaurant — emergency."
+
+Speaker 3: 34:13
+Yeah. A walk-in cooler failure is absolutely an emergency. Food safety implications, potential loss of thousands of dollars in inventory.
+
+Speaker 4: 34:20
+Understood. And Clara would triage that correctly. "My cooler is down" from a restaurant caller at two AM — that goes to the emergency chain, not the voicemail queue.
+
+Speaker 3: 34:29
+Okay. Good. I was worried this would be a gap.
+
+Speaker 4: 34:32
+It's not. The configuration is flexible enough to cover your full service range, not just the primary HVAC work.
+
+Speaker 3: 34:38
+Good. Because I'd hate to have a client call about a cooler emergency and have Clara treat it like a tune-up inquiry.
+
+Speaker 4: 34:44
+Ha. Yeah. "Your walk-in cooler is out? I can schedule someone for next Tuesday." That would be bad.
+
+Speaker 3: 34:49
+Ha! Please not that.
+
+Speaker 4: 34:51
+Not going to happen. We'll make sure refrigeration emergencies are in the trigger list.
+
+Speaker 2: 34:55
+And actually, Sandra, this brings up something useful — we'd want you to share your full list of service types during onboarding. Everything Summit does. So we can make sure Clara has the right vocabulary and triage logic for all of it.
+
+Speaker 3: 35:05
+Sure. I can put that together. It's basically HVAC installation, HVAC repair and service, HVAC maintenance contracts, duct cleaning, commercial refrigeration repair, and then we do some indoor air quality stuff — air purifiers, humidifiers, that kind of thing.
+
+Speaker 2: 35:21
+Perfect. That's a complete picture. All of that can be configured. And for services like duct cleaning or indoor air quality — those would always be non-emergency, scheduled service, right?
+
+Speaker 3: 35:30
+Right. Nobody's calling at midnight because their humidifier needs a tune-up.
+
+Speaker 2: 35:34
+Ha. Exactly. So those would all fall into the standard business hours intake flow — collect info, schedule callback.
+
+Speaker 3: 35:40
+Yeah. Perfect.
+
+Speaker 4: 35:41
+Actually, and this is something worth flagging — for services like duct cleaning and indoor air quality, those are often things people are calling about because they've done research and they have specific questions. Like "what brand of air purifier do you install" or "do you do Aeroseal duct sealing." Those questions are above what Clara would know, so rather than trying to answer them, she'd acknowledge the question, say she wants to make sure someone with the right expertise answers it, and route it for a callback where you or Tina can actually address it properly.
+
+Speaker 3: 36:05
+Yeah. I'd much rather she say "I'm going to have someone follow up on that specifically" than try to answer and get it wrong.
+
+Speaker 4: 36:12
+Exactly. And that's a really good general principle for how Clara handles complexity. For things she knows, she answers. For things that require human expertise or judgment, she routes and collects. She doesn't bluff.
+
+Speaker 3: 36:23
+That's the right approach. I've seen AI systems that try to answer everything and half the time they're wrong and you end up with a customer who has wrong information.
+
+Speaker 4: 36:31
+Yeah, and wrong information is worse than no information. "I don't know, let me have someone follow up" is always safer than a confident wrong answer.
+
+Speaker 3: 36:39
+Completely agree.
+
+Speaker 2: 36:40
+And from a brand perspective, "let me make sure you get the right answer" actually signals competence and care. It's not a weakness.
+
+Speaker 3: 36:47
+Yeah, that's true. When a person says "I'm not sure, let me check and get back to you," that's actually reassuring. I'd rather hear that than a confident wrong answer.
+
+Speaker 2: 36:55
+Exactly. Okay, I also want to make sure we talk briefly about the onboarding process and what the first thirty days look like, just so you know what to expect.
+
+Speaker 3: 37:02
+Yes, please.
+
+Speaker 2: 37:03
+So onboarding starts with a configuration call — that's about thirty to forty minutes with Pawan, who leads our onboarding team. He's going to walk through everything in detail. Business hours, routing chain, emergency definitions, the specific wording you want for greetings and fallbacks, your service types, your VIP accounts, your pricing information if you want Clara to share it. He takes all of that and builds the first version of the agent. That typically takes about twenty-four hours.
+
+Speaker 3: 37:27
+And then what?
+
+Speaker 2: 37:28
+Then you get access to a dedicated test number. That's not your live line — it's a separate number that only routes to your Clara agent. You and your team call that number and test scenarios. You can test the emergency flow, the business hours flow, the Spanish language flow, the VIP account handling. You run it through its paces. Any issues you find, you let Pawan know and he fixes them usually within a few hours.
+
+Speaker 3: 37:50
+How long do most people spend in testing?
+
+Speaker 2: 37:53
+A couple of days, typically. Most people do a day or two of casual testing, then a day where they do more structured scenario testing. And then they're ready to go live.
+
+Speaker 3: 38:00
+And going live — how disruptive is that? Like is there going to be a period where things are in transition and calls might not get handled correctly?
+
+Speaker 2: 38:08
+Going live is a forwarding change — it takes five minutes, it's not disruptive at all, and you can roll it back instantly if needed. Like if you flip the forwarding and within the first hour you see something that needs fixing, you can flip it back to your current setup while the fix is made. But in practice, that almost never happens because the testing period usually catches everything.
+
+Speaker 3: 38:27
+Okay. And we could go live just for after-hours initially, and keep handling daytime calls ourselves to start?
+
+Speaker 2: 38:34
+Absolutely. A lot of clients do that. It's called a soft launch — you go live for after-hours first, which is often where the most urgent need is, and you let the daytime piece run a little longer in parallel before switching it over. That way you're solving the most pressing problem first and giving yourself more time to be comfortable with the daytime flow.
+
+Speaker 3: 38:52
+I like that. Yeah. The after-hours thing is what's keeping me up at night, literally. That would be the highest priority.
+
+Speaker 2: 38:59
+Then that's exactly where we'd start. After-hours first, daytime to follow at your pace.
+
+Speaker 3: 39:04
+Perfect. That makes me feel a lot better about the process.
+
+Speaker 2: 39:07
+And during the whole first month, Pawan is actively watching the call logs. He's not waiting for you to come to him with issues — he's proactively flagging anything that looks like it could be improved. Most clients see their second and third configuration improvements happen within the first two weeks without even asking for them.
+
+Speaker 3: 39:22
+Oh wow. That's a high-touch onboarding.
+
+Speaker 2: 39:25
+We've learned that the first month really sets the tone for the whole relationship. If we get it right in the first month, clients stick around for years. So we invest heavily there.
+
+Speaker 3: 39:34
+That's smart. And rare, honestly.
+
+Speaker 2: 39:36
+We try to be worth it. Ha.
+
+Speaker 3: 39:38
+Ha. Okay. So the proposal, the onboarding call, testing, soft launch for after-hours, then daytime. That's a clear path.
+
+Speaker 2: 39:46
+That's exactly the path.
+
+Speaker 3: 39:47
+Okay. I feel good about this.
+
+Speaker 2: 39:49
+I'm glad. Before I let Priya wrap up, can I ask one more operational question? You mentioned Tina comes in Monday, Wednesday, Friday. On Tuesdays and Thursdays when it's just you — is that the period where you feel most stretched?
+
+Speaker 3: 39:59
+Yeah. Tuesday and Thursday are tough because I'm trying to do everything. And you know what, we actually have a service coordinator we were thinking about hiring. But part of the reason I've been holding off is I wasn't sure if we needed a full-time person or if there was a smarter way to solve the phone problem first.
+
+Speaker 2: 40:16
+That's really interesting because it gets at the core value proposition. If Clara is handling all the intake and triage during business hours, what does Tina's role look like on the days she's in?
+
+Speaker 3: 40:27
+Honestly it probably looks a lot more like administrative and scheduling work rather than answering phones. Like she could spend more time on job follow-ups, making sure Jobber is accurate, handling the billing cycle. The stuff she's good at and actually likes doing.
+
+Speaker 2: 40:40
+Right. And that's a meaningful efficiency gain — not because you're eliminating Tina, but because you're using Tina's time better. Higher-value work instead of intake calls.
+
+Speaker 3: 40:50
+Yeah. And that might actually mean I don't need to hire the extra person. Or if I do hire someone, they can focus on something more strategic than phones.
+
+Speaker 2: 40:58
+That's the calculation a lot of our clients do and they often find that the cost of the service is more than offset by either not hiring, or being able to use existing staff more productively.
+
+Speaker 3: 41:08
+Yeah. It's starting to look pretty good on a cost-benefit basis.
+
+Speaker 4: 41:12
+And I want to add one thing about Tina specifically. When you take the phone burden off someone like her who's handling a lot of tasks simultaneously, you see a quality improvement across everything she does. People who are constantly interrupted by phone calls lose focus and make small errors. Removing that interruption source improves accuracy across everything else.
+
+Speaker 3: 41:31
+That's — yeah. I've actually noticed that. When Tina has a day where she's not fielding calls constantly, the quality of everything else she does is better. She's more focused.
+
+Speaker 4: 41:40
+Exactly. It's not just about hours saved, it's about quality improvement on the hours that remain.
+
+Speaker 3: 41:46
+I hadn't framed it that way before but that makes a lot of sense.
+
+Speaker 2: 41:49
+Good. Alright, I think Priya has covered everything from the demo perspective. Priya, anything else before we move to next steps?
+
+Speaker 4: 41:57
+Just one quick thing — can I show Sandra the mobile view of the dashboard? Because I think a lot of the value for someone like you, Sandra, is being able to check the call log from your phone when you're away from your desk.
+
+Speaker 3: 42:07
+Oh, yeah. Let's see that.
+
+Speaker 4: 42:08
+So the dashboard has a full mobile view. Here's what it looks like on a phone screen. You can see the call log, tap into any call to see the full summary and transcript, see the notification history — so you'd know if an emergency alert was sent and whether it was acknowledged. And you can make routing changes from your phone too. If you're out and you need to update who's on-call tonight, you can do it from wherever you are.
+
+Speaker 3: 42:28
+That's really useful. Half my day is not at a desk.
+
+Speaker 4: 42:31
+Ha, yeah. Field-adjacent businesses — the owner is rarely sitting still. Mobile access is essentially a requirement.
+
+Speaker 3: 42:37
+Absolutely. Okay. Yeah. I've seen enough. This is good.
+
+Speaker 2: 42:40
+Perfect. Let's talk next steps.
+
+Speaker 2: 31:14
+Great. So there's no pressure here, Sandra. But if it's something you want to explore, the next step would be a more formal proposal from me that lays out the pricing and the specific modules based on what you've told me today — inbound answering, emergency routing, Jobber integration, dispatcher, reviews. I'll put that together and send it today or tomorrow. You can review it with Dale, ask any questions, and if you want to move forward, the next step is an onboarding call where we get all the configuration details locked in and build out the actual agent.
+
+Speaker 3: 31:43
+And how long from the onboarding call to having it live?
+
+Speaker 2: 31:47
+Usually about a week. The onboarding call typically takes about thirty to forty minutes, we build the agent, you get a test number to try it, you and your team test it for a couple of days, we make any adjustments, and then you go live.
+
+Speaker 3: 32:00
+Okay. And what does going live mean in terms of my current phone setup?
+
+Speaker 2: 32:05
+It means we configure the forwarding from your main business line to Clara. It's a setting change on your phone system. We'd walk you through it or your phone carrier can do it — it usually takes about five minutes.
+
+Speaker 3: 32:15
+And in the meantime, I can keep the current answering service running, right? I don't have to cancel them until I'm confident this is working?
+
+Speaker 2: 32:22
+Absolutely. We'd never tell you to pull the plug on your existing setup before you're comfortable. Run them in parallel if that makes you feel better. Most clients cancel the old service within a month once they see the difference.
+
+Speaker 3: 32:33
+Yeah. That's a relief. Okay. I think Dale is going to have some questions too. Can I loop him in on the proposal call?
+
+Speaker 2: 32:40
+Of course. The more the merrier. We can schedule a short call with both of you to walk through the proposal, answer any questions, and if you want, we can do a quick re-demo specifically of the emergency call handling since that's clearly the most important use case for Dale given what happened six weeks ago.
+
+Speaker 3: 32:55
+Yeah, actually that would be good. He'd want to see exactly what would have happened differently in that scenario.
+
+Speaker 2: 33:01
+We can literally walk through that scenario. We'll simulate a no-heat call at eleven PM, show exactly how Clara handles it, show the alert that goes to your phone, show how it retries if you don't respond. That will probably do more than any amount of explanation.
+
+Speaker 3: 33:13
+Yeah. I think that would close the deal honestly if he saw that.
+
+Speaker 2: 33:17
+Ha. Perfect. Let's make that happen. So I'll send you a summary of what we covered today along with the proposal in the next twenty-four hours. And then let's find a time for the follow-up call with Dale. Does that work?
+
+Speaker 3: 33:27
+That works great. Yeah. I'll watch out for your email.
+
+Speaker 2: 33:30
+Perfect. Sandra, this was a really great conversation. I feel like we really got into the specifics of your business and I think the fit here is actually really strong.
+
+Speaker 3: 33:39
+Yeah, I came in skeptical and I'm leaving a lot more optimistic. So that's something.
+
+Speaker 2: 33:44
+Ha! That's the best kind of outcome from our perspective. Priya, anything to add before we let Sandra go?
+
+Speaker 4: 33:50
+Just that I'm excited about this one. The seasonal business dynamics, the bilingual need, the commercial VIP accounts — there's a lot of interesting configuration to get right and I love those challenges. So I'm looking forward to it.
+
+Speaker 3: 34:01
+Ha. Okay. That's good to know. You're going to earn your keep.
+
+Speaker 4: 34:05
+Ha! Looking forward to it.
+
+Speaker 2: 33:07
+Alright, Sandra. Thank you so much for your time. Keep an eye on your inbox and we'll talk soon.
+
+Speaker 3: 34:11
+Thank you both. Bye.
+
+Speaker 2: 34:13
+Bye bye. Take care now.
+
+Speaker 4: 34:14
+Bye Sandra!
+
+Speaker 1: 34:15
+Ending the meeting now.
+
+Speaker 2: 34:16
+Oh wait, Sandra, before we let you go actually — I realized we didn't ask about one thing that I think is worth thirty seconds. You mentioned you have commercial properties including restaurants. Is that a meaningful part of the business?
+
+Speaker 3: 34:27
+Yeah. We've got four restaurant clients. It's not the biggest part of the revenue but it's steady and restaurants are kind of unique because if their HVAC goes down, they can't operate. So they're very sensitive to response time.
+
+Speaker 2: 34:40
+Right, and would those restaurant clients typically fall into the emergency category after hours if their system goes down? Or is there a nuance there — like if it's winter and the heat goes out in a restaurant, is that an emergency or a business decision?
+
+Speaker 3: 34:52
+For restaurants, if their heat or AC fails and they're open or about to open, that's an emergency. They could lose a whole service period. So yes, I'd treat those the same as a residential no-heat situation.
+
+Speaker 4: 35:03
+That's a really important distinction to flag. Because in the agent configuration, we can set it up so that if the caller identifies as a commercial operator — restaurant, retail, whatever — and they say their system is completely down, Clara treats that as emergency-tier automatically. Not just for residences.
+
+Speaker 3: 35:19
+Yeah. I'd want that. Because honestly, a restaurant losing their kitchen ventilation during a Saturday dinner service is as urgent to me as a family without heat.
+
+Speaker 4: 35:28
+Got it. We'll make sure that's reflected. Commercial operators with complete system failure in an operating period — emergency tier.
+
+Speaker 3: 35:35
+Perfect.
+
+Speaker 2: 35:36
+And the four restaurant clients — are they all under some kind of service agreement, like a maintenance contract, or are they call-in customers?
+
+Speaker 3: 35:43
+Three of them are on our maintenance agreement. The fourth is call-in only, they're kind of ad hoc. The three on contract are definitely relationships I'd want Clara to recognize.
+
+Speaker 4: 35:52
+So those three would be VIP accounts alongside Colorado Facilities Management.
+
+Speaker 3: 35:57
+Yeah. The three restaurants on contract — I'll give you the names during onboarding. They're Larimer Street Kitchen, Blue Mesa Grill, and Union Station Tap Room. Commercial accounts, maintenance agreements, should be treated as priority.
+
+Speaker 4: 36:10
+Noted. Larimer Street Kitchen, Blue Mesa Grill, Union Station Tap Room. And the same logic applies — after hours any call from them triggers a priority notification, not just a morning queue item.
+
+Speaker 3: 36:20
+Right. Because if Larimer Street calls at six AM because their kitchen exhaust is down and they open at eleven, that's a real problem and I want to know immediately.
+
+Speaker 4: 36:29
+Understood. Actually that's a slightly different scenario — six AM is before your seven-thirty opening. Is six AM before business hours or would you consider that early business hours?
+
+Speaker 3: 36:39
+Hmm. Good question. Restaurants often start prep at six or seven so they might call early. I think anything before seven-thirty should still go through the emergency or priority routing. I don't want calls just going to voicemail before seven-thirty. I'd rather Clara pick up and triage.
+
+Speaker 4: 36:54
+So we'd set Clara's hours to twenty-four hours — she's always on — and the routing logic for before seven-thirty would follow the after-hours rules, not the business hours rules. Emergency and priority accounts get routed, everything else gets a next-business-day or next-opening response.
+
+Speaker 3: 37:09
+Yes. Exactly.
+
+Speaker 4: 37:10
+Perfect. That's a really practical distinction. A lot of businesses don't think about the early morning window.
+
+Speaker 3: 37:16
+Yeah, we learned that one the hard way too. We had a restaurant call at six forty-five once and it went to voicemail and they were not happy.
+
+Speaker 2: 37:23
+Yeah. Those are the moments that really define customer relationships. Okay. Anything else coming up?
+
+Speaker 3: 37:23
+One more thing actually — I've been thinking about this while you've been talking. We have a maintenance agreement program. About forty of our residential customers are on it. They pay annually and they get two tune-up visits per year plus priority scheduling. Do we want Clara to know about that program so she can answer questions about it?
+
+Speaker 2: 37:40
+Absolutely. That's exactly the kind of business-specific information we'd configure. So if a caller asks "do you have a maintenance plan" or "I heard you offer a service contract," Clara can explain the basics — what's included, the annual pricing, the priority scheduling benefit — and then route the caller to you or Tina to actually enroll them.
+
+Speaker 3: 37:57
+Good. Because we've had people ask about it on the phone and whoever picks up doesn't always know the current pricing or what's included and it's embarrassing.
+
+Speaker 2: 38:05
+Ha. Yeah. Clara will always have the up-to-date information because you control what she knows. If the price changes in January, you update it once and every call going forward reflects the new pricing.
+
+Speaker 3: 38:14
+That's actually a really nice feature. Consistent information across every call.
+
+Speaker 4: 38:18
+And for the maintenance agreement customers specifically — do you want them to receive any elevated treatment when they call in? Since they're paying customers on contract?
+
+Speaker 3: 38:27
+Yeah, that's a good point. Maintenance agreement customers should probably get a slightly faster callback commitment. Like if they call in with a service issue, I'd want them to feel like their contract means something.
+
+Speaker 4: 38:37
+We can configure it. If someone identifies as being on your maintenance plan, Clara can acknowledge that — "since you're on our Summit Care maintenance plan, I'll flag this as a priority for our team to follow up with you today." That's a nice touch.
+
+Speaker 3: 38:50
+"Summit Care" — is that what we're calling it now?
+
+Speaker 4: 38:52
+Ha! Just made that up. What do you call it?
+
+Speaker 3: 38:54
+We call it the Summit Maintenance Agreement. Not very glamorous but it's clear.
+
+Speaker 4: 38:58
+Ha! The Summit Maintenance Agreement customers then. We'll make sure they feel valued.
+
+Speaker 3: 39:01
+Ha. Good. Okay, I think that actually was my last one. I keep thinking of things but I think I'm satisfied now.
+
+Speaker 2: 39:08
+Take your time, there's no rush.
+
+Speaker 3: 39:10
+No I think I'm good. It's been a thorough demo.
+
+Speaker 2: 39:12
+Great. Anything else coming up?
+
+Speaker 3: 39:14
+Actually yes, one more. What about calls that are just plain weird? Like we get occasional prank calls, and we get a lot of telemarketing calls. Can Clara tell the difference?
+
+Speaker 4: 37:38
+Ha, good one. So for telemarketing and spam, yes — Clara has pretty strong signals for that. If a call comes in and it's clearly a sales pitch or an automated dialer, she handles it very briefly — acknowledges, says this line is for service customers of Summit HVAC, if you have a service inquiry please call back, and ends the call. She doesn't spend three minutes engaging with a robocall.
+
+Speaker 3: 37:59
+Oh good. Because Janet — bless her heart — sometimes she'll engage with sales callers for like five minutes before she figures out what's happening.
+
+Speaker 2: 38:08
+Ha! Yeah. Clara doesn't have that problem. She's not polite to a fault.
+
+Speaker 3: 38:13
+Ha! Okay that's good to know. And what about prank calls or someone who's just being difficult?
+
+Speaker 4: 38:19
+If a caller is being uncooperative, using abusive language, or seems to be testing the system, Clara has de-escalation protocols. She'll calmly try to redirect them to the purpose of the call a couple of times. If it continues, she politely ends the call and logs it with a flag for your review. She doesn't escalate back, she doesn't lose her composure — she just exits gracefully and it's documented.
+
+Speaker 3: 38:39
+That's probably more graceful than some of my staff, honestly.
+
+Speaker 4: 38:43
+Ha, most AI is very good at not having a bad day.
+
+Speaker 3: 38:46
+Ha! Fair enough. Okay, I think I'm actually satisfied now. I feel like I've put it through its paces.
+
+Speaker 2: 38:52
+You've asked really good questions, Sandra. These are the kinds of questions that help us configure a really solid agent for you.
+
+Speaker 3: 38:58
+Yeah. Well, I've had a lot of time to think about what I'd want in an answering service. This is like the third one we've evaluated in two years.
+
+Speaker 2: 39:05
+And what happened with the others?
+
+Speaker 3: 39:08
+One was just too expensive for what it did. It was a human answering service but a different company than the one we use now, and they were charging us a lot for pretty average quality. The second one was an AI solution but it was really clunky. Like it would ask a question and if you didn't say exactly the right thing, it got confused. A customer told me she felt like she was fighting with it. And that's the opposite of what I want.
+
+Speaker 4: 39:30
+The rigidity issue is really common with first-generation voice AI. Clara's conversational model is designed to handle a huge range of phrasings — if a customer says "my furnace is busted" versus "the heating system in my home is non-functional," she understands both the same way. She's not waiting for a specific keyword or command.
+
+Speaker 3: 39:49
+Yeah. I noticed that in the demo clip. It felt like it was actually understanding, not just pattern matching.
+
+Speaker 4: 39:55
+Right. It's a different generation of technology. And the other thing I'll note is that Clara is trained specifically on HVAC and service trade business contexts. She understands the terminology — BTU, heat pump, dual-fuel system, SEER rating. If a customer mentions their SEER rating, she won't be confused by that. She understands what it means in context.
+
+Speaker 3: 40:14
+Oh, that's interesting. Because our current answering service, when a customer says something technical, the operator basically just writes it down phonetically and I have no idea what they heard.
+
+Speaker 4: 40:23
+Ha, "sear rating" — like a steak.
+
+Speaker 3: 40:25
+Ha! Exactly, that's happened.
+
+Speaker 4: 40:27
+Yeah, Clara knows HVAC. She won't mishear a technical term because she understands the vocabulary.
+
+Speaker 3: 40:33
+Okay. That's actually a bigger deal than I initially thought. Our customers sometimes call in very technical — especially the commercial property managers — and if the intake captures it wrong, the tech shows up with wrong expectations.
+
+Speaker 4: 40:44
+Right. And accurate technical intake also protects you from liability in some cases — if there's a dispute about what was reported and what you were dispatched to fix, having an accurate transcript is a real asset.
+
+Speaker 3: 40:55
+That's a great point. We've never had a legal issue but I can see how it would matter.
+
+Speaker 2: 40:59
+Alright, let me also just give you the high level picture of the support model, Sandra, just so you know what you're getting into on an ongoing basis. Once you're onboarded, you have a dedicated account manager — that would be either myself or someone I designate depending on schedule — who is your first point of contact for any issues, configuration updates, or questions. You're not going to be calling a general support line and explaining your whole setup from scratch every time.
+
+Speaker 3: 41:22
+Oh, good. That's something I dread with vendor relationships — when you call support and they have no context.
+
+Speaker 2: 41:28
+Yeah, we've all been there. That's not the model here. Your account manager has your full configuration document, knows your business, and can make updates directly without you re-explaining everything.
+
+Speaker 3: 41:37
+Okay. And is there a contract term?
+
+Speaker 2: 41:40
+There's typically a three-month minimum so we have time to calibrate the agent properly and show you the value. After that it's month-to-month. We don't lock people in to long terms because honestly if we're doing our job, you won't want to leave.
+
+Speaker 3: 41:53
+Ha. I respect that confidence.
+
+Speaker 2: 41:55
+We try to earn it. What I'll do is include all the contract terms in the proposal so you can see exactly what you're agreeing to in writing.
+
+Speaker 3: 42:02
+Perfect. Yeah, Dale will want to read the fine print. He always does.
+
+Speaker 2: 42:06
+That's good. You should read the fine print. And if there's anything in there that gives either of you pause, you tell me and we'll talk through it.
+
+Speaker 3: 42:13
+Appreciate that.
+
+Speaker 4: 42:15
+Sandra, can I ask one more thing before we finish up? I want to make sure I understand your on-call structure correctly because it affects how we configure the after-hours routing chain. So you mentioned Dale is the primary on-call. Is that year-round or does that rotate?
+
+Speaker 3: 42:28
+So officially it rotates. Dale and I have an arrangement where we take alternating weeks of being "primary on-call." But in reality, if there's a furnace emergency in February, Dale usually insists on taking it himself because he's the one who can actually fix it if it needs a part swap. I handle the customer side, he handles the technical side.
+
+Speaker 4: 42:46
+Okay, so for after-hours emergency routing — the order would be Dale first, then you?
+
+Speaker 3: 42:52
+Yeah. Dale first. He'll want to know immediately. If he doesn't pick up for some reason, then me. And then if both of us don't pick up — which honestly is very rare, one of us is almost always reachable — we have a senior tech, his name is Marcus Chen. He's been with us twelve years, he knows the business inside out, he can handle anything that comes up. He'd be the third in the chain.
+
+Speaker 4: 43:12
+Got it. Dale first, you second, Marcus Chen third. And I'll need the phone numbers for each.
+
+Speaker 3: 43:18
+Sure. Dale's cell is 720-555-0184. Mine is 720-555-0237. And Marcus — let me pull that up.
+
+Speaker 3: 43:28
+Marcus Chen is 720-555-0419.
+
+Speaker 4: 43:31
+Perfect. And the timeout between each — thirty seconds, or different?
+
+Speaker 3: 43:35
+Yeah, thirty seconds between each is fine.
+
+Speaker 4: 43:37
+And if all three are unavailable — the fallback message and the fifteen-minute callback commitment?
+
+Speaker 3: 43:42
+Yes. And please make sure it includes the 911 advisory for any life-safety situation. I want that said explicitly. "If this is a life-threatening emergency, please call 911 immediately."
+
+Speaker 4: 43:53
+Absolutely. We'll include that language in every after-hours emergency fallback.
+
+Speaker 3: 43:57
+Okay. And one thing I want to make sure — Clara shouldn't be telling people to wait fifteen minutes if it's a situation where they might have a carbon monoxide issue or an actual fire. In those cases the 911 instruction should come first, before anything about calling us back.
+
+Speaker 4: 44:10
+Completely agree. For any situation that involves potential life safety — smoke, CO, structural concern — the 911 advisory comes immediately, before any discussion of our callback. Clara's not going to delay a 911 instruction.
+
+Speaker 3: 44:21
+Good. I just want to be absolutely clear on that.
+
+Speaker 4: 44:23
+Understood, and it's the right instinct. Safety first, business second.
+
+Speaker 2: 44:27
+Always. And that's actually a regulatory consideration for anyone in the life-safety adjacent space — you don't want your answering system to ever create a barrier to emergency services. It's both the ethical and the legally prudent approach.
+
+Speaker 3: 44:39
+Yeah. Exactly. Okay. Now I really am satisfied. That was the last thing I wanted to confirm.
+
+Speaker 2: 44:44
+Great. Let me just do a quick recap of what we covered so you have it fresh in your mind when you talk to Dale about it.
+
+Speaker 3: 44:50
+Sure, that'd be helpful.
+
+Speaker 2: 44:51
+So the core solution for Summit HVAC would be: inbound answering, twenty-four seven, with a business hours flow from seven-thirty AM to five-thirty PM Monday through Friday. During business hours, Clara collects full intake information and transfers to your office line, with fallback collection if the transfer fails. After hours, Clara triages emergency from non-emergency. Emergency triggers — no-heat, no-AC, complete system failure for commercial operators, CO alarm, any active fire or life-safety situation — get routed through the emergency chain: Dale, then you, then Marcus Chen, thirty-second timeouts, with fifteen-minute callback commitment and 911 advisory in the fallback. Priority accounts — Colorado Facilities Management, Larimer Street Kitchen, Blue Mesa Grill, Union Station Tap Room — get elevated treatment after hours, priority notification to you and Dale. Bilingual support in Spanish. Jobber integration for structured call summaries. Dispatcher module for outbound confirmation and reminder calls. Reviews module for post-job follow-up. And collections module for invoice follow-up. Does that sound like the full picture?
+
+Speaker 3: 45:55
+Yeah. That is, actually. That's a really good summary.
+
+Speaker 2: 45:58
+Great. And that's what the proposal will reflect. I'll make sure the pricing breaks down each module so you can see the cost and value of each piece and decide what to start with.
+
+Speaker 3: 46:07
+That's helpful because I might want to start with just the answering and emergency piece and add the dispatcher and reviews later once we're comfortable.
+
+Speaker 2: 46:14
+That's a very reasonable approach and we'd completely support it. You can start with the core and add modules at any time.
+
+Speaker 3: 46:20
+Perfect.
+
+Speaker 2: 46:21
+Alright, Sandra. I'm going to let you get back to your day. Really wonderful conversation and I'm looking forward to getting you the proposal.
+
+Speaker 3: 46:27
+Thank you, Nick. And thank you Priya. Really helpful demo, you clearly know the HVAC space well.
+
+Speaker 4: 46:34
+Thank you! I've done a lot of HVAC calls. Ha. Looking forward to building something great for Summit.
+
+Speaker 3: 46:39
+Ha. Sounds good. Talk soon.
+
+Speaker 2: 46:41
+Talk soon, Sandra. Bye bye. Take care now.
+
+Speaker 4: 46:43
+Bye!
+
+Speaker 1: 46:44
+Ending the meeting now. Thank you both. And Sandra — really good time talking to you and we're really excited to show you what this can do. In the three months you'll be able to see so much time and revenue coming back to you that you didn't even know you were losing. The seasonal peaks in particular — October and November being handled by Clara with the same quality as a slow January Tuesday — that's a real game changer. And the emergency reliability piece, honestly that's going to give you and Dale a lot of peace of mind. Looking forward to growing together. And honestly, the thing that stands out most to me from this conversation is how clearly you and Dale understand your own business — the seasonal spikes, the VIP accounts, the refrigeration piece, the maintenance agreement customers. That level of clarity makes for a really clean and well-targeted configuration from day one. See you on the proposal call.
+
+Speaker 3: 47:02
+You bet. Thanks very much, really appreciate the time today. This was genuinely a useful and well-structured conversation.
+
+Speaker 1: 47:06
+Thank you so much. Have a great rest of your day. Talk very soon. Bye.
+
+Speaker 3: 47:08
+You too. Really enjoyed the conversation. Bye bye. Take care now.
+
+Speaker 1: 47:09
+Bye everyone. Ending the meeting now. Great call today, everyone.
+
+---
+[End of Demo Call Recording – Summit HVAC Services]
+[Duration: 47 minutes 09 seconds] [Word count verified: 14642]

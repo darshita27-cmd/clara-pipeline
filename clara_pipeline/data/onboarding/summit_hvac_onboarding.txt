@@ -1,0 +1,283 @@
+(Transcribed by TurboScribe.ai. Go Unlimited to remove this message.)
+
+Onboarding Call Recording – Summit HVAC Services
+[Participants: Pawan (Clara Onboarding), Bharat (Clara Sales), Sandra Kowalski (Co-Owner, Summit HVAC Services)]
+[Duration: Approx. 41 minutes]
+
+---
+
+Bharat: Alright, Sandra. Can you hear us okay?
+
+Sandra Kowalski: Yes, hi! Good to see you again, Bharat.
+
+Bharat: Good to see you too! And yeah, as promised — I've got Pawan with me today. He's going to lead the configuration session and he's the one who's going to build Clara out for Summit. I'll be in the background but I'll let him take it from here. Pawan, over to you!
+
+Pawan: Hey Sandra, great to finally connect! I've read through all of Bharat's notes from the demo call and I've also looked over your website and got a pretty solid picture of Summit HVAC already. The goal today is to get the specific details confirmed so I can complete the configuration and have you in testing mode by end of day or first thing tomorrow. Does that sound good?
+
+Sandra Kowalski: That sounds great. Yeah, let's do it.
+
+Pawan: Perfect. So the way I want to structure this is we'll go through office hours behavior first, then after-hours, then the emergency routing chain, and then a couple of final details around notifications and the VIP accounts. I want to make sure we're thorough because getting this right the first time means less back-and-forth for both of us.
+
+Sandra Kowalski: That's exactly how I like to work. Let's go.
+
+Pawan: Great. So first, business hours. From the demo notes I have Monday through Friday, seven-thirty AM to five-thirty PM. Is that still accurate?
+
+Sandra Kowalski: Yes. Seven-thirty to five-thirty, Monday through Friday.
+
+Pawan: And timezone — Denver, so Mountain Time. Do you observe daylight saving time? I know Arizona doesn't, but Colorado does.
+
+Sandra Kowalski: Yes, we do follow daylight saving. We go to MDT in the summer and back to MST in the fall.
+
+Pawan: Perfect. So I'll configure it on Mountain Time with daylight saving adjustments. That matters for the clock logic that governs when business hours start and end, so it's important to get it right.
+
+Sandra Kowalski: Yes. We've had software do that wrong before and it was annoying.
+
+Pawan: Ha, I can imagine. We'll make sure it's locked in correctly. Now, during business hours — the primary transfer target. From the demo I understood it would be your main office line. What's that number?
+
+Sandra Kowalski: The main line is 720-555-0103. That's the number on our website and it rings at Tina's desk when she's in.
+
+Pawan: Got it. 720-555-0103 as the primary transfer. And the timeout before we try the next number?
+
+Sandra Kowalski: Maybe twenty-five seconds? I want to give Tina a real chance to pick up but not leave the caller waiting too long.
+
+Pawan: Twenty-five seconds. And if that doesn't connect, the failover during business hours?
+
+Sandra Kowalski: Then to my cell. 720-555-0237.
+
+Pawan: 720-555-0237. And if both are unavailable?
+
+Sandra Kowalski: Then Clara should tell them she wasn't able to connect with someone right now but has their details and someone will call them back within two hours during business hours. And she should have already collected their name and number before attempting the transfer.
+
+Pawan: Confirmed — name and number collected before transfer attempt, and the fallback message commits to a two-hour callback during business hours. That's a tight commitment. Is two hours something you can reliably meet even on busy days?
+
+Sandra Kowalski: Honestly, yes. One of us is always checking in. If something came in at eleven AM and it's one PM and nobody's called back yet, Tina or I would have seen it. I'd rather promise two hours and deliver it than promise a day and have people wait.
+
+Pawan: That's a good customer service standard. We'll lock it in at two hours.
+
+Sandra Kowalski: Good.
+
+Pawan: Now, for the service call fee — you mentioned wanting Clara to share this only if asked. Can you give me the exact numbers?
+
+Sandra Kowalski: Sure. We charge a dispatch fee of one hundred and ten dollars. That gets the tech to the site. After that, labor is billed at ninety-five dollars per hour for residential, billed in thirty-minute increments. For commercial it's a hundred and ten dollars per hour. Clara should only mention this if someone specifically asks about pricing or fees, not proactively.
+
+Pawan: Dispatch fee a hundred and ten dollars, residential labor ninety-five per hour in thirty-minute increments, commercial labor a hundred and ten per hour. Only mentioned if asked. Got it. And the maintenance agreement — Summit Maintenance Agreement, you called it — do you want Clara to be able to describe that?
+
+Sandra Kowalski: Yes. It's four hundred and fifty dollars per year for residential. Two visits included — fall furnace tune-up and spring AC tune-up. Priority scheduling. That's the main selling points. If someone asks whether we have a service plan, Clara can share those details and tell them to ask for Tina or me when they call back to get enrolled.
+
+Pawan: Four hundred and fifty dollars annually, two tune-ups, priority scheduling. Clara describes it if asked and routes enrollment to your team. Got it.
+
+Sandra Kowalski: Perfect.
+
+Pawan: Business address — I have this from the demo but let me confirm. Is it Summit HVAC on West Colfax?
+
+Sandra Kowalski: We actually moved last year. New address is 2244 North Pecos Street, Suite 8, Denver, Colorado, 80211.
+
+Pawan: Good thing I confirmed. 2244 North Pecos Street, Suite 8, Denver, Colorado, 80211. Is that where callers should be directed if they ask for a location?
+
+Sandra Kowalski: Yes, that's our office. Customers don't usually come to us though, we go to them.
+
+Pawan: I'll include it as a reference point in case someone asks. Now let's move to after-hours. Clara will be active twenty-four seven, but her behavior will be different outside your business hours. The after-hours greeting — you mentioned in the demo you want something that acknowledges the office is closed and that includes a 911 advisory for life-safety situations. Is the one I drafted okay? "Thank you for calling Summit HVAC Services. Our office is currently closed. I'm Clara, Summit's virtual assistant, and I'm here to help. If this is a life-threatening emergency, please call 911 immediately. Otherwise, I can help connect you with our team for urgent issues or take a message for next business day. What can I help you with?"
+
+Sandra Kowalski: That's really good. Yes. The 911 part — I want that first. Before anything else.
+
+Pawan: Understood. Life-safety advisory leads the after-hours greeting. Done.
+
+Sandra Kowalski: Great.
+
+Pawan: Now for the emergency triggers. From the demo, I have: no-heat situation in winter, no-AC situation in summer, walk-in cooler failure for commercial clients, carbon monoxide alarm activation, complete commercial HVAC failure during operating hours, and smoke or active fire. Is that the full list or are there others?
+
+Sandra Kowalski: That's pretty much it. I'd also add — if a residential customer says they smell gas, that should be treated as an emergency even though that's technically a gas company situation. I'd want Clara to tell them to call the gas company and 911 immediately, and also log it for us.
+
+Pawan: Perfect. Gas smell — Clara immediately advises 911 and the gas company first, logs the call for your records. That's a life-safety priority that actually bypasses our routing chain — the customer needs to talk to emergency services, not us.
+
+Sandra Kowalski: Exactly. Same thing if someone says there's a fire. They should call 911, not wait for us.
+
+Pawan: Agreed. For fire and gas — Clara advises 911 immediately and logs. She doesn't attempt to transfer to you because that would delay them getting emergency help.
+
+Sandra Kowalski: Yes. That's exactly right.
+
+Pawan: Good. Now for the true HVAC emergencies where we do attempt our routing chain — no-heat in winter, no-AC in summer, commercial system failure. The chain is Dale first, then you, then Marcus Chen. Numbers: Dale at 720-555-0184, you at 720-555-0237, Marcus at 720-555-0419. Thirty-second timeouts between each.
+
+Sandra Kowalski: That's right.
+
+Pawan: And the fallback message if all three are unreachable — fifteen-minute callback commitment and 911 advisory for life-safety situations?
+
+Sandra Kowalski: Yes. Fifteen minutes for true heat and AC failures. And the 911 reminder even in the fallback — just in case the situation has escalated by the time we don't pick up.
+
+Pawan: Done. And you want a text notification to your cell for every emergency call regardless of whether the transfer succeeds?
+
+Sandra Kowalski: Yes. Every emergency call, I want to see it. Even if Dale picks up on the first ring.
+
+Pawan: Got it. Text alert to 720-555-0237 on every emergency regardless of transfer outcome. What about a text to Dale as well? So he has the log even if he took the call?
+
+Sandra Kowalski: Oh, that's a good idea actually. Yes. Send it to both of us. Dale's cell again is 720-555-0184.
+
+Pawan: Perfect. Emergency alert texts to both 720-555-0237 and 720-555-0184 for every emergency call. Now for the on-call rotation — you mentioned you and Dale alternate weeks. And that you'd want to be able to update the routing order yourselves in the dashboard rather than having to contact us every week.
+
+Sandra Kowalski: Exactly. I want to be able to log in and change who's primary when the rotation switches.
+
+Pawan: That's fully self-service in the dashboard. I'll also show you the temporary override feature in the onboarding guide I'm going to send you — so if Dale's traveling and his reception is spotty, he can flip himself to secondary for a few days without having to call us.
+
+Sandra Kowalski: Perfect. That's going to get used. Dale travels occasionally for industry training and it's always a pain to coordinate coverage.
+
+Pawan: Ha. It'll be easy from now on. Now the early morning window — you said anything before seven-thirty should follow after-hours rules rather than business hours rules. Including those restaurant clients who might call early for kitchen prep issues.
+
+Sandra Kowalski: Yes. Before seven-thirty, even if it's a regular call time for some of our commercial clients, the after-hours routing logic applies. Clara picks up, triages, and escalates emergencies through the chain.
+
+Pawan: Got it. Clara is active twenty-four seven. Before seven-thirty and after five-thirty, after-hours rules. Between seven-thirty and five-thirty Monday through Friday, business hours rules.
+
+Sandra Kowalski: Exactly.
+
+Pawan: Now let's go through the VIP accounts. From the demo I have four: Colorado Facilities Management, Larimer Street Kitchen, Blue Mesa Grill, and Union Station Tap Room. For all four, any after-hours contact triggers a priority notification to you and Dale rather than just going to the morning queue. Is that right?
+
+Sandra Kowalski: Yes. Those four accounts — any call outside business hours, I want to know. Even if it's not an emergency. Even if it's just someone checking in about a scheduled appointment.
+
+Pawan: Got it. And for the three restaurant accounts specifically — if they're calling after hours with a system failure, they go through the full emergency chain, not just a notification?
+
+Sandra Kowalski: Yes. Those three restaurants are on our maintenance agreement. If their HVAC or their kitchen exhaust is down, that's an emergency. Full chain.
+
+Pawan: And for Colorado Facilities Management — they're a property manager, not a restaurant. If they call after hours with a system failure at one of their properties, same treatment?
+
+Sandra Kowalski: Yes. Colorado Facilities manages eight commercial properties we service. Any of those could be a business-critical situation. Full emergency chain for them too.
+
+Pawan: Perfect. All four VIP accounts — after-hours system failure goes through the full emergency routing chain. Non-emergency after-hours calls from them — priority notification to you and Dale, not just the morning queue.
+
+Sandra Kowalski: That's right.
+
+Pawan: How will Clara identify these accounts? Phone numbers or self-identification?
+
+Sandra Kowalski: Mostly self-identification. Colorado Facilities — their main contact is a woman named Jennifer Marsh. She'd say "this is Jennifer from Colorado Facilities Management." For the restaurants, they'd probably identify the restaurant by name. "This is calling from Larimer Street Kitchen." Clara should pick that up.
+
+Pawan: Good. We'll use name and organization keyword recognition for those four accounts. If someone identifies themselves or their organization matching those names, the elevated routing kicks in.
+
+Sandra Kowalski: And I should give you Jennifer Marsh's cell number actually, for Colorado Facilities — she's the main contact. Her number is 720-555-0951. If that number comes in, Clara should recognize it even before she says anything.
+
+Pawan: 720-555-0951 — Jennifer Marsh, Colorado Facilities Management. Added as a recognized caller number for automatic VIP elevation.
+
+Sandra Kowalski: Perfect.
+
+Pawan: Now, post-call notifications and summaries. For daytime calls — structured summaries to Tina's email for service request calls. What's Tina's email?
+
+Sandra Kowalski: tina@summithvac.com.
+
+Pawan: tina@summithvac.com for daytime service request summaries. And after-hours call summaries go to both you and Tina?
+
+Sandra Kowalski: Yes. My email is sandra@summithvac.com.
+
+Pawan: sandra@summithvac.com and tina@summithvac.com for after-hours summaries. And is Dale on the distribution as well for after-hours?
+
+Sandra Kowalski: Let me think. Dale doesn't really use email during the day. He's in the field. But for the night summaries — yeah, actually, let's put Dale on the after-hours summary too. His email is dale@summithvac.com.
+
+Pawan: dale@summithvac.com added for after-hours summaries. So all three of you get the overnight log.
+
+Sandra Kowalski: Yeah. That way nobody's in the dark.
+
+Pawan: Good. And for the non-emergency after-hours calls — regular residential callers, standard inquiries — Clara collects name, callback number, property address, nature of the call, and preferred callback time. The callback commitment is "next business day, within one business hour after seven-thirty AM." Is that right?
+
+Sandra Kowalski: Yes. One business hour after we open, so by eight-thirty. If it's a Monday morning and we open at seven-thirty, they should hear from us by eight-thirty.
+
+Pawan: "Next business day, by eight-thirty AM." I'll use that specific language in the call flow.
+
+Sandra Kowalski: Perfect.
+
+Pawan: Now the intake form — you mentioned in the demo you have a standard intake checklist that Tina fills out. You were going to share that with us.
+
+Sandra Kowalski: Oh yes! I actually have it here. So for a service call inquiry, the fields are: customer name, customer phone number, service address including zip code, type of system — like gas furnace, heat pump, central AC, mini-split, commercial rooftop — approximate age of system if they know, description of the issue, whether it's a complete failure or partial issue, preferred appointment window, and whether they're a new or existing customer. That's what Tina fills out.
+
+Pawan: Perfect. That's exactly what I need to map the call flow to. Clara will ask those questions in a natural conversational way — not like a form, but she'll make sure she has all those fields by the end. And the system type question — should she ask for the brand as well, or just the type?
+
+Sandra Kowalski: Type is the most important. If they know the brand, great, but don't make it feel like an interrogation.
+
+Pawan: Noted. Type required, brand optional. And for the age of system — is "I don't know" an acceptable answer?
+
+Sandra Kowalski: Yes. A lot of residential customers have no idea. Just note "unknown" and we'll figure it out when we get there.
+
+Pawan: Got it. Field is optional in the call flow — if they say they don't know, Clara doesn't push it.
+
+Sandra Kowalski: Exactly.
+
+Pawan: Now I want to confirm a couple of hard limits you mentioned in the demo. No quoting project timelines — like install timeframes?
+
+Sandra Kowalski: Correct. "How long would it take to install a new furnace" — Clara should say she's not able to give a timeline over the phone and someone will discuss that with you when they reach out.
+
+Pawan: And no code compliance guidance?
+
+Sandra Kowalski: Yes. We occasionally get contractors or property managers asking about fire codes, ventilation requirements, that kind of thing. Clara should not answer those. She should say that's a question our technical team can answer and route for a callback.
+
+Pawan: And no committing to whether you can take a job?
+
+Sandra Kowalski: Right. "Can you come out this week?" — Clara can say we'll do our best to accommodate, but she can't confirm availability. That's for our team to answer.
+
+Pawan: Got it. No timeline quotes, no code compliance, no job commitment. Clara is intake and routing, not sales or engineering.
+
+Sandra Kowalski: Exactly.
+
+Pawan: And Spanish language support — fully bilingual, Clara switches to Spanish if the caller speaks Spanish, and the summaries come through translated to English for your team?
+
+Sandra Kowalski: Yes. That's important for us. Denver has a significant Spanish-speaking population and some of our clients prefer Spanish. I want them to feel just as well served as anyone else.
+
+Pawan: Absolutely. The Spanish experience will be just as complete as the English one. And the translated summaries will make sure Tina can process them without any issue.
+
+Sandra Kowalski: Great.
+
+Pawan: Almost done. The refrigeration piece — walk-in cooler failure is an emergency trigger, same as HVAC failure for commercial clients. Is there any particular vocabulary I should make sure Clara understands? Like, does your refrigeration work involve any specific systems or brands your clients typically reference?
+
+Sandra Kowalski: The main ones are Manitowoc and Hoshizaki for ice machines, Tyler and Hussmann for walk-in cases, and for the compressors — Copeland and Emerson mostly. If a commercial client calls and says any of those brand names and says it's down or not cooling, Clara should treat that as a commercial emergency.
+
+Pawan: Noted — Manitowoc, Hoshizaki, Tyler, Hussmann, Copeland, Emerson. If a commercial caller mentions any of these in the context of a failure or "not cooling," Clara escalates to emergency tier.
+
+Sandra Kowalski: Perfect. Yeah, that's — I'm impressed you're noting that level of detail.
+
+Pawan: Ha, that's my job. The more specific the configuration, the fewer surprises in production. Alright, let me read back the full summary to make sure I haven't missed anything.
+
+Sandra Kowalski: Please.
+
+Pawan: Business hours: Monday through Friday, seven-thirty AM to five-thirty PM, Mountain Time with daylight saving. Address: 2244 North Pecos Street, Suite 8, Denver, Colorado, 80211. Main line: 720-555-0103. Business hours transfer: main line first, twenty-five second timeout, then Sandra's cell at 720-555-0237. Fallback message: two-hour callback commitment during business hours. Service pricing: one hundred and ten dollar dispatch fee, residential labor ninety-five per hour in thirty-minute increments, commercial labor one hundred and ten per hour — only shared if asked. Summit Maintenance Agreement: four hundred and fifty dollars annually, two tune-ups, priority scheduling — described if asked, enrollment routed to staff. After-hours greeting: twenty-four seven, with 911 advisory leading. Emergency triggers: no-heat, no-AC, walk-in cooler failure, CO alarm, commercial system failure during operating hours, commercial refrigeration failure. Gas smell and active fire: 911 and gas company advised immediately, logs created, no routing chain attempt. Emergency routing chain: Dale at 720-555-0184 first, Sandra at 720-555-0237 second, Marcus Chen at 720-555-0419 third. Thirty-second timeouts. Fallback: fifteen-minute callback commitment plus 911 reminder. Emergency text alert to both 720-555-0184 and 720-555-0237 on every emergency regardless of transfer outcome. VIP accounts: Colorado Facilities Management, Jennifer Marsh at 720-555-0951, Larimer Street Kitchen, Blue Mesa Grill, Union Station Tap Room — all four get full emergency chain for system failures and priority notification for all after-hours contact. Post-call summaries: daytime service requests to tina@summithvac.com. After-hours summaries to sandra@summithvac.com, tina@summithvac.com, and dale@summithvac.com. Standard non-emergency after-hours callback commitment: next business day by eight-thirty AM. Intake fields: name, phone, service address with zip, system type, system age optional, issue description, complete vs partial failure, appointment preference, new vs existing customer. Hard limits: no timeline quotes, no code compliance, no job commitment. Bilingual Spanish support with translated summaries. Refrigeration brand vocabulary: Manitowoc, Hoshizaki, Tyler, Hussmann, Copeland, Emerson — commercial failure context triggers emergency tier. Does all of that sound right?
+
+Sandra Kowalski: That is — yeah, that is incredibly comprehensive. I'm genuinely impressed.
+
+Pawan: Ha! Good. That's the goal. Anything I missed?
+
+Sandra Kowalski: Actually one small thing. The maintenance agreement customers — the forty residential customers who are already enrolled. When they call in, can Clara somehow acknowledge they're existing contract customers? I know she might not be able to look them up in real time, but if they identify themselves as being on the maintenance plan, I want them to feel recognized.
+
+Pawan: Yes. If a caller says they have a maintenance agreement or mentions being a Summit maintenance plan customer, Clara can acknowledge that — "Thank you, as a Summit Maintenance Agreement customer I'll make sure this is prioritized for our team." She can't verify it in real time, but acknowledging the claim costs nothing and makes the customer feel valued. If someone falsely claims it, that'll be obvious when Tina calls back.
+
+Sandra Kowalski: Ha, yeah. Nobody's going to lie about being on a maintenance plan to get a faster callback.
+
+Pawan: Ha, right. Low fraud risk. We'll add that in. Okay, I think we are genuinely done. This was a really thorough session, Sandra.
+
+Sandra Kowalski: It was. I feel really good about this.
+
+Pawan: So here's what happens next. I'm going to build out the full configuration today. By end of business today or first thing tomorrow morning, you'll get an email from me with three things: one, the test number for your Clara agent. Two, your dashboard login details. Three, the forwarding setup instructions for your phone carrier — your IT person or your phone carrier can do the forwarding in about five minutes. Once you have the test number, call it yourself. Have Dale call it. Have Tina call it. Run through the scenarios we talked about — business hours, after hours, emergency, the VIP account flow. Try it in Spanish if you want to test that. Anything that feels off, reply to my email with the details. I'll turn around fixes same day for most things.
+
+Sandra Kowalski: Perfect. And then once we're happy with testing, we do a soft launch for after-hours first?
+
+Pawan: Exactly. After-hours only first. You keep your current answering service running for daytime while we build confidence. Once you're fully comfortable — which for most clients is within a week or two — we flip the daytime forwarding as well.
+
+Sandra Kowalski: That's the approach I wanted. Take the most urgent thing first and layer in the rest.
+
+Pawan: Smart approach. And I'll be proactively watching the call logs in the first two weeks. If I see anything that needs tuning before you even notice it, I'll flag it.
+
+Sandra Kowalski: That's really reassuring. Okay. I think Dale might want to jump on a quick call with you at some point — maybe after the first day of testing. He's the one who's going to be most affected by the after-hours routing and I want him to feel confident.
+
+Pawan: Absolutely. Just have him reach out through the same email thread or give me a call directly. I'm happy to walk him through it.
+
+Sandra Kowalski: Great. I'll tell him.
+
+Bharat: Sandra, thank you so much! This is going to be a great setup. I'm really excited for you guys.
+
+Sandra Kowalski: Thank you, Bharat. And Pawan, you are clearly very good at your job. That readback was something else.
+
+Pawan: Ha! Thank you so much. That means a lot. Alright, watch out for my email. Talk soon.
+
+Sandra Kowalski: Will do. Thanks, guys. Bye!
+
+Pawan: Bye!
+
+Bharat: Bye Sandra!
+
+---
+[End of Onboarding Call Recording – Summit HVAC Services]
+[Duration: 41 minutes 03 seconds]
+
+(Transcribed by TurboScribe.ai. Go Unlimited to remove this message.)

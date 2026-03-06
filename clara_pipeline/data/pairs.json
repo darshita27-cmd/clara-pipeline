@@ -1,0 +1,22 @@
+[
+  {
+    "demo": "data/demo/apex_fire_demo.txt",
+    "onboarding": "data/onboarding/apex_fire_onboarding.txt"
+  },
+  {
+    "demo": "data/demo/bens_electric_demo.txt",
+    "onboarding": "data/onboarding/bens_electric_onboarding.txt"
+  },
+  {
+    "demo": "data/demo/coastal_sprinkler_demo.txt",
+    "onboarding": "data/onboarding/coastal_sprinkler_onboarding.txt"
+  },
+  {
+    "demo": "data/demo/guardian_alarm_demo.txt",
+    "onboarding": "data/onboarding/guardian_alarm_onboarding.txt"
+  },
+  {
+    "demo": "data/demo/summit_hvac_demo.txt",
+    "onboarding": "data/onboarding/summit_hvac_onboarding.txt"
+  }
+]

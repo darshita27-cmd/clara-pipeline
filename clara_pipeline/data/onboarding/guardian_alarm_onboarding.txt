@@ -1,0 +1,279 @@
+(Transcribed by TurboScribe.ai. Go Unlimited to remove this message.)
+
+Onboarding Call Recording – Guardian Alarm Systems
+[Participants: Pawan (Clara Onboarding), Bharat (Clara Sales), Kevin Marsh (Owner, Guardian Alarm Systems)]
+[Duration: Approx. 43 minutes]
+
+---
+
+Bharat: Alright Kevin, can you hear us okay?
+
+Kevin Marsh: Yeah, loud and clear. Hey Bharat.
+
+Bharat: Hey! Great to catch up again. So as promised, I've got Pawan here with me today. He's the one who's actually going to build Clara out for Guardian Alarm, and he's very good at what he does. I'll stay in the background. Pawan, over to you.
+
+Pawan: Hey Kevin! Great to finally connect. I've gone through all of Nick's notes from the demo call and honestly, Guardian is a really interesting configuration — the Priority Response tier, the alarm industry vocabulary, Riverview Medical — there's a lot to get right and I'm looking forward to it. The goal today is to lock in all the specifics so I can build the agent and have you in testing mode by end of day or first thing tomorrow. Sound good?
+
+Kevin Marsh: Sounds good. Let's do it.
+
+Pawan: Perfect. So I'll go through this methodically — business hours first, then after-hours, then the Priority Response routing, then the VIP accounts, and then a few edge cases at the end. Should take about thirty to forty minutes.
+
+Kevin Marsh: Great.
+
+Pawan: Alright. Business hours. From the demo notes I have Monday through Friday. What are your opening and closing times?
+
+Kevin Marsh: Eight AM to five-thirty PM. Monday through Friday.
+
+Pawan: Eight to five-thirty, Monday through Friday. And timezone?
+
+Kevin Marsh: Eastern Time. Columbus, Ohio.
+
+Pawan: Eastern Time, with daylight saving. Got it. And Linda is your office person, in four days a week. Which day is she off?
+
+Kevin Marsh: Wednesday.
+
+Pawan: Okay. So on Wednesdays, calls during business hours come to you directly.
+
+Kevin Marsh: Yeah. My cell.
+
+Pawan: Got it. So for the primary transfer target during business hours — is it the main office line when Linda is in, and your cell as a fallback?
+
+Kevin Marsh: Yes. Main office line is 614-555-0182. That rings at Linda's desk. If she doesn't pick up within twenty seconds, go to my cell.
+
+Pawan: 614-555-0182, twenty-second timeout, then your cell. What's your cell number?
+
+Kevin Marsh: 614-555-0347.
+
+Pawan: Got it. 614-555-0347. And if both are unavailable — what should Clara tell the caller?
+
+Kevin Marsh: Tell them we weren't able to connect right now but we have their information and someone will call back within two hours during business hours.
+
+Pawan: Two-hour callback commitment during business hours. And Clara should have the callback number before attempting the transfer?
+
+Kevin Marsh: Yes. Name and callback number at minimum, before she transfers.
+
+Pawan: Name and number first, then transfer. Got it. Now on Wednesdays specifically — same flow applies, just the main office line is Linda's desk but she won't be there. Should Clara still try the main line on Wednesdays, or go straight to your cell?
+
+Kevin Marsh: Go straight to my cell on Wednesdays. Don't bother ringing an empty desk.
+
+Pawan: Smart. I'll flag Wednesdays as a skip-to-cell day. I'll need you to confirm in the dashboard at the start of each Wednesday, or I can just configure the Wednesday forwarding to skip the office line automatically.
+
+Kevin Marsh: Can you automate it by day of week?
+
+Pawan: Yes. I'll set it so Wednesday business hours always route directly to your cell, no office line attempt.
+
+Kevin Marsh: Perfect. Yeah, do that.
+
+Pawan: Done. Now, business address — we'll want this for the agent to reference.
+
+Kevin Marsh: 3780 Morse Road, Suite 204, Columbus, Ohio, 43219.
+
+Pawan: 3780 Morse Road, Suite 204, Columbus, Ohio, 43219. Main business line — is that 614-555-0182 or a different number?
+
+Kevin Marsh: That's the one. Same number on our website and Google.
+
+Pawan: Perfect. Now for service pricing — from the demo I didn't see a firm figure. Do you want Clara to share any pricing if someone asks?
+
+Kevin Marsh: We don't have a simple published rate because it really depends on the job. For monitoring contracts — residential starts at twenty-five dollars a month, commercial starts at forty-five. But for installation, service calls, access control — those vary a lot and I don't want Clara quoting numbers. If someone asks about pricing, she should say pricing varies based on the scope and a member of our team will discuss options when they follow up.
+
+Pawan: Got it. Monitoring rates sharable if asked — residential from twenty-five per month, commercial from forty-five. All other pricing — "varies by scope, team will follow up." No specific service call fees quoted.
+
+Kevin Marsh: Right.
+
+Pawan: And the Priority Response plan — from the demo I understand it's a premium monitoring tier with a guaranteed thirty-minute callback. Do you want Clara to be able to describe that plan?
+
+Kevin Marsh: Yes. If someone asks what the Priority Response plan is, Clara can say it's our premium commercial monitoring tier that includes a guaranteed thirty-minute callback any time of day or night, plus priority scheduling for service visits. She should not quote the price because it varies by account. And she should say "ask about our Priority Response plan when you talk to our team."
+
+Pawan: Priority Response — guaranteed thirty-minute callback any time, priority service scheduling. Pricing not quoted. CTA to ask the team. Got it. Now, let's go to after-hours. Clara is active twenty-four seven. The after-hours greeting — let me read you the draft and you tell me if it sounds right. "Thank you for calling Guardian Alarm Systems, Columbus's local security specialists. Our office is currently closed. I'm Clara, Kevin's virtual assistant, and I'm here to help. If you are in immediate danger, please call 911 right now. Otherwise, I can connect you with our emergency team for urgent issues, or take a message for next business day. What can I help you with?"
+
+Kevin Marsh: That's really good. "Kevin's virtual assistant" — I like that. It's personal. And the 911 line up front — yes, that's exactly right.
+
+Pawan: Good. That stays. Now for after-hours emergency triggers. Let me run through what I have and you confirm or add. Active intrusion alarm — confirmed emergency?
+
+Kevin Marsh: Yes.
+
+Pawan: Fire alarm activation — confirmed?
+
+Kevin Marsh: Yes.
+
+Pawan: Complete alarm system failure — panel offline, no zones communicating?
+
+Kevin Marsh: Yes.
+
+Pawan: Active security concern — caller believes there may be an intruder or is unsure if their premises are safe?
+
+Kevin Marsh: Yes. That's a big one. If someone calls and says they're not sure if their building is safe, that's immediately an emergency.
+
+Pawan: Agreed. And we always lead with "if you feel in immediate danger, call 911." Clara asks the safety question early and if there's any hesitation, she escalates immediately.
+
+Kevin Marsh: Good.
+
+Pawan: Footage urgency — caller needs security camera footage because of a recent incident?
+
+Kevin Marsh: Yes. If someone had a break-in or an incident and they need footage, that's a priority call.
+
+Pawan: Got it. And for access control — main entrance reader failure at a sensitive property, like a medical facility or school?
+
+Kevin Marsh: Yes. For Riverview Medical specifically, any access control failure is urgent. If a door reader is down at a medical facility, that's a security issue.
+
+Pawan: Riverview Medical access control failure — emergency tier. I'll make a specific note for that account. Now for the non-emergency after-hours calls — things like panel trouble lights at closed properties, camera offline with no incident, routine questions. Standard callback commitment?
+
+Kevin Marsh: Next business day. Clara should say "one of our technicians will review this and follow up first thing next business day." Don't give a specific time — just first thing.
+
+Pawan: "First thing next business day." Got it. And what info should she collect for a non-emergency after-hours call?
+
+Kevin Marsh: Caller name, callback number, property address, what system they have if they know — brand or type — and what they're seeing. Zone number if they have it, error message on the display if they can read it. And ask if the property is currently occupied or vacant.
+
+Pawan: Name, callback number, property address, system type, what they're seeing including any display messages, zone number if available, property occupancy status. I'll build that into the intake flow.
+
+Kevin Marsh: Yes. And read the address back to them for confirmation. We've had address errors before.
+
+Pawan: Already in. Address confirmation is standard — Clara reads it back and the caller confirms.
+
+Kevin Marsh: Good.
+
+Pawan: Now the emergency routing chain. From the demo — you first, then Dave. What are the numbers and timeouts?
+
+Kevin Marsh: Me first at 614-555-0347. Thirty seconds. Then Dave Torres at 614-555-0219. Thirty seconds.
+
+Pawan: Kevin at 614-555-0347, thirty seconds. Dave Torres at 614-555-0219, thirty seconds. And if both are unavailable — the fallback message?
+
+Kevin Marsh: "I was unable to reach our emergency team right now. Your call has been flagged as urgent and someone from Guardian Alarm Systems will contact you within thirty minutes. If you are in immediate danger, please call 911 immediately." And I should get a text alert at that point regardless.
+
+Pawan: The thirty-minute commitment matches your Priority Response guarantee — is that intentional, or should the fallback message for non-Priority-Response callers say something different?
+
+Kevin Marsh: Good catch. For regular emergency callers — not Priority Response — the fallback can say "within the hour." Keep the thirty-minute language specifically for Priority Response callers.
+
+Pawan: So two fallback messages. Priority Response callers — thirty minutes. Everyone else — within the hour. And 911 advisory in both.
+
+Kevin Marsh: Exactly.
+
+Pawan: Got it. Text alerts — you want one on every emergency call regardless of transfer outcome. What's the best number for that?
+
+Kevin Marsh: Same cell, 614-555-0347.
+
+Pawan: And Dave — does he want text alerts too?
+
+Kevin Marsh: On Priority Response calls yes. On regular emergency calls, only if the transfer chain fails completely. He doesn't need to know about every alarm call at two AM if I'm already handling it.
+
+Pawan: So for Priority Response calls — text to both you and Dave, 614-555-0219, on every call. For regular emergency calls — text to you only unless transfer chain fails, then text to both.
+
+Kevin Marsh: Yes. That's right.
+
+Pawan: Got it. Now the Priority Response clients. You have eight of them. Can you give me the names and any known phone numbers?
+
+Kevin Marsh: Let me pull the list. Okay. So: Apex Properties Group — main contact is Robert Chen, his number is 614-555-0831. Metro Retail Solutions — main contact is Diane Walsh, 614-555-0562. Riverview Medical Center — main contact is their facilities manager, his name is Tom Kowalski, 614-555-0743. Then I've got four more — Eastside Warehouse Partners, contact is Frank Liu, 614-555-0671. Columbus Self Storage, contact is Patricia Hale, 614-555-0390. Midtown Commerce Building, contact is their property manager Mike Norton, 614-555-0284. And two more — Gateway Industrial LLC, contact is Sam Porter, 614-555-0917. And last one, Riverside Church Campus — contact is their facilities director, Pastor James, 614-555-0456.
+
+Pawan: Perfect. Eight Priority Response accounts. I'll register all eight phone numbers as VIP triggers. And for name-based identification — if someone calls and says they're from any of those organizations, even from an unregistered number, they get the Priority Response treatment?
+
+Kevin Marsh: Yes. Any of those organization names, the Priority Response flow kicks in.
+
+Pawan: Got it. And for all eight — after-hours any call gets full emergency chain routing plus the thirty-minute callback commitment?
+
+Kevin Marsh: Yes. Any call from a Priority Response client after hours — even if it's not technically an emergency, it gets the emergency chain and the thirty-minute callback. That's what they're paying for.
+
+Pawan: Understood. Priority Response means priority treatment regardless of issue type. Now, your top three commercial VIP accounts who are not on the Priority Response plan — Apex Properties Group, Metro Retail Solutions, and Riverview Medical Center. Wait — Apex Properties Group and Metro Retail are on the Priority Response list I just took down.
+
+Kevin Marsh: Oh, yeah. Right. Sorry. So those three are Priority Response clients. The three VIP non-Priority-Response accounts from the demo were — let me think. It was more like I was describing my top commercial accounts generally. All of them are actually on Priority Response. So there's no separate VIP tier. All eight Priority Response accounts get the same treatment.
+
+Pawan: Got it. Simplifies things actually. Eight accounts, all Priority Response, all get the same elevated after-hours treatment.
+
+Kevin Marsh: Yes. That's right. Sorry for the confusion.
+
+Pawan: No worries at all, good to clarify. Now Riverview Medical — you mentioned data privacy and credential security are particularly important for them. Can you walk me through what you want?
+
+Kevin Marsh: So for Riverview, I don't want Clara logging detailed building security information if they call. Like if they describe exactly how their access control system is set up, what zones are armed — that's sensitive operational security information for a medical facility. I'd rather Clara collect just enough to understand the urgency and route the call, not a detailed technical log.
+
+Pawan: So for Riverview specifically — minimal logging of security specifics, collect urgency indicators and callback info, route immediately rather than doing a full intake.
+
+Kevin Marsh: Yes. And under no circumstances should Clara accept or log alarm codes or access credentials. For any caller.
+
+Pawan: That's already a universal hard rule. Clara will explicitly decline to take alarm codes or access credentials on any call. She'll say "for security reasons, we handle code and credential changes through our verified channels only — please contact our team directly during business hours." That applies to all callers.
+
+Kevin Marsh: Perfect. And that's actually a policy I should be enforcing more consistently than I currently do. This will help formalize it.
+
+Pawan: And it's documented in the call log — every time a caller tries to provide a code and Clara declines, that's logged. So there's an audit trail showing the policy was followed.
+
+Kevin Marsh: I didn't even think about the audit trail value. Yeah. That's good.
+
+Pawan: Especially for a medical facility client — the paper trail matters. Alright. The Spanish bilingual support — fully on, Clara switches to Spanish automatically if the caller speaks Spanish, summaries translated to English for your team?
+
+Kevin Marsh: Yes.
+
+Pawan: Post-call summaries and notifications — where should those go? You mentioned Linda and Dave for different things.
+
+Kevin Marsh: Daytime service request summaries — to Linda. Her email is linda@guardianalarmcolumbus.com. Priority Response and emergency after-hours alerts — text to my cell, as we discussed. Dave gets text alerts on Priority Response calls and on full chain failures. Morning digest of all after-hours activity — email to me at kevin@guardianalarmcolumbus.com and Dave at dave@guardianalarmcolumbus.com.
+
+Pawan: Linda gets daytime service request summaries at linda@guardianalarmcolumbus.com. Emergency and Priority Response texts to 614-555-0347. Dave texts per the tiering we discussed. Morning digest to kevin@guardianalarmcolumbus.com and dave@guardianalarmcolumbus.com. Got it.
+
+Kevin Marsh: Perfect.
+
+Pawan: A couple of edge cases I want to confirm. Calls about monitoring renewal — like a residential customer calling to ask if their contract is up for renewal or to cancel. How should Clara handle that?
+
+Kevin Marsh: If someone wants to cancel, Clara should not try to retain them. Collect their name, account address, callback number, and route to me for the next business day. Do not offer any discounts or counter-offers. That's a conversation for me to have personally.
+
+Pawan: No retention attempts by Clara. Collect details, route to you, next business day. Got it. And for new installation inquiries — commercial leads specifically, you mentioned you want a deeper intake. What fields?
+
+Kevin Marsh: Property type, square footage approximately, number of entry points roughly, whether they have an existing system and if so what brand, what they're looking for — alarm only, alarm plus cameras, access control — and their timeline. Those are the qualification fields for a commercial lead.
+
+Pawan: Property type, square footage, entry points, existing system and brand, desired services, and timeline. Five fields for commercial leads. And for residential new inquiries — simpler?
+
+Kevin Marsh: Residential — just the property address, whether they own or rent, whether they have an existing system, and what they're looking for. Keep it brief.
+
+Pawan: Got it. Shorter residential intake, longer commercial intake. And both route to the morning queue unless they flag urgency?
+
+Kevin Marsh: Correct. New leads are not emergencies.
+
+Pawan: Got it. Hard limits before I do the full readback — from the demo: no alarm codes or credentials, correct.
+
+Kevin Marsh: Correct.
+
+Pawan: No quoting installation or service pricing beyond monitoring rates.
+
+Kevin Marsh: Correct.
+
+Pawan: No technical diagnosis — Clara doesn't tell callers what their panel fault means.
+
+Kevin Marsh: Correct.
+
+Pawan: And no retention attempts if a caller wants to cancel.
+
+Kevin Marsh: Correct.
+
+Pawan: Alright. Full readback. Business hours: Monday through Friday, eight AM to five-thirty PM, Eastern Time with daylight saving. Main line: 614-555-0182. Business hours transfer: main line first, twenty-second timeout, then Kevin's cell at 614-555-0347. Wednesday exception: skip office line, go directly to cell. Fallback: two-hour callback commitment during business hours, name and number collected before transfer. Address: 3780 Morse Road, Suite 204, Columbus, Ohio, 43219. Pricing: monitoring from twenty-five residential, forty-five commercial. All other pricing — team to discuss. Priority Response description sharable, price not quoted. After-hours greeting: twenty-four seven, 911 advisory first, "Kevin's virtual assistant" personalization. Emergency triggers: active intrusion, fire alarm activation, complete system failure, active security concern with safety uncertainty, footage urgency for incidents, Riverview Medical access control failure. Emergency routing chain: Kevin first at 614-555-0347, thirty seconds, then Dave Torres at 614-555-0219, thirty seconds. Fallback: Priority Response callers — thirty minutes plus 911. All others — within the hour plus 911. Text alerts: Kevin on every emergency. Dave on Priority Response calls and full chain failures. Eight Priority Response accounts: Apex Properties Group, Metro Retail Solutions, Riverview Medical Center, Eastside Warehouse Partners, Columbus Self Storage, Midtown Commerce Building, Gateway Industrial LLC, Riverside Church Campus — all registered phone numbers and organization names. All Priority Response accounts after hours — full emergency chain plus thirty-minute commitment regardless of issue type. Riverview Medical: minimal security detail logging, immediate routing. Credential security policy universal: Clara declines all codes and credentials with advisory to contact team during business hours. Spanish bilingual: on, translated summaries to English. Post-call routing: daytime summaries to linda@guardianalarmcolumbus.com. Morning digest to kevin@ and dave@guardianalarmcolumbus.com. Commercial lead intake: five fields. Residential: four fields. Cancellation calls: collect and route to Kevin, no retention attempts. Hard limits: no credentials, no installation pricing, no technical diagnosis, no retention. Does that cover it?
+
+Kevin Marsh: That is — I mean, that's a completely thorough readback. The only thing I want to add is just one phrase for the greeting. At the end of the greeting, before she asks how she can help, can she add "Guardian Alarm has been serving Columbus for eight years"? I just think that builds trust with a new caller.
+
+Pawan: Absolutely. "Guardian Alarm has been serving Columbus for eight years." Added to the greeting.
+
+Kevin Marsh: Perfect.
+
+Pawan: Alright. So here's what happens next. I'm going to build the full configuration today. By end of business or first thing tomorrow, you'll get an email from me with the agent's test number, your dashboard login, and the call forwarding instructions for your phone carrier. You, Dave, and Linda should all call the test number and run through scenarios. Emergency call, Priority Response client call, regular non-emergency, new lead inquiry, Spanish language call if you can manage it. Anything that needs adjusting, reply to my email. I'll turn it around within a few hours for most things.
+
+Kevin Marsh: Perfect. And then we do after-hours soft launch first?
+
+Pawan: After-hours first, yes. Daytime to follow when you're confident. And I'll be watching the call logs proactively in the first two weeks — I'll flag anything I see before you even notice it.
+
+Kevin Marsh: That's good. I want the first couple of weeks to be really tight, especially given the Priority Response clients.
+
+Pawan: Understood. That's the highest-stakes part of the configuration and I'll give it the most attention. Alright, Kevin, I think we're done. Really good session.
+
+Kevin Marsh: Yeah. Thanks, Pawan. You're thorough.
+
+Pawan: Ha. That's the job. Watch out for my email.
+
+Bharat: Kevin — looking forward to seeing this go live. I think it's going to be really impactful for Guardian.
+
+Kevin Marsh: Yeah. Me too. Alright guys, thanks. Talk soon.
+
+Pawan: Talk soon!
+
+Bharat: Bye Kevin!
+
+Kevin Marsh: Bye.
+
+---
+[End of Onboarding Call Recording – Guardian Alarm Systems]
+[Duration: 43 minutes 17 seconds]
+
+(Transcribed by TurboScribe.ai. Go Unlimited to remove this message.)

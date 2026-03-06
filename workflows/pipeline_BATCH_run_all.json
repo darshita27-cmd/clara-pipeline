@@ -1,0 +1,249 @@
+{
+  "name": "Clara Pipeline BATCH \u2014 Run All 10 Transcripts",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "bt0-error-trigger",
+      "name": "On Workflow Error",
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [
+        1120,
+        540
+      ]
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "clara/batch",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "bt1-webhook",
+      "name": "Webhook: Batch Run",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        240,
+        300
+      ],
+      "webhookId": "clara-batch-webhook"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Validate batch payload\nconst body = $input.first().json.body || $input.first().json;\n\n// \u2500\u2500 Shell-metacharacter sanitiser (F-1 fix) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nfunction sanitizeArg(val, fieldName) {\n  if (typeof val !== 'string') return val;\n  if (/[^a-zA-Z0-9_.\\/\\-]/.test(val)) {\n    throw new Error(\n      `Input '${fieldName}' contains disallowed shell characters: ${val}. ` +\n      'Only alphanumerics, path separators (/), dots, dashes and underscores are allowed.'\n    );\n  }\n  return val;\n}\n\n// \u2500\u2500 Path-prefix restriction (F-2 fix) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nconst ALLOWED_PREFIX = '/app/clara_pipeline/data/';\nfunction restrictPath(val, fieldName) {\n  if (val && !val.startsWith(ALLOWED_PREFIX)) {\n    throw new Error(\n      `'${fieldName}' must be within ${ALLOWED_PREFIX}. Got: ${val}`\n    );\n  }\n  return val;\n}\n\nconst rawDemoDir       = body.demo_dir;\nconst rawOnboardingDir = body.onboarding_dir;\nconst rawPairsFile     = body.pairs_file;\nconst dryRun           = body.dry_run || false;\nconst force            = body.force   || false;\nconst rawModel         = body.model   || process.env.OLLAMA_MODEL || 'mistral';\nconst rawOllamaUrl     = body.ollama_url || process.env.OLLAMA_URL || 'http://host.docker.internal:11434';\n\nif (!rawDemoDir && !rawPairsFile) {\n  throw new Error('Provide either demo_dir (with optional onboarding_dir) or pairs_file');\n}\n\n// Sanitise and restrict all path inputs\nconst demoDir       = rawDemoDir       ? restrictPath(sanitizeArg(rawDemoDir,       'demo_dir'),       'demo_dir')       : null;\nconst onboardingDir = rawOnboardingDir ? restrictPath(sanitizeArg(rawOnboardingDir, 'onboarding_dir'), 'onboarding_dir') : demoDir;\nconst pairsFile     = rawPairsFile     ? restrictPath(sanitizeArg(rawPairsFile,     'pairs_file'),     'pairs_file')     : null;\nconst model         = sanitizeArg(rawModel, 'model');\nlet ollamaUrl;\ntry {\n  const u = new URL(rawOllamaUrl);\n  if (!['http:', 'https:'].includes(u.protocol)) throw new Error('protocol');\n  ollamaUrl = rawOllamaUrl;\n} catch {\n  throw new Error(`'ollama_url' is not a valid http/https URL: ${rawOllamaUrl}`);\n}\n\nreturn [{\n  json: {\n    demo_dir: demoDir,\n    onboarding_dir: onboardingDir,\n    pairs_file: pairsFile,\n    dry_run: dryRun,\n    force,\n    model,\n    ollama_url: ollamaUrl,\n    started_at: new Date().toISOString()\n  }\n}];"
+      },
+      "id": "bt2-validate",
+      "name": "Validate Batch Input",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        460,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "command": "=cd /app/clara_pipeline && python run_all.py {{ $json.pairs_file ? '--pairs ' + $json.pairs_file : '--demo-dir ' + $json.demo_dir + ' --onboarding-dir ' + $json.onboarding_dir }} --ollama-url {{ $json.ollama_url }} --model {{ $json.model }}{{ $json.dry_run ? ' --dry-run' : '' }}{{ $json.force ? ' --force' : '' }} 2>&1",
+        "options": {}
+      },
+      "id": "bt4-run-all",
+      "name": "Run All Transcripts (run_all.py)",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        900,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse run_all.py output\nconst stdout = $input.first().json.stdout || '';\nconst exitCode = $input.first().json.exitCode;\n\nif (exitCode !== 0) {\n  throw new Error(`run_all.py failed (exit ${exitCode}):\\n${stdout.slice(0, 1000)}`);\n}\n\n// Parse summary table from output\nconst lines = stdout.split('\\n');\nconst accounts = [];\n\nfor (const line of lines) {\n  // Match table rows: CLARA-YYYY-NNN  Company  \u2713  \u2713  \u2705\n  const match = line.match(/^(CLARA-\\d{4}-\\d{3})\\s+(.+?)\\s+(\u2713|\u2717)\\s+(\u2713|\u2717|-)\\s*(\u2705|\u274c|-)/);\n  if (match) {\n    accounts.push({\n      account_id: match[1],\n      company: match[2].trim(),\n      v1_ok: match[3] === '\u2713',\n      v2_ok: match[4] === '\u2713',\n      go_live: match[5] === '\u2705'\n    });\n  }\n}\n\n// Extract elapsed time\nconst elapsedMatch = stdout.match(/(\\d+\\.\\d+)s/);\nconst elapsed = elapsedMatch ? parseFloat(elapsedMatch[1]) : null;\n\n// Load run_summary.json if it exists\nconst fs = require('fs');\nlet runSummary = {};\nconst summaryPath = '/app/clara_pipeline/outputs/run_summary.json';\ntry {\n  if (fs.existsSync(summaryPath)) {\n    runSummary = JSON.parse(fs.readFileSync(summaryPath, 'utf8'));\n  }\n} catch(e) {}\n\nconst v1Success = accounts.filter(a => a.v1_ok).length;\nconst v2Success = accounts.filter(a => a.v2_ok).length;\nconst goLiveReady = accounts.filter(a => a.go_live).length;\n\nreturn [{\n  json: {\n    ...($input.first().json),\n    accounts_processed: accounts.length,\n    v1_success: v1Success,\n    v2_success: v2Success,\n    go_live_ready: goLiveReady,\n    elapsed_seconds: elapsed,\n    accounts,\n    run_summary: runSummary,\n    run_all_stdout: stdout\n  }\n}];"
+      },
+      "id": "bt5-parse",
+      "name": "Parse Batch Output",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1120,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Write batch summary to pipeline_log.json\nconst fs = require('fs');\nconst logPath = '/app/clara_pipeline/outputs/pipeline_log.json';\nlet log = [];\ntry {\n  if (fs.existsSync(logPath)) log = JSON.parse(fs.readFileSync(logPath, 'utf8'));\n} catch(e) {}\n\nconst d = $input.first().json;\n\nconst entry = {\n  timestamp: new Date().toISOString(),\n  pipeline: 'BATCH',\n  accounts_processed: d.accounts_processed,\n  v1_success: d.v1_success,\n  v2_success: d.v2_success,\n  go_live_ready: d.go_live_ready,\n  elapsed_seconds: d.elapsed_seconds,\n  model: d.model,\n  dry_run: d.dry_run,\n  accounts: d.accounts\n};\n\nlog.push(entry);\nfs.writeFileSync(logPath, JSON.stringify(log, null, 2));\n\nreturn [{ json: { ...d, log_written: true } }];"
+      },
+      "id": "bt6-log",
+      "name": "Write Batch Log",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1340,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({\n  status: 'ok',\n  pipeline: 'BATCH',\n  dry_run: $json.dry_run,\n  started_at: $json.started_at,\n  elapsed_seconds: $json.elapsed_seconds,\n  summary: {\n    accounts_processed: $json.accounts_processed,\n    v1_success: $json.v1_success,\n    v2_success: $json.v2_success,\n    go_live_ready: $json.go_live_ready\n  },\n  accounts: $json.accounts,\n  run_summary_path: '/app/clara_pipeline/outputs/run_summary.json'\n}) }}",
+        "options": {
+          "responseHeaders": {
+            "entries": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        }
+      },
+      "id": "bt7-respond",
+      "name": "Respond to Webhook",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [
+        1560,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const error = $input.first().json;\nreturn [{ json: { message: error.message || 'Unknown batch error', timestamp: new Date().toISOString() } }];"
+      },
+      "id": "bt8-error",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1340,
+        540
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ status: 'error', pipeline: 'BATCH', message: $json.message }) }}",
+        "options": {
+          "responseCode": 500,
+          "responseHeaders": {
+            "entries": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        }
+      },
+      "id": "bt9-error-respond",
+      "name": "Error Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [
+        1560,
+        540
+      ]
+    }
+  ],
+  "connections": {
+    "Webhook: Batch Run": {
+      "main": [
+        [
+          {
+            "node": "Validate Batch Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate Batch Input": {
+      "main": [
+        [
+          {
+            "node": "Run All Transcripts (run_all.py)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Run All Transcripts (run_all.py)": {
+      "main": [
+        [
+          {
+            "node": "Parse Batch Output",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Batch Output": {
+      "main": [
+        [
+          {
+            "node": "Write Batch Log",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Write Batch Log": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "On Workflow Error": {
+      "main": [
+        [
+          {
+            "node": "Error Handler",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Error Handler": {
+      "main": [
+        [
+          {
+            "node": "Error Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {},
+  "versionId": "phase3-BATCH-v2",
+  "triggerCount": 0,
+  "tags": [
+    {
+      "name": "clara",
+      "createdAt": "2026-01-01"
+    },
+    {
+      "name": "pipeline-BATCH",
+      "createdAt": "2026-01-01"
+    }
+  ]
+}

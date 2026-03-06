@@ -1,0 +1,1297 @@
+Speaker 1: 00:00
+Alright, let's go ahead and bring Kevin in. Three, two, one. And he's in.
+
+Speaker 2: 00:08
+Hey Kevin, can you hear me okay?
+
+Speaker 3: 00:11
+Yeah, loud and clear. Hey, how's it going?
+
+Speaker 2: 00:13
+Going really well, thanks for asking. And thank you for making time today. I know you mentioned you've got a field tech out on a job this afternoon so we'll make sure we're done before that comes up. Before we start, let me do a quick intro. I'm Nick, part of the Clara Answers team. We work with alarm and security companies, fire protection businesses, and service trade companies across North America. And with me today is Priya, she's our solutions specialist and she'll be doing the demo portion.
+
+Speaker 3: 00:36
+Hey Priya.
+
+Speaker 4: 00:37
+Hi Kevin! Really good to meet you. Looking forward to this.
+
+Speaker 2: 00:40
+So Kevin, I'd love to start by learning a little about Guardian Alarm Systems before we get into the demo. I find the demo is much more useful when it's tailored to your actual situation rather than generic. So can you walk me through the business a bit?
+
+Speaker 3: 00:53
+Sure. So Guardian Alarm Systems — we've been around for about eight years. I started it after working for a national security company for about twelve years, so I knew the industry well but I wanted to build something local and more personalized. We're based in Columbus, Ohio. We cover most of the Columbus metro, sometimes we'll go out to the suburbs pretty far — Westerville, Dublin, Grove City, Reynoldsburg. But Columbus proper is the core.
+
+Speaker 2: 01:17
+And what services do you offer? Is it residential, commercial, or a mix?
+
+Speaker 3: 01:22
+Both. On the residential side we do alarm system installation, monitoring, service calls, camera systems, smart home security. On the commercial side it's alarm systems, access control, camera networks, some intercom systems. Commercial has grown a lot in the last three years. We picked up a few property management accounts and some retail clients and that's been a good chunk of the growth.
+
+Speaker 2: 01:44
+And headcount? How many people are running the operation right now?
+
+Speaker 3: 01:48
+So I've got four full-time techs. One of them, Dave, doubles as my operations supervisor — he handles scheduling and some of the customer communication when I'm tied up. Then I've got a part-time office person, her name is Linda, she's in four days a week. And then of course me. So it's small but we run pretty tight.
+
+Speaker 2: 02:08
+And where does the phone situation fit into that? How are calls being handled today?
+
+Speaker 3: 02:14
+So the calls come into our main business line during the day. Linda picks them up when she's in. On the days she's not in — she's off Wednesdays — it comes to me. And after hours, it goes to voicemail. We check the voicemail and call back the next morning.
+
+Speaker 2: 02:31
+And how's that working?
+
+Speaker 3: 02:33
+Honestly, it's not working well. And it's been bugging me for about a year now. So there are a few problems. The biggest one is the alarm industry has a lot of after-hours activity. We have customers who have alarm events — panel troubles, zone faults, actual alarm activations — and they need to reach someone. When they hit our voicemail at eleven PM, they're not happy. They want to know what's happening with their system. They want to know if we can come out. And we can't help them until the next morning.
+
+Speaker 2: 03:02
+Right. And in an alarm or security context, an alarm event at eleven PM isn't a low-priority situation.
+
+Speaker 3: 03:09
+Exactly. And a lot of our commercial clients have monitoring agreements with a central station — so the monitoring piece is handled separately. But the customer experience piece, like "what does this panel fault mean" or "my alarm keeps beeping, what do I do" — those calls come to us and we're not catching them.
+
+Speaker 2: 03:26
+Got it. So it's not just emergencies but also a lot of what I'd call support calls — customers who need guidance and reassurance in the moment.
+
+Speaker 3: 03:34
+Yes. That's a good way to put it. It's not always "there's a fire" or "there's a break-in." Sometimes it's "my panel is beeping and I don't know what it means and I'm trying to sleep." That person deserves an answer, even if the answer is "it's a low battery, here's how to silence it."
+
+Speaker 2: 03:48
+Yeah. And that kind of call, if handled well, actually builds a lot of loyalty. And if it goes to voicemail, it erodes it.
+
+Speaker 3: 03:54
+Exactly. We've lost a couple of clients over it. They didn't say that directly but I could see in their renewal behavior that they were dissatisfied. One of them, a commercial property manager, moved to a different alarm company last year and when I asked why, she said the service response wasn't where she needed it to be. And I think that was part of it.
+
+Speaker 2: 04:12
+I appreciate you being candid about that. So let me ask a few more things and then we'll get into the demo. On the emergency side — what qualifies as a true emergency for Guardian? Like what are the calls where someone needs to reach you or Dave immediately, no matter what time?
+
+Speaker 3: 04:28
+Okay so there are a few. One is an actual alarm activation — intrusion alarm at a commercial site, especially an armed client. Two is a fire alarm activation, even though the central station handles the monitoring side. When a business owner's fire alarm goes off, they're calling us even if the fire department is already on the way, they want to know what's happening with their system. Three is a complete system failure — like an alarm system that's fully offline, panel is dead, no zones are communicating. For a business that relies on that system, that's an emergency. Four — and this is specific to us — we have some clients on what we call our Priority Response plan. They pay extra for guaranteed call-back within thirty minutes any time of day. Those clients, any call from them is an emergency regardless of what it's about.
+
+Speaker 2: 05:14
+Okay. Intrusion activation, fire alarm activation, complete system failure, and Priority Response plan clients — all emergency tier. That's helpful. What about something like a single zone fault on a panel? Not a full system failure, just one sensor offline?
+
+Speaker 3: 05:27
+That depends on the client and the zone. A front door sensor on a commercial property that's currently open for business — that's urgent. A motion detector in a room that's rarely used — that can wait. We can't always tell from a call description which it is, so the best approach would be to collect the details and then have one of us make a judgment call on urgency.
+
+Speaker 2: 05:47
+Right. Clara can collect the information and then route based on what's described. It doesn't have to make the final call — it just makes sure the right information gets to the right person.
+
+Speaker 3: 05:56
+Yeah. That's what I'd want. I don't need the AI making the judgment. I need it making sure the information gets to me so I can make the judgment.
+
+Speaker 2: 06:04
+That's a very clear and sensible framing of the role. And honestly it's how most of our best clients think about it.
+
+Speaker 3: 06:10
+Yeah. I was worried AI answering was going to try to be smarter than it needs to be. I want it to be a great intake person, not an alarm technician.
+
+Speaker 2: 06:18
+Exactly. Clara's not going to try to diagnose your customer's panel. She's going to collect the right information and make sure it lands with you. Priya, over to you.
+
+Speaker 4: 06:26
+Thanks Nick. Kevin, this is a really well-articulated picture of your situation and I think what I'm about to show you is going to map to it closely. Let me share my screen.
+
+Speaker 3: 06:35
+Sure, go ahead.
+
+Speaker 4: 06:37
+Alright, can you see my screen?
+
+Speaker 3: 06:39
+Yep.
+
+Speaker 4: 06:40
+Perfect. So what you're looking at is the Clara Answers dashboard. Every call that comes into Guardian Alarm — daytime, after hours, weekends, holidays — shows up here. Caller name, phone number, time, call duration, what they called about, whether a transfer was attempted, whether it succeeded, and a full transcript and recording. Nothing disappears into a voicemail black hole.
+
+Speaker 3: 07:00
+Okay. And this is accessible to me and Linda and Dave?
+
+Speaker 4: 07:04
+You can give access to as many team members as you want. You control permissions — so you could give Dave full access, give Linda read-only access, and keep your own admin access for routing changes. However you want to structure it.
+
+Speaker 3: 07:15
+That's good. Dave would want to see the calls because he does a lot of the follow-up scheduling.
+
+Speaker 4: 07:20
+Perfect. And for Dave specifically, he'd be able to see the call summaries and transcripts, which means he can prep for follow-up calls with full context. He's not starting from scratch when he calls someone back.
+
+Speaker 3: 07:30
+Yeah. That's a real time saver. Right now Dave calls people back and half the time the voicemail message wasn't clear and he's going in blind.
+
+Speaker 4: 07:38
+Clara changes that completely. Every follow-up call has a structured summary ready. Let me show you what that looks like. So this sample here — "Caller: Mike Patterson, commercial, alarm panel issue, called Tuesday 9:22 PM, spoke for four minutes twelve seconds, call summary: caller reports DSC alarm panel showing trouble light on zone three, front entrance sensor, property is a retail store currently closed for the night, customer unsure if system is armed, requested callback as soon as possible, callback number collected." That's what's in the dashboard waiting for Dave when he comes in.
+
+Speaker 3: 08:11
+Okay. That is genuinely useful. Zone three, front entrance, retail, currently closed. Dave would know exactly what he's dealing with before he picks up the phone.
+
+Speaker 4: 08:20
+Exactly. And notice it even captured that the property was closed for the night — that's context that changes how Dave would approach the conversation. He's not calling to potentially dispatch someone urgently, he's calling to reassure and schedule.
+
+Speaker 3: 08:31
+Yeah. That's a level of detail the voicemail never has.
+
+Speaker 4: 08:35
+Right. And that was from a four-minute call. Clara does this for every call, every time. Let me play a sample interaction for you. This is a simulated call to a security alarm company, after-hours, customer with a panel trouble light.
+
+Speaker 3: 08:47
+Okay.
+
+Speaker 4: 08:48
+[Sample audio plays — approximately 2 minutes 10 seconds. Clara greets caller, identifies the issue as a panel trouble light, asks about the property type, system arming status, and current safety of the premises, collects name and callback number, confirms next-business-day callback with option for same-night callback if urgent, closes warmly.]
+
+Speaker 3: 10:59
+Okay. That was impressive. A couple things I noticed. One, she asked if the premises were safe. That's a good question because if someone's alarm is going off and they're actually concerned about a break-in, that changes everything.
+
+Speaker 4: 11:11
+Yes. The safety check question is always in the after-hours emergency flow. If the caller says they're not sure the premises are safe, Clara immediately escalates to the emergency routing chain rather than treating it as a routine callback.
+
+Speaker 3: 11:23
+Right. Because "my alarm is beeping" and "I think someone broke in" are very different calls that might come in sounding similar at first.
+
+Speaker 4: 11:30
+Exactly. Clara is designed to distinguish between them by asking the right follow-up questions. And she doesn't wait until the end of the conversation to find out — she asks the safety question early, before she goes down the intake path.
+
+Speaker 3: 11:41
+Good. I like that.
+
+Speaker 4: 11:43
+Second thing you might have noticed — she gave the caller two options: next-business-day callback for a routine issue, or she could flag it as urgent for a same-night callback if they needed it. And the caller, in that sample, said next-day was fine. But if they'd said they needed someone sooner, the flow would have branched to the emergency chain.
+
+Speaker 3: 12:00
+Yeah. And that's the right design because it puts the decision partly in the caller's hands. Some people will say "no it's not urgent" even if it is, but at least the option is offered.
+
+Speaker 4: 12:10
+Right. And for certain trigger words — if the caller says "I think there's been a break-in" or "there's someone outside" or anything that sounds like an active security concern — Clara doesn't wait for them to say it's urgent. She escalates immediately regardless of what the caller thinks about urgency.
+
+Speaker 3: 12:25
+Good. Because people don't always recognize when they're in a dangerous situation. Sometimes they're calm on the phone and they're actually in trouble.
+
+Speaker 4: 12:32
+That's very true. And for those situations, we also always include an advisory to call 911 if there's an immediate threat. Clara is not a substitute for emergency services in a true break-in or fire.
+
+Speaker 3: 12:43
+Right. I'd want that said clearly. "If you feel you are in immediate danger, call 911 first."
+
+Speaker 4: 12:49
+It's in every after-hours emergency fallback and any time a caller describes an active threat. Always 911 first.
+
+Speaker 3: 12:55
+Good. Okay. Before I ask about the Priority Response clients, I want to understand something about the business hours side. Because the problem isn't only after hours for us. During business hours when Linda is in, she's managing a lot. She handles calls but she also handles our invoicing, she handles supply orders, she handles the service call schedule. So sometimes calls are getting Linda when she's not fully focused.
+
+Speaker 4: 13:17
+Yeah. The divided attention problem. And in the alarm industry that can lead to missed details in intake — which then creates problems downstream when the tech shows up.
+
+Speaker 3: 13:26
+Exactly. I've had a technician go to a job address that was wrong because Linda wrote it down incorrectly while she was in the middle of something else. That's a wasted trip and an annoyed customer.
+
+Speaker 4: 13:36
+Clara doesn't have divided attention. When she's taking a call, that call is her only task. She captures every detail accurately.
+
+Speaker 3: 13:43
+Ha. Yeah. That's not a problem she has.
+
+Speaker 4: 13:45
+And she asks for confirmation on critical details. If someone gives an address, she reads it back. "Just to confirm, that's 4215 Broad Street, Columbus, Ohio?" And the caller confirms or corrects. So the address in the summary is verified.
+
+Speaker 3: 13:57
+Oh. That's actually a really important feature for us. Wrong address means a wasted tech trip.
+
+Speaker 4: 14:02
+It won't happen with Clara. She reads back the address, the callback number, the system type. Everything critical gets confirmed before she ends the call.
+
+Speaker 3: 14:10
+Okay. Yeah. That's a bigger operational improvement than I expected from what I thought of as just an answering service.
+
+Speaker 2: 14:17
+That's a really common realization. It's not just about not missing calls. It's about the quality of every call interaction going up across the board.
+
+Speaker 3: 14:24
+Right. Accuracy plus availability. Both together.
+
+Speaker 2: 14:27
+Exactly. And the two together mean your techs are always going to the right place with the right information.
+
+Speaker 3: 14:32
+Ha. Dave would really like that. He's the one who deals with the scheduling chaos when a tech is at the wrong location.
+
+Speaker 4: 14:38
+Ha. Alright. Let me also ask about something that's relevant for your commercial accounts. You mentioned Dave does some customer communication. How does that work currently — is he calling from his cell?
+
+Speaker 3: 14:48
+From his cell mostly. Which is actually a problem because customers end up with Dave's personal number and then call him directly for things that should come through the main line. Dave is not happy about it.
+
+Speaker 4: 14:59
+Ha. The "I have your number now" problem.
+
+Speaker 3: 15:02
+Exactly. He's basically become a second customer service line and he didn't sign up for that.
+
+Speaker 4: 15:07
+With Clara handling inbound and the dispatcher module handling outbound, Dave could potentially stop making customer calls from his personal cell entirely. All outbound calls would come from Clara on a business number. Customers see the business number, not Dave's cell.
+
+Speaker 3: 15:20
+Oh. Dave would love that. He has been asking me to fix that situation for a while.
+
+Speaker 4: 15:25
+Ha. That might actually be the feature that sells him on this.
+
+Speaker 3: 15:28
+Ha! Yeah. I'm leading with that.
+
+Speaker 2: 15:30
+Ha! "Dave, your phone problem is solved."
+
+Speaker 3: 15:32
+Ha! Yeah.
+
+Speaker 4: 15:33
+Alright. I also want to ask about camera systems. You do camera installations and surveillance. Do customers call about camera issues — offline feeds, app access problems?
+
+Speaker 3: 15:42
+Yes, those calls come in too. "My camera feed is showing offline," "I can't access my remote viewing app." Different from alarm calls but same phone line.
+
+Speaker 4: 15:51
+Camera and video surveillance calls would have their own intake flow in Clara's configuration. The key questions are different — which camera or cameras are affected, is it a hardware issue or a connectivity issue, what system are they on. And for commercial clients especially — is this urgent because of a recent incident, meaning they need footage, or is it a routine issue?
+
+Speaker 3: 16:08
+Oh, good point. If a commercial client had a break-in and needs footage — that's urgent. A camera just being offline with no incident, not urgent.
+
+Speaker 4: 16:16
+Exactly. "I need my footage from last night" — priority flag regardless of time. "One of my cameras has been offline since Thursday" — routine service callback.
+
+Speaker 3: 16:24
+Yeah. That distinction really matters. We had a client call after hours needing footage from a break-in and that was absolutely urgent.
+
+Speaker 4: 16:31
+And Clara would triage it correctly — "Has there been an incident at your property that makes this footage needed urgently?" If yes, priority routing. If no, morning queue.
+
+Speaker 3: 16:40
+Good. You've covered more of our service types than I expected.
+
+Speaker 4: 16:44
+We try to. The more dimensions of your business we understand in the demo, the better the configuration we build in onboarding.
+
+Speaker 3: 16:50
+Yeah. I appreciate that. Okay, now I want to ask about the Priority Response clients. You heard me describe them — they're clients on a higher-tier service plan who get guaranteed thirty-minute callback. How would Clara know who those clients are?
+
+Speaker 4: 13:07
+Great question. We'd configure them as VIP accounts. So you'd give us a list of those clients — names, associated phone numbers if you have them — and when one of those clients calls, Clara recognizes them either by their phone number matching a registered number, or by self-identification — "I'm calling from so-and-so, we're on your Priority Response plan." Either way, that call gets elevated treatment immediately. Clara acknowledges the priority plan, collects the information, and routes to your emergency chain rather than the standard queue.
+
+Speaker 3: 13:34
+And what if a Priority Response client calls during business hours? Like not an emergency, they're just calling about something routine?
+
+Speaker 4: 13:41
+During business hours, Clara still handles them with the elevated greeting acknowledgment — but the routing would follow the standard business hours transfer flow, since Linda or you are available to handle it normally. The Priority Response special handling is most meaningful after hours, where regular callers might just get a callback commitment but Priority Response clients get immediate routing.
+
+Speaker 3: 13:59
+Okay. That makes sense. Because during the day I'd want Linda treating everyone well anyway.
+
+Speaker 4: 14:04
+Exactly. The difference is really in the after-hours behavior.
+
+Speaker 3: 14:07
+Right. So how many Priority Response clients do I have — I want to give you an accurate picture. I've got eight commercial clients on that plan. They pay about double the standard monitoring fee in exchange for the priority guarantee. So they're important accounts.
+
+Speaker 4: 14:20
+Eight Priority Response clients — we can configure all eight as VIP accounts. During onboarding, you'd give us the names and any known phone numbers. The self-identification backup means even if they call from an unregistered number, as long as they mention being on the Priority Response plan, the elevated routing kicks in.
+
+Speaker 3: 14:37
+Perfect. Yeah, those clients need to feel the value of what they're paying for.
+
+Speaker 4: 14:41
+And Clara delivering a noticeably better experience to them when they call after hours is a very tangible expression of that value. They're not hitting voicemail like everyone else — they get immediate acknowledgment, priority routing, and a faster callback commitment.
+
+Speaker 3: 14:55
+Yeah. That's the pitch I make when I sell them on the Priority Response plan. "Call anytime, we'll get back to you in thirty minutes." Right now that promise depends on whether I happen to check my voicemail in time. With Clara, the promise actually holds.
+
+Speaker 2: 15:08
+That's a really important point, Kevin. The product you're selling your Priority Response clients is a better experience. Right now the experience depends on human behavior at two AM. Clara makes it reliable and consistent.
+
+Speaker 3: 15:20
+Yeah. That's — I mean, that's actually the framing I need. I'm selling a product to those clients and my current back-end can't always deliver it.
+
+Speaker 2: 15:27
+And if they ever found that out, it would be a problem.
+
+Speaker 3: 15:29
+Ha. Yeah. It would.
+
+Speaker 4: 15:31
+Let me show you a few more things and then I want to open it up for questions. I want to show you the notification system specifically because I think the alarm industry has some unique needs there.
+
+Speaker 3: 15:41
+Sure.
+
+Speaker 4: 15:42
+So on the notifications page, you can see there are different tiers. For an emergency call — active alarm activation, active break-in concern, complete system failure — the notification is immediate, text and email, to whomever you designate. For a Priority Response client calling after hours — same immediate notification even if the issue isn't technically an emergency. For a routine after-hours call — this gets batched into a morning summary that's in your inbox when you arrive. You get to configure each tier independently.
+
+Speaker 3: 16:12
+And for the immediate notifications — can I set it to text only? I'm more likely to see a text than an email at two in the morning.
+
+Speaker 4: 16:19
+Yes. You can set it to text only, email only, or both. Most clients in your situation do text for emergency and immediate-tier, email for everything else.
+
+Speaker 3: 16:27
+Yeah. Text for urgent, email for the morning queue. That's how I'd want it.
+
+Speaker 4: 16:31
+And on the text — it's a brief but clear message. Something like: "Clara Alert — Guardian Alarm — Priority Response caller: Mike Patterson, 614-555-0312, reporting zone fault at Westside Retail, 11:47 PM. Call details in dashboard." You see it, you tap the number, you're calling back.
+
+Speaker 3: 16:50
+Okay. That's clean. I can act on that immediately without even having to open a dashboard.
+
+Speaker 4: 16:55
+That's the design intent. You get enough information in the text to decide whether to call back right now or wait for the dashboard review. For a Priority Response client with a zone fault, you'd probably call back right now. For a routine caller at eleven PM asking about scheduling, you'd wait until morning.
+
+Speaker 3: 17:09
+Right. The text gives me enough to make that decision without having to log in somewhere.
+
+Speaker 4: 17:13
+Exactly. And the retry feature I want to mention — for emergency and Priority Response alerts, if the text isn't acknowledged within a configurable window — say fifteen minutes — Clara will resend the alert. It's persistent until it's acknowledged. You're not going to miss an urgent notification because your phone was in the other room for twenty minutes.
+
+Speaker 3: 17:30
+Okay. That's really important for us because the whole promise to Priority Response clients is built on thirty-minute callback. If an alert goes out and I miss it and nobody knows, that promise is broken. With retry alerts, if I miss the first one, I'm getting another one.
+
+Speaker 4: 17:45
+Right. The system is actively working to make sure the promise holds. It's not just a passive notification.
+
+Speaker 3: 17:50
+Yeah. I like that a lot.
+
+Speaker 4: 17:52
+Now let me ask about something specific to the alarm industry — monitoring stations. You mentioned your commercial clients have central station monitoring for the actual alarm events. How does that interact with Clara? Like is Clara going to get calls that should be going to the central station?
+
+Speaker 3: 18:06
+Ha. Good question. So the way it works is the central station handles the monitoring and the dispatch side — if an alarm goes off, they call the customer, they call the police, all of that. They don't call us unless there's a technical issue they can't resolve. So customers calling us after hours are almost always calling with questions or service issues, not because they had an alarm event and need dispatch. The dispatch side is handled.
+
+Speaker 2: 18:30
+So Clara doesn't need to be the connection point to the central station.
+
+Speaker 3: 18:34
+Right. Clara handles the customer communication side. "Why does my panel keep beeping." "My motion detector seems to not be working." "I'm going on vacation next week, how do I put my system in vacation mode." Those are the kinds of calls we get after hours. Not "there's an active alarm, dispatch the police."
+
+Speaker 4: 18:52
+That's really helpful context. And it simplifies the configuration significantly. Clara is handling customer service and technical support triage, not security dispatch.
+
+Speaker 3: 19:00
+Exactly. And for the customer service calls, the most important thing is that the customer feels heard, their issue is captured accurately, and they get a clear expectation on when we'll follow up.
+
+Speaker 4: 19:10
+And that's exactly what Clara does well.
+
+Speaker 3: 19:13
+Okay. I'm starting to see how this fits. I think the piece I was most unsure about was whether Clara could handle the technical vocabulary of alarm systems. Like if someone says "my NAC circuit is faulting" or "my FACP is showing a supervisory signal" — is Clara going to understand that?
+
+Speaker 4: 19:28
+Great question and this is actually one of the things that makes Clara specifically useful for the alarm and fire industry as opposed to a generic answering service. Clara is trained on security and fire alarm industry vocabulary. She understands panel types, zone terminology, alarm categories — supervisory, trouble, alarm, restore. If a caller says "my FACP is showing a supervisory signal on the sprinkler zone," Clara understands that's a technical fault on a fire alarm control panel related to the sprinkler system. She'll collect the panel type, what the display is showing, and the location of the property.
+
+Speaker 3: 20:04
+And she won't try to tell the caller what it means?
+
+Speaker 4: 20:07
+No. She collects what's happening and routes it to your team to interpret and respond. She won't say "oh that's probably just a low pressure supervisory, nothing to worry about." She'll say "I've captured all the details and one of our technicians will review this and contact you." The interpretation is your job.
+
+Speaker 3: 20:22
+Good. Because even trained dispatchers sometimes give wrong advice on panel faults and then there's liability exposure. I'd rather have her collect and route than guess and advise.
+
+Speaker 4: 20:31
+Completely understood and that's exactly how we'd configure it. Clara is an intake and routing tool for your business, not a technical advisor.
+
+Speaker 3: 20:38
+Okay. Yeah, that's the right role.
+
+Speaker 4: 20:40
+And it's worth talking about what "intake and routing" means in practice for the alarm industry because I don't want to undersell it. The intake Clara does is actually quite deep. For a commercial client calling about a panel fault, she'd collect: the property address, the panel brand and model if they know it, what the display is showing — error code, zone number, what type of signal — whether the system is currently armed, whether the property is occupied, how long the issue has been occurring, and whether there have been any recent changes to the system like new sensors or a recent service visit. That's a comprehensive picture.
+
+Speaker 3: 21:08
+Yeah. That's actually more than Linda typically collects. Linda usually gets "there's a problem with my alarm" and a callback number.
+
+Speaker 4: 21:15
+Ha. Clara doesn't settle for "there's a problem." She keeps asking until she has everything a tech would need to know what they're walking into.
+
+Speaker 3: 21:22
+Okay. I'm going to have to acknowledge that Clara is probably going to be more thorough than Linda on the intake side.
+
+Speaker 4: 21:29
+Ha. Don't tell Linda.
+
+Speaker 3: 21:30
+Ha. Yeah. But look, Linda's strengths are elsewhere. She's great at billing and vendor management. She's just not a natural phone interviewer.
+
+Speaker 4: 21:38
+And Clara doesn't replace Linda for those other things. She takes over the phone interviewing so Linda can focus on what she's actually good at.
+
+Speaker 3: 21:45
+Right. That's the right way to think about it.
+
+Speaker 2: 21:47
+And Kevin, you mentioned you've been growing the commercial side of the business a lot in the last three years. What's been driving that?
+
+Speaker 3: 21:54
+Honestly, referrals mostly. A property manager I did a really good job for recommended me to two other property management companies. And then one of those led to Metro Retail Solutions. It snowballs when you do good work in the commercial space because those decision-makers all talk to each other.
+
+Speaker 2: 22:09
+Right. And in that environment, one bad experience with a client who feels underserved — like the property manager you lost — can also snowball in the other direction.
+
+Speaker 3: 22:17
+Yeah. The Columbus commercial property management world is not that big. People know people. I can't afford a reputation for poor after-hours response.
+
+Speaker 2: 22:25
+And ironically, the better your reputation gets — the more business you win, the bigger the commercial client base — the more after-hours coverage matters because you have more clients with systems running around the clock.
+
+Speaker 3: 22:36
+Yeah. That's a growth trap I've been thinking about. Every new commercial contract I sign is another account that might have an issue at two in the morning. And right now my coverage doesn't scale.
+
+Speaker 2: 22:46
+Clara scales. You can have two commercial contracts or two hundred — the after-hours coverage quality is the same.
+
+Speaker 3: 22:52
+Yeah. That's the answer to the scaling problem.
+
+Speaker 4: 22:55
+And actually for the commercial growth story — when you're pitching a new commercial property management account, what do you tell them about your responsiveness and service quality?
+
+Speaker 3: 23:04
+I usually say we're a local company, we're reachable, we respond faster than the big national companies because we actually care about each account. But the honest truth is my "reachable" promise is only as good as my voicemail and however fast I check it.
+
+Speaker 4: 23:17
+Right. So you're selling a promise that your current infrastructure can't fully back up.
+
+Speaker 3: 23:22
+Ha. Yeah. That's a diplomatic way to put it.
+
+Speaker 4: 23:24
+Ha. With Clara, the pitch becomes true. "We have a twenty-four seven answering system specifically configured for alarm companies, you'll be recognized as a VIP client the moment you call, and our team will be alerted within seconds of your call, any time of day." That's a different conversation with a new commercial prospect.
+
+Speaker 3: 23:41
+Yeah. That's actually a much stronger pitch. I can demonstrate it rather than just describe it.
+
+Speaker 2: 23:46
+And for your existing commercial clients — knowing that their calls after hours will actually reach someone, not voicemail, is a retention factor that doesn't even need to be sold. It just happens and they notice.
+
+Speaker 3: 23:56
+Yeah. The clients who've had the experience of hitting voicemail at ten PM — they remember that. It's a quiet dissatisfier.
+
+Speaker 2: 24:03
+And the clients who call after hours and get Clara, who acknowledges them and makes sure their issue is handled — that's a quiet satisfier. You might not hear about it explicitly, but renewal rates go up.
+
+Speaker 3: 24:14
+Yeah. I believe that. Okay. Good. That gives me a clear ROI framing to think through.
+
+Speaker 2: 24:19
+Kevin, can I ask about something that might be coming up for you as we talk through this? You mentioned you lost a commercial property manager last year and you think the service response was part of it. When you think about that now, with what you've seen today — what would have been different if Clara had been in place at that time?
+
+Speaker 3: 22:03
+Hmm. So that account — they would call sometimes after hours about system issues. Not emergencies, just like "our panel is showing something weird and I want to make a note of it for the morning." And that went to voicemail. And I think they felt like after-hours calls were just not a priority for us. Which wasn't true, but that was the experience they had.
+
+Speaker 2: 22:24
+Right. The experience told them a story that wasn't accurate.
+
+Speaker 3: 22:27
+Yeah. If Clara had picked up that call, acknowledged them, collected the details, told them someone would follow up in the morning — that's a totally different experience. They feel like there's a system behind the service, not just someone's voicemail.
+
+Speaker 2: 22:39
+And the property manager feels like the relationship is solid rather than ad hoc.
+
+Speaker 3: 22:43
+Exactly. That's probably worth a few thousand dollars a year in retention. Honestly more because commercial accounts are high value.
+
+Speaker 2: 22:50
+Right. And that's one of those invisible ROI numbers — the client you kept rather than lost. It doesn't show up on any report but it's real.
+
+Speaker 3: 22:58
+Yeah. I think about that account sometimes. Eight years of service history, good relationship, and one retention failure. It stings.
+
+Speaker 2: 23:06
+And the solution isn't complex. It's consistent, reliable after-hours coverage that makes your clients feel cared for even when you're asleep.
+
+Speaker 3: 23:13
+Yeah. That's what I needed.
+
+Speaker 4: 23:15
+Kevin, I also want to flag something about the contract structure for your Priority Response clients. You mentioned they're paying about double the standard monitoring fee for that plan. That's a pricing differential that signals service quality. Clara actually helps you deliver on that differential in a very concrete way. When a Priority Response client calls after hours and Clara answers immediately, acknowledges their priority status, and routes for a thirty-minute callback — that's a touchpoint that validates the premium they're paying every month.
+
+Speaker 3: 23:41
+Yeah. Right now they're paying for a promise that I'm trying to keep manually. With Clara, the promise is built into the system. It's not dependent on me noticing a voicemail.
+
+Speaker 4: 23:51
+And that's a much stronger value proposition to sell when you bring on new Priority Response clients. You're not selling "I'll try to call you back fast." You're selling "a dedicated system will acknowledge your call within seconds and route it to my team immediately, with a thirty-minute callback guarantee backed by automated alerts."
+
+Speaker 3: 24:07
+Ha. Yeah. That's a completely different conversation with a new client. That's something I can demonstrate rather than just describe.
+
+Speaker 4: 24:14
+Exactly. You can literally say "call this number right now and watch what happens." The demo is the sales pitch.
+
+Speaker 3: 24:20
+Ha! That's a great point. I could show a prospect the experience in real time.
+
+Speaker 4: 24:24
+Yep. That's something a lot of our clients in premium service plans do. The live demo is more convincing than any brochure.
+
+Speaker 3: 24:30
+Okay. I hadn't thought about the sales implications. That's actually useful.
+
+Speaker 2: 24:34
+And the reviews module plays into that too. If your Priority Response clients are leaving reviews about the quality of your emergency response, those reviews become part of your marketing for that premium plan.
+
+Speaker 3: 24:44
+Yeah. "Guardian responded to my after-hours call in under fifteen minutes." That's exactly the kind of review that sells a Priority Response plan to a new commercial prospect.
+
+Speaker 2: 24:53
+Exactly. The service quality creates the reviews, the reviews create the sales. It compounds.
+
+Speaker 3: 24:59
+Ha. Okay. I'm connecting some dots here that I hadn't connected before. This is not just a phone answering service.
+
+Speaker 2: 25:05
+Ha! That's usually the realization we hope for.
+
+Speaker 3: 25:08
+Ha. Okay. I'm connecting some dots here that I hadn't connected before. This is not just a phone answering service.
+
+Speaker 2: 25:14
+Ha! That's usually the realization we're hoping for. And I'll say — Guardian is actually a pretty compelling use case for how these modules fit together. You have a recurring revenue model with monitoring contracts. You have a premium tier — Priority Response — where service quality is literally the product. You have a growing commercial base where reputation matters. You have an annual inspection cycle that requires outbound coordination. And you have a review gap. Every single module maps to a real revenue or retention lever in your business. That's not always the case. Some businesses only need the answering piece. You're one where the whole stack makes sense.
+
+Speaker 3: 25:43
+Ha. You've just described the last three years of my pain points in one paragraph.
+
+Speaker 2: 25:47
+Ha! We've been listening carefully. Alright, let me hand it back to Priya for one more thing before we wrap the demo section.
+
+Speaker 4: 25:53
+Yeah — Kevin, one last thing from me. You mentioned Linda is part-time, four days a week. Wednesday is her off day. What currently happens on Wednesdays when calls come in during business hours?
+
+Speaker 3: 26:03
+They come to me. Wednesdays are the worst day of the week honestly. I'm trying to do everything — the field scheduling, the invoicing review, the vendor calls — and the phones are hitting me directly. It's a lot.
+
+Speaker 4: 26:16
+So Wednesday is a day where inbound answering relief is particularly valuable.
+
+Speaker 3: 26:21
+Ha. Yes. If you could make Wednesdays bearable, that alone would be worth something.
+
+Speaker 4: 26:25
+Ha. Clara doesn't take Wednesdays off.
+
+Speaker 3: 26:27
+Ha! Okay. Yeah. That's actually a really good point. She's not part-time.
+
+Speaker 4: 26:31
+She's there Monday through Sunday, nine PM through seven AM, and every Wednesday when Linda isn't. Same quality, every time.
+
+Speaker 3: 26:39
+Ha. Yeah. Okay. I'm sold on the consistency argument. That's something I've been working around for two years and I've just accepted it as the cost of a small business.
+
+Speaker 4: 26:48
+It doesn't have to be. Okay, I think that's really everything from the demo side. Nick, back to you.
+
+Speaker 2: 26:53
+Kevin, can I ask about one more dimension of the business? You mentioned some retail clients and property management accounts in the commercial space. Are those accounts managed differently day-to-day? Like do they have dedicated contacts at Guardian, or is it all funneled through you and Linda? My top three commercial accounts — I have Apex Properties Group, they manage a bunch of commercial office buildings here in Columbus. Metro Retail Solutions, they've got a chain of about fifteen stores. And Riverview Medical Center, which is a smaller private medical clinic. Those three are the anchors of the commercial side and they get more of my personal attention.
+
+Speaker 2: 21:19
+And when those accounts call in after hours — is the expectation different from a regular residential caller?
+
+Speaker 3: 21:25
+Yes. Those three, any call from them after hours, I want to know about it right away. Not just a morning summary. They're paying significant recurring fees and they expect white-glove treatment.
+
+Speaker 2: 21:36
+So those three would join your Priority Response clients as VIP accounts.
+
+Speaker 3: 21:40
+Yeah. I'd put them in the same tier, or maybe a separate tier since they're not technically on the Priority Response plan, they're just important clients. But the effect should be the same — immediate notification to me.
+
+Speaker 4: 21:52
+We can set it up that way. Priority Response plan clients get a thirty-minute callback commitment explicitly stated by Clara. Your top three commercial accounts get immediate notification to you but the callback language might be slightly different — more like "our team will follow up with you shortly" rather than explicitly promising thirty minutes, since they're not on the Priority Response agreement.
+
+Speaker 3: 22:12
+Yeah. That's the right distinction. I don't want to accidentally create a service level expectation I haven't sold them.
+
+Speaker 4: 22:17
+Exactly. Clara only makes promises that you've authorized her to make.
+
+Speaker 3: 22:21
+Good. Okay. Priya, can I ask about something else? The access control side of our business. We do access control installations — key card systems, door readers, credential management. Customers sometimes call about access control issues. "My key card reader isn't responding." "An employee lost their card." "A door won't release." Those are different from alarm calls but they come in on the same line.
+
+Speaker 4: 22:43
+Great call-out. Access control calls can absolutely be configured into Clara's intake flow. For "my door won't release" or "card reader not responding" — those would follow the same triage logic as alarm calls. Is the facility currently able to operate — is security compromised? If a door is stuck open or a main entrance reader is down, that could be a security or safety issue and Clara would treat it accordingly.
+
+Speaker 3: 23:04
+Yeah. A card reader down at a medical facility — that's potentially a serious access issue.
+
+Speaker 4: 23:09
+Exactly. We'd build in specific escalation logic for access control scenarios at sensitive sites. A card reader fault at a residential complex during normal hours — routine callback. A main entrance reader failure at a medical facility — emergency tier.
+
+Speaker 3: 23:22
+That's the kind of nuance I'd want. Most answering services would just take a message regardless.
+
+Speaker 4: 23:27
+And that's the difference between a generic service and a configured one. We build in your business logic, not a generic template.
+
+Speaker 3: 23:34
+Yeah. Okay. I want to ask about something that might be an edge case. We occasionally get calls from people asking about monitoring services — like someone found us online and they want to set up a new alarm system or start a new monitoring contract. Those are sales calls essentially. How does Clara handle those?
+
+Speaker 4: 23:51
+Those would be business hours intake calls primarily. During business hours, Clara would collect their interest — what kind of property, residential or commercial, what they're looking for — and either transfer to you or Linda, or if nobody's available, collect all the details for a follow-up call. After hours, a new lead like that isn't urgent but it's valuable. Clara would collect the contact details and inquiry type, and they'd land in the morning queue as a new lead notification.
+
+Speaker 3: 24:16
+Can she gather a little more detail on those? Like, for a new commercial lead I'd want to know the square footage, whether they have an existing system, what kind of access control they might need, so that when I call back I'm going in with a full picture.
+
+Speaker 4: 24:28
+Absolutely. For a new inquiry call we can configure an extended intake for commercial leads specifically. Clara would ask the property type, size, existing system if any, what they're looking for, timeline. That way when you or Dave calls back, you're calling back with enough information to have a substantive conversation rather than starting with basic qualification.
+
+Speaker 3: 24:47
+Yes. That's actually going to make our sales callbacks more efficient because I won't be spending the first five minutes asking questions I could have had answered already.
+
+Speaker 4: 24:55
+Exactly. Better intake means better follow-up conversations, which means better close rates on new business.
+
+Speaker 3: 25:01
+Yeah. I like that.
+
+Speaker 2: 25:03
+And Kevin, just to follow on that — is Linda currently doing any kind of qualification when new leads call in? Or is she mostly just taking a name and number and passing it to you?
+
+Speaker 3: 25:12
+Mostly name and number. She doesn't really know enough about the technical side to do a good qualification. So when I call back I'm starting from scratch. And sometimes the lead has gone cold because it's been a day or two before I get to it.
+
+Speaker 2: 25:24
+Right. So Clara's intake on new leads would actually be more thorough than what Linda currently collects, because Linda's not familiar with the qualification criteria.
+
+Speaker 3: 25:32
+Ha. Yeah. That's probably true. I don't say that as a knock on Linda — she's great at other things. But alarm system needs assessments are pretty specific and she doesn't have that background.
+
+Speaker 2: 25:41
+And Clara is configured with exactly the qualification questions you'd want asked, consistently, every time.
+
+Speaker 3: 25:47
+Yeah. Okay. I can see the value there.
+
+Speaker 2: 25:49
+Kevin, I want to ask you something a bit broader before we get into the remaining features. You mentioned you've been in the alarm industry for twenty years — twelve with the national company, eight with Guardian. What made you start Guardian rather than stay with the bigger operation?
+
+Speaker 3: 26:02
+Ha. Good question. So the national company I was with, they were — they were fine. But everything was templated. Scripts, procedures, everything by the book and the same everywhere. And what I found is in this business, the clients who really become loyal long-term clients are the ones who feel like they have a relationship with someone, not just a contract with a company. I wanted to build something where a property manager in Columbus could call and get someone who knows their system, knows their building, knows their history with us.
+
+Speaker 2: 26:32
+And that personal touch is something that's working — you've got eight Priority Response commercial accounts, three anchor commercial clients. That's a business built on relationship.
+
+Speaker 3: 26:41
+Yeah. And that's also why I've been reluctant to do AI answering. I was worried it would strip that personal feeling out of the first interaction.
+
+Speaker 2: 26:50
+That's a really common and understandable concern. And I want to address it directly — the way Clara is configured for Guardian would not feel like a national company's automated phone tree. She introduces herself as Clara, the virtual assistant for Guardian Alarm Systems. She's warm, she's professional, she knows your service types and your client categories. And critically — she routes every non-routine call to you or Dave, so the relationship part, the human judgment part, still happens.
+
+Speaker 3: 27:14
+Yeah. She's not replacing the relationship. She's handling the intake so the relationship can happen more efficiently.
+
+Speaker 2: 27:20
+Exactly. The calls where personal attention matters — Priority Response clients, your top commercial accounts, real emergencies — those get routed to you immediately. The calls where the relationship isn't yet formed — a new lead, a routine support question — those get handled cleanly and efficiently so that when you do follow up, you're doing so with full context.
+
+Speaker 3: 27:40
+Right. The quality of my follow-up calls goes up because I have better information.
+
+Speaker 2: 27:44
+And you get to those follow-up calls faster because you're not spending time playing phone tag or deciphering bad voicemail messages.
+
+Speaker 3: 27:50
+Yeah. Okay. That's a good reframe.
+
+Speaker 4: 27:53
+And I'd add one more thing on the personal touch concern. The after-hours greeting can be very warm. It can say "Thank you for calling Guardian Alarm Systems. I'm Clara, Kevin's virtual assistant" — not just a generic "virtual assistant." That small personalization signals to the caller that there's a person behind the service who set this up deliberately, which is a very different feeling from a national company's automated system.
+
+Speaker 3: 28:14
+Oh. "Kevin's virtual assistant." Yeah. That's a really different feel from "thank you for calling, press one for support."
+
+Speaker 4: 28:21
+Ha. Exactly. It's the difference between "I'm part of a small team that cares" and "I'm a phone tree." The wording you choose for the greeting sets that tone immediately.
+
+Speaker 3: 28:29
+Yeah. Okay. I like that. Let me think about the exact wording during onboarding.
+
+Speaker 4: 28:34
+Absolutely. The greeting language is one of the things we spend real time on in onboarding because it's the first impression of every single interaction.
+
+Speaker 3: 28:41
+Yeah. First impression matters. Especially in security — people are calling us because they trust us with their safety. The first thing they hear should reinforce that trust.
+
+Speaker 2: 28:50
+Completely. And you've thought about this clearly enough over eight years that the configuration will reflect it. Priya, show Kevin the analytics dashboard before the dispatcher module — I think it'll help contextualize the whole picture.
+
+Speaker 4: 29:00
+Good idea. Kevin, let me show you the analytics view. So this is the reporting section. You can see total call volume by day and week, broken down by category — how many were service calls, how many were new inquiries, how many were alarm-related, how many were camera-related, how many were routine questions. You can see transfer success rates, average call duration, and you can see a breakdown by time of day and day of week.
+
+Speaker 3: 29:24
+Okay. And this is historical, so I can look back?
+
+Speaker 4: 29:27
+Yes. You'd have full history from the day you go live. And you can compare periods — this week versus last month, this quarter versus last year.
+
+Speaker 3: 29:35
+That's interesting because I have a hypothesis that our heaviest call days are Mondays — like people come back from the weekend and there's been an issue with their system they noticed over the weekend, and they call Monday morning. But I have no data to back that up.
+
+Speaker 4: 29:47
+Ha. You'll know within the first month whether you're right. And if you are, you might staff accordingly — maybe Linda comes in Mondays specifically, or maybe that's the day to make sure your personal phone is clear for the morning rush.
+
+Speaker 3: 29:58
+Ha. Yeah. I'll find out if my hypothesis holds.
+
+Speaker 4: 30:01
+And there's something useful in knowing the categories too. If you can see that forty percent of your after-hours calls are about panel trouble lights versus alarm activations versus new leads, you can see where your biggest service pain points are. Maybe there's a particular type of issue your clients are having repeatedly and you could address it proactively.
+
+Speaker 3: 30:19
+Yeah. Like if everyone is calling about low battery warnings, maybe we're not doing a good enough job of proactively replacing batteries before they trigger a trouble light.
+
+Speaker 4: 30:28
+Exactly. The data surfaces operational insights you couldn't see before.
+
+Speaker 3: 30:32
+Ha. Okay. I was not expecting this to be a business intelligence tool as well.
+
+Speaker 4: 30:37
+Ha. It kind of is. Over time it becomes a map of your customer communication patterns.
+
+Speaker 3: 30:42
+Yeah. That's useful. Okay. Let me ask about something I thought of — we do some work in what I'd call semi-rural areas outside Columbus. Groveport, Canal Winchester, Pickerington. Those clients sometimes have spotty cell service. If a caller is calling from a bad connection and gets cut off in the middle of talking to Clara, what happens?
+
+Speaker 4: 30:59
+Good edge case. If a call drops mid-conversation, Clara logs everything that was captured up to that point. If she had the callback number already — which she collects early in the conversation — she'd have that for follow-up. If the call dropped before the number was captured, the incoming caller ID would be logged and you could attempt a callback from the dashboard. No information is lost from what was said before the drop.
+
+Speaker 3: 31:20
+And can she tell the caller early in the conversation to give her the callback number first, in case the call drops?
+
+Speaker 4: 31:27
+Yes. That's actually a configurable setting — "collect callback number as first priority" — and for customers in areas with known coverage issues, it's smart to do this. Clara would say something like "before we get into the details, can I get the best number to reach you in case we get disconnected?" It's presented as a courtesy, not a sign of distrust.
+
+Speaker 3: 31:45
+Yeah. And it actually sounds thoughtful — like we're thinking about the customer's experience.
+
+Speaker 4: 31:50
+Exactly. It's framed as caring about continuity, not as a technical hedge.
+
+Speaker 3: 31:54
+Good. I like that.
+
+Speaker 2: 31:56
+And Kevin, one more thing before the dispatcher module — the holiday coverage. You're in the alarm business, which means your clients' systems don't take holidays. How are you currently handling holiday coverage?
+
+Speaker 3: 32:06
+Honestly, I take it myself. Me and my phone. If something comes up Christmas Day or Thanksgiving, it comes to my cell. Which, you know, I don't love.
+
+Speaker 2: 32:15
+Right. And with Clara, you can configure holidays exactly like after-hours. She's always on, the same emergency routing applies, and you don't have to be the one staring at your phone all day waiting for something to happen. You just need to be reachable if Clara routes something your way.
+
+Speaker 3: 32:29
+Yeah. There's a big difference between "my phone might ring and I need to answer" and "my phone is ringing, something's actually happening." The second is much less stressful.
+
+Speaker 2: 32:38
+Exactly. Clara filters out the noise so when you do get a holiday call, it's a real call that needs you.
+
+Speaker 3: 32:44
+Yeah. Okay. That's actually a big quality of life improvement for me personally.
+
+Speaker 2: 32:49
+Ha. We hear that a lot.
+
+Speaker 3: 32:51
+Ha. Alright. Show me the dispatcher.
+
+Speaker 4: 32:53
+Let me show you a few more features and then we'll open it up. One I want to flag for you is the dispatcher module. This is an outbound companion to the inbound answering agent. The use case is: you've done a job, you want to follow up with the customer. Or you want to remind customers about their annual system inspection. Or you have a maintenance visit scheduled for tomorrow and you want to send a confirmation call. Clara dispatcher does that automatically.
+
+Speaker 3: 26:11
+Hmm. We do annual system inspections for a lot of our monitoring clients. It's part of the service package. And we manually call to schedule those. It takes a lot of time.
+
+Speaker 4: 26:20
+So instead of Linda spending half a day calling to schedule annual inspections, Clara dispatcher goes through the list, calls each client, and either gets a scheduled appointment or collects their preferred callback window. The outcomes go back to your dashboard. Linda just reviews and confirms.
+
+Speaker 3: 26:33
+That would save us a significant amount of time. Annual inspections are probably thirty to forty client visits a month when we're in a busy period.
+
+Speaker 4: 26:42
+And Clara dispatcher can handle all the outbound for those in the background while Linda focuses on inbound and administrative work.
+
+Speaker 3: 26:49
+Yeah. Okay. That's genuinely useful. I was thinking of this as primarily an inbound solution and the outbound piece is something I hadn't considered.
+
+Speaker 4: 26:57
+It's one of those things that opens up once you're comfortable with the inbound side. Most clients start with inbound answering and then realize the outbound capability solves a problem they've had for years.
+
+Speaker 3: 27:06
+Ha. Yeah. That's probably going to happen to me.
+
+Speaker 4: 27:08
+Ha. Almost guaranteed. Now, reviews — after a service call or installation, Clara can make a follow-up call to the customer. "Hi, this is Clara from Guardian Alarm Systems, just checking in to make sure your system is working as expected and that you're happy with the service." If the response is positive, it can direct them to leave a review on Google. If it's negative, it flags it internally for your follow-up.
+
+Speaker 3: 27:29
+Hmm. We don't have a systematic review process. We get reviews occasionally but only when a customer is really enthusiastic or really upset. Never the middle ground where people are generally happy but just don't think to review.
+
+Speaker 4: 27:40
+And that happy middle ground is the largest segment of your customer base. They're satisfied but passive. A gentle prompt from Clara often converts a lot of them into reviewers.
+
+Speaker 3: 27:49
+Yeah. And for a security company, reviews are really important. People are trusting us with their home or business security. They read reviews carefully.
+
+Speaker 4: 27:57
+Exactly. A strong review profile is basically a trust signal that's visible at the top of your Google listing. It does your marketing for you.
+
+Speaker 3: 28:03
+Yeah. I've been meaning to address that for a long time.
+
+Speaker 4: 28:06
+Clara makes it systematic and effortless.
+
+Speaker 3: 28:08
+Ha. Okay. Good.
+
+Speaker 2: 28:10
+Let me also show you the analytics dashboard, Kevin, because I think for a business owner like you who wants visibility into what's happening, this is really useful.
+
+Speaker 3: 28:18
+Sure.
+
+Speaker 2: 28:19
+So you can see total call volume by day, week, month. Call categories — how many were service calls, how many were new inquiries, how many were emergencies, how many were routine support. Resolution type — transferred live, callback taken, voicemail equivalent captured. Average call duration. Transfer success rate. And you can compare periods — this month versus last month, this year versus last year.
+
+Speaker 3: 28:43
+Okay. That's actually interesting because I've never had data on call volume before. I know we're busy but I don't know exactly how busy.
+
+Speaker 2: 28:50
+And that data becomes really useful for business planning. If you can see that your call volume triples in Q4 when people are concerned about their security before the holidays, you can staff accordingly or make sure your on-call coverage is tighter.
+
+Speaker 3: 29:02
+Yeah. I do think we get more calls in fall and around the holidays. But I have no way to prove that currently.
+
+Speaker 2: 29:08
+With the dashboard, you'd have the data to back it up and plan around it.
+
+Speaker 3: 29:12
+That's actually more valuable than I expected. The analytics piece. I was thinking of this as "answer my phone" and it's more like "give me visibility into my business."
+
+Speaker 2: 29:21
+That's a great way to frame it. It's not just answering, it's intelligence.
+
+Speaker 3: 29:24
+Yeah. Okay.
+
+Speaker 4: 29:26
+And one more thing I want to flag before we open it up. You work with some sensitive client types — a medical clinic, commercial businesses with confidential access control systems. How does data privacy sit with you? Like is that something you'd need to address with your clients before using a service like this?
+
+Speaker 3: 29:43
+That's a good question. For Riverview Medical, there's definitely some sensitivity. Like if a call comes in about their access control system and the conversation captures details about their building security configuration — that should be treated confidentially.
+
+Speaker 4: 29:57
+Right. So a couple of things on that. Call recordings and transcripts are stored securely and access is limited to your authorized team. We don't use your call data to train models or share it with third parties. For clients with specific confidentiality requirements — like a medical facility — you can configure Clara to avoid capturing certain types of sensitive details and to route those calls to you directly with minimal logging. We can work through the specific needs during onboarding.
+
+Speaker 3: 30:22
+Okay. That's good to know. I'd probably want to have a conversation with Riverview before going fully live on that account, just to make sure they're comfortable.
+
+Speaker 4: 30:30
+That's the right approach. And we can configure their account within Clara to have whatever privacy settings they require.
+
+Speaker 3: 30:37
+Good. I appreciate you raising that proactively. Most answering services don't think about that.
+
+Speaker 4: 30:42
+It matters in your industry especially.
+
+Speaker 3: 30:44
+Yeah. Alright. I have a bunch of questions. First — what's the onboarding process look like? Like how do we go from this conversation to actually having it live?
+
+Speaker 2: 30:53
+Great. So the next step, if you decide to move forward, is a proposal from me — I'll put that together in the next twenty-four hours. It'll lay out the specific modules we'd recommend for Guardian and the pricing. You review it, ask any questions. Once you're ready to proceed, we schedule an onboarding call with Pawan, who leads our configuration team. That's typically thirty to forty-five minutes where he goes through all the specifics — your routing chain, the exact wording you want for greetings and fallbacks, your Priority Response client list, your VIP commercial accounts, emergency triggers, all of it. He builds the agent from that conversation.
+
+Speaker 3: 31:25
+And how long to build after that?
+
+Speaker 2: 31:27
+About twenty-four hours. Then you get a dedicated test number — not your live line — where you and Dave and Linda can call and test scenarios. Run through the emergency flow, test a Priority Response client call, test a new lead inquiry, test Spanish if you have Spanish-speaking clients.
+
+Speaker 3: 31:43
+Do we have Spanish-speaking clients? Yeah, we actually do. Columbus has a significant Hispanic community and we've gotten several residential clients who prefer Spanish.
+
+Speaker 2: 31:52
+Good to know. Clara is fully bilingual — she can handle Spanish-language calls and the call summaries come through translated to English for your team.
+
+Speaker 3: 32:00
+Oh, that's great. We currently handle those calls pretty awkwardly because Linda doesn't speak Spanish.
+
+Speaker 2: 32:06
+Yeah. Clara handles Spanish natively. No awkward moments, no missed details.
+
+Speaker 3: 32:11
+Okay. Add that to the list of wins.
+
+Speaker 4: 32:13
+Ha! Yeah, that's often a surprise feature for clients who didn't think they needed it.
+
+Speaker 3: 32:17
+Ha. Yeah. I hadn't even thought about it in the context of this conversation. But it's meaningful. We've had callers who hung up because the interaction wasn't working and they came back later when they found someone Spanish-speaking. If Clara can handle that in real time, we stop losing those calls.
+
+Speaker 4: 32:32
+Exactly. And in Columbus's residential security market, being the company that serves Spanish-speaking clients well is a real differentiator. Most of your local competitors probably have the same Linda problem — nobody who speaks Spanish on staff, awkward handoffs, calls lost.
+
+Speaker 3: 32:46
+Yeah. That's probably true. We're all small local shops. None of us have dedicated bilingual staff.
+
+Speaker 4: 32:52
+Clara gives you something none of them have without the cost of a hire.
+
+Speaker 3: 32:56
+Yeah. Okay. That's a competitive angle I should actually think about actively.
+
+Speaker 2: 33:00
+And we can include that in the proposal framing — how Clara gives Guardian a competitive differentiation in the Columbus residential market.
+
+Speaker 3: 33:07
+Ha. Now you're writing my marketing materials.
+
+Speaker 2: 33:09
+Ha! That's what good vendors do.
+
+Speaker 3: 33:11
+Ha. Fair enough. Okay. What happens after testing? How do we actually go live?
+
+Speaker 2: 33:16
+So after testing — you and Dave and Linda have run through the scenarios, you're happy with how Clara is handling things — we do the forwarding flip. Your main business number stays the same. We just forward it to Clara. It's a setting change on your phone system that takes about five minutes. And it's reversible instantly if anything feels wrong in the first hour.
+
+Speaker 3: 33:34
+And we can do after-hours only first, right? Not daytime?
+
+Speaker 2: 33:38
+Absolutely. After-hours soft launch. Your main line still rings at Linda's desk during business hours. After five-thirty, it forwards to Clara. You evaluate for a week or two, build confidence, then decide about the daytime rollout.
+
+Speaker 3: 33:51
+Yeah. That's the right pace for me.
+
+Speaker 2: 33:53
+And Pawan will be monitoring call logs actively in the first two weeks. He's not waiting for you to come to him with issues. He'll proactively flag anything he sees that could be improved.
+
+Speaker 3: 34:01
+That's a nice touch. Active monitoring in the calibration period.
+
+Speaker 2: 34:05
+It's how we make sure the first impression is strong. The first week of live calls matters a lot for how you feel about the system going forward.
+
+Speaker 3: 34:12
+Yeah. And in the alarm business, first impressions happen at the worst moments — two AM, stressed customer. If those go well in the first week, I'll be sold.
+
+Speaker 2: 34:21
+Exactly. And that's also the best test. Not a Tuesday afternoon training call but a real customer with a real issue. If Clara handles that well, the system earns your trust.
+
+Speaker 3: 34:30
+Yeah. Real-world test. That's the only test that matters.
+
+Speaker 2: 34:33
+Alright. I think we've covered a lot of ground today. Let me make sure we didn't miss anything important. Priya, anything from your side?
+
+Speaker 4: 34:40
+I think we covered the key things — after-hours emergency routing with the Priority Response tier, commercial VIP accounts, alarm industry vocabulary, access control and camera intake, Spanish bilingual support, dispatcher for renewal outreach and inspection scheduling, reviews, the data privacy question for Riverview Medical, the credential handling policy. That's a pretty complete picture.
+
+Speaker 3: 34:58
+Ha. Yeah. It was a thorough demo.
+
+Speaker 4: 34:59
+Ha! Kevin asked good questions. Made it easy.
+
+Speaker 3: 35:02
+Ha. Yeah. I guess I did.
+
+Speaker 2: 35:04
+Alright Kevin. I'm going to let you get back to your afternoon. I'll get you the proposal today or tomorrow. Looking forward to the next conversation.
+
+Speaker 3: 32:36
+And if something goes wrong after we go live? Like if a call is handled incorrectly?
+
+Speaker 2: 32:41
+Every call is logged and recorded. If you hear something you don't like — a call handled wrong, a commitment made that you didn't authorize — you flag it in the dashboard. Pawan reviews it and makes the correction usually within a few hours. And in the first month Pawan is actively reviewing call logs proactively, not waiting for you to come to him with issues.
+
+Speaker 3: 32:59
+That's reassuring. Especially in the first few weeks when there will probably be some things to tune.
+
+Speaker 2: 33:04
+Always. And that's totally expected. The agent gets better with each refinement. Think of it like a new employee — very capable on day one, but a couple of weeks of real-world calls makes them noticeably sharper.
+
+Speaker 3: 33:15
+That's a good analogy.
+
+Speaker 4: 33:16
+Kevin, one more question from my side before we wrap the demo portion. You mentioned Dave is your operations supervisor and handles some customer communication. Would Dave have his own notification preferences, or does everything go through you?
+
+Speaker 3: 33:27
+Good question. I think for scheduling-related follow-ups — like a service call callback that needs to be scheduled — Dave should get those too so he can act on them directly. But for anything emergency or priority — that should come to me. Dave doesn't need to be woken up at two AM for a Priority Response client call. That's my responsibility.
+
+Speaker 4: 33:44
+So we'd configure two notification tiers — emergency and Priority Response alerts go to you only, scheduling and service follow-up summaries go to both you and Dave.
+
+Speaker 3: 33:53
+Yeah. That way Dave can work through the service queue without me having to hand things off, but I'm still in the loop on everything important.
+
+Speaker 4: 33:59
+That's a clean split. Works really well in practice.
+
+Speaker 3: 34:02
+Good.
+
+Speaker 2: 34:03
+Alright, Kevin. Before we go to questions — anything you were hoping we'd cover today that we haven't gotten to yet?
+
+Speaker 3: 34:09
+I think you've hit the main things. The after-hours emergency piece, the Priority Response clients, the access control vocab, the commercial VIP accounts. I think I have a pretty clear picture.
+
+Speaker 2: 34:19
+Great. What questions are coming up for you?
+
+Speaker 3: 34:22
+A bunch, actually. Let me go through them. First — what does the greeting sound like? Like, what does a caller hear in the first three seconds?
+
+Speaker 4: 34:30
+You control that entirely. A typical configuration for a business like yours might be: "Thank you for calling Guardian Alarm Systems. I'm Clara, and I'm here to help. How can I assist you today?" Short, warm, professional. Or if you prefer to emphasize the after-hours context: "Thank you for calling Guardian Alarm Systems. Our office is currently closed, but I'm Clara and I can help. If this is an emergency, please let me know right away." The wording is yours to set.
+
+Speaker 3: 34:53
+I want it to feel like Guardian specifically, not generic. Can we put something in there that references our specialization?
+
+Speaker 4: 34:59
+Absolutely. Something like: "Thank you for calling Guardian Alarm Systems, Columbus's local security and alarm specialists. I'm Clara. How can I help you today?" You can include whatever identifier makes it feel specific to your brand.
+
+Speaker 3: 35:11
+Yeah. "Columbus's local security specialists" — that's actually a phrase we use in our marketing. That would resonate with residential clients especially.
+
+Speaker 4: 35:19
+Then we'll use it. The greeting is a brand moment.
+
+Speaker 3: 35:21
+Good. Second question — what if a caller starts speaking Spanish? We have some Spanish-speaking clients, particularly in some of the residential neighborhoods we serve.
+
+Speaker 4: 35:30
+Clara is fully bilingual in Spanish and English. If a caller begins speaking Spanish, she recognizes it and responds in Spanish. The entire conversation — intake, safety questions, routing logic — all of it happens in Spanish. And the call summary that goes to Linda and Dave comes through translated to English so your team can process it.
+
+Speaker 3: 35:47
+Okay. That's important to me. I've had a couple of situations where a Spanish-speaking caller got Linda on the phone and Linda doesn't speak Spanish. The call kind of fell apart. The caller ended up calling back the next day and getting me.
+
+Speaker 4: 35:59
+That won't happen with Clara. Spanish-speaking callers get the full experience — no fall-apart moments, no awkward pauses, no "let me get someone who speaks Spanish."
+
+Speaker 3: 36:08
+Yeah. Okay. That's a meaningful improvement for a segment of our clients who currently get a pretty poor experience.
+
+Speaker 2: 36:14
+And given that Columbus has a significant Hispanic population, this is probably a retention and acquisition factor too — Spanish-speaking businesses and homeowners looking for an alarm company that actually speaks their language.
+
+Speaker 3: 36:25
+Honestly yes. We've picked up a few referrals in that community and I've been thinking about how to serve that segment better.
+
+Speaker 2: 36:31
+Clara handling Spanish calls natively is a concrete answer to that.
+
+Speaker 3: 36:35
+Yeah. Okay. Third question — what about caller ID? Sometimes I get spoofed calls. Is Clara going to engage with robocalls and spam?
+
+Speaker 4: 36:44
+Clara has strong signals for identifying automated calls and spam. If a call comes in and the pattern suggests it's an automated dialer or a robocall, she handles it very briefly — "This line is for Guardian Alarm Systems customers, if you have a service need please call back" — and ends the call. She doesn't spend three minutes engaging with something that's clearly not a real customer inquiry.
+
+Speaker 3: 37:02
+Okay. And she won't accidentally cut off a real customer who's calling from an unusual number?
+
+Speaker 4: 37:08
+The detection is based on call patterns and behavior, not just caller ID. A real customer calling from an unusual number will speak normally and Clara will engage normally. A robocall or spam dialer has recognizable patterns — automated silence, rapid pitch starting, that kind of thing. The false positive rate on cutting off real callers is very low.
+
+Speaker 3: 37:25
+Good. Because we do get a fair amount of vendor solicitation calls — companies trying to sell us equipment, monitoring services, that kind of thing.
+
+Speaker 4: 37:33
+Those would be handled quickly too. If it's clearly a sales pitch, Clara can say "thank you, this line is for our customers. If you're a vendor, please reach out by email." Brief and polite.
+
+Speaker 3: 37:42
+Ha. Yeah. Linda hates vendor solicitation calls. She'll be glad to get those off her plate too.
+
+Speaker 4: 37:47
+Ha. Clara is very efficient at ending calls that shouldn't be happening.
+
+Speaker 3: 37:51
+Ha. Okay. Fourth question — and this one's a bit abstract — I've built Guardian on trust. My clients trust me with their alarm codes, their access schedules, details about when their properties are occupied. The AI that answers my phone is hearing all of that. Where does that data go?
+
+Speaker 2: 38:07
+That's exactly the right question and I'm glad you asked it directly. Call recordings and transcripts are stored securely. Access is limited to your authorized team — you, Linda, Dave, whoever you grant access to. We do not use your call data to train models, we do not sell it, we do not share it with third parties. The data belongs to Guardian Alarm Systems.
+
+Speaker 3: 38:26
+And what about the clients who share sensitive information about their properties? Like a client might say "the alarm code for the warehouse is such-and-such" while leaving a message.
+
+Speaker 2: 38:35
+We'd strongly advise configuring Clara to explicitly not accept alarm codes or sensitive credentials over the phone. She can say "for security reasons, we don't take alarm code changes over the phone — please use our secure customer portal or speak directly with our team during business hours." That protects both the client and you.
+
+Speaker 3: 38:52
+That's — yes. That's actually the right protocol. I don't want alarm codes in call transcripts. I want those handled through our verified channels only.
+
+Speaker 2: 38:59
+And Clara would enforce that for you — she'd redirect those requests gracefully rather than collecting sensitive credentials.
+
+Speaker 3: 39:05
+Good. That's actually a security best practice that I've been loose about. This would formalize it.
+
+Speaker 4: 39:10
+And from a liability standpoint, having a documented policy of "we do not accept credentials over the phone" is a strong position if there's ever a security incident. The transcript shows the policy was followed.
+
+Speaker 3: 39:20
+Yeah. Okay. Good. That's something I hadn't thought about — Clara actually helps enforce security protocols, not just handle calls.
+
+Speaker 2: 39:27
+That's a really interesting way to think about it and you're right. The configuration is a set of policies, not just scripts.
+
+Speaker 3: 39:33
+Yeah. Okay. Last question on my list. We're a small team. If I add this and something goes wrong — like Clara mishandles a Priority Response call and I lose that client — what's my recourse?
+
+Speaker 2: 39:44
+That's fair to ask. So every call is logged. If there's an incident, we review the transcript together and understand exactly what happened. If the configuration was responsible — Clara didn't escalate when she should have, Clara gave wrong information — we treat that as a configuration issue and fix it immediately. Our commitment is to make it right and to improve the configuration so it doesn't happen again. We're not going to tell you "sorry, that's just how it works."
+
+Speaker 3: 40:07
+And if the client is lost because of a Clara failure — is there compensation?
+
+Speaker 2: 40:12
+That's something I'd address specifically in the service agreement. I don't want to overpromise right now, but I'll make sure the proposal addresses our service level commitments and what happens in the case of a failure. The short version is we take responsibility for failures attributable to the system, and we do everything we can to remediate.
+
+Speaker 3: 40:29
+Okay. Fair enough. I appreciate that you didn't just say "don't worry about it."
+
+Speaker 2: 40:33
+Ha. Yeah. You asked a direct question, you deserve a direct answer.
+
+Speaker 3: 40:36
+Ha. Okay. I think that's everything on my list. I'm going to talk to Dave tonight and loop him in before the proposal call.
+
+Speaker 2: 40:43
+Perfect. And when you talk to Dave, the main things to highlight are probably the scheduling workflow improvement, the fact that outbound calls would come from a business number instead of his cell, and the dashboard visibility he'd have on all incoming calls.
+
+Speaker 3: 40:55
+Ha. Yeah. The cell phone thing I'll lead with.
+
+Speaker 2: 40:58
+Ha. Works every time.
+
+Speaker 3: 41:00
+Ha! Okay, one more thing before we get to pricing. I've been thinking about monitoring contract renewals. We have about a hundred and forty residential monitoring clients and sixty commercial. Renewals are annual. We manually reach out — Linda sends an email and then calls if there's no response. It takes a while and some clients just quietly lapse because we didn't catch them in time.
+
+Speaker 4: 41:20
+Oh. So you have a lapse problem on renewals.
+
+Speaker 3: 41:23
+Yeah. Not a huge one, but it's probably five to eight percent of clients a year who don't renew because the outreach wasn't timely enough or they moved and didn't tell us. I just don't have a systematic way to make sure everyone gets touched before their renewal date.
+
+Speaker 4: 41:36
+Clara dispatcher can handle renewal outreach. Thirty days before a client's monitoring contract renewal date, Clara makes an outbound call. "Hi, this is Clara from Guardian Alarm Systems, just reaching out because your monitoring service is coming up for renewal next month. I wanted to make sure everything is still working well for you and confirm that you'd like to continue." Collects their response, flags any hesitation for your follow-up, confirms renewal intentions, and logs everything.
+
+Speaker 3: 41:59
+Okay. That would catch the lapsing clients before they lapse rather than after.
+
+Speaker 4: 42:04
+Proactive retention. Much cheaper than re-acquiring a client you lost.
+
+Speaker 3: 42:08
+Yeah. And monitoring revenue is recurring — losing even ten clients a year is a meaningful number over time.
+
+Speaker 4: 42:14
+If Clara's renewal outreach catches even half of those lapsing clients, it pays for itself many times over just on the monitoring side.
+
+Speaker 3: 42:21
+Ha. Yeah. When you frame it that way, the ROI math is pretty clear.
+
+Speaker 2: 42:25
+And that's separate from the inbound answering value. The dispatcher module adds another whole layer of business value.
+
+Speaker 3: 42:31
+Yeah. Okay. I came in thinking this was about answering my after-hours calls and it's actually about a bunch of operational improvements that stack.
+
+Speaker 2: 42:39
+That's exactly right. And each module addresses a real cost or revenue issue. Inbound answering addresses missed calls and customer experience. Dispatcher addresses manual labor on outbound calls. Reviews addresses the passive review gap. Collections addresses outstanding invoices. Renewal outreach addresses lapse rate. They all stack.
+
+Speaker 3: 42:56
+Yeah. And I can start with the most urgent one — after-hours answering — and add the others as I see fit.
+
+Speaker 2: 43:02
+Exactly. Start with the highest urgency, prove the value, build from there.
+
+Speaker 3: 43:06
+Okay. Yeah. I think I have a complete picture now. I appreciate how thorough you both were with the alarm industry specifics. That made a real difference in how comfortable I felt with this.
+
+Speaker 4: 43:16
+That's intentional. Generic answering services lose alarm clients because they don't understand the vocabulary or the urgency logic. We've put real work into getting this right for your vertical.
+
+Speaker 3: 43:26
+Yeah. I noticed that. The FACP question, the NAC circuit discussion, the understanding that central station monitoring and customer service calls are different things — those aren't things a generic vendor would know.
+
+Speaker 4: 43:37
+Exactly. And it means the configuration we build for Guardian will actually be accurate, not a rough approximation.
+
+Speaker 3: 43:43
+That matters a lot. Okay. I'm satisfied. Let's do next steps.
+
+Speaker 2: 43:47
+Great. So I'll send the proposal in the next twenty-four hours — it'll include pricing for each module, the contract terms, and the onboarding process outline. The short version on pricing is it's a flat monthly subscription, no per-call fees. Given your situation — eight Priority Response clients, three VIP commercial accounts, bilingual support, dispatcher for renewal outreach and annual inspections — I'd put you in our mid-tier configuration. I'll break it down module by module in the proposal so you and Dave can evaluate each piece individually.
+
+Speaker 3: 44:12
+Okay. And the contract structure?
+
+Speaker 2: 44:14
+Three-month minimum, then month-to-month. We need enough time to calibrate the agent properly and show you the value.
+
+Speaker 3: 44:20
+That's reasonable. And here's my final thing — I want to run a parallel test before I fully commit. Like, can I run Clara for after-hours only for a couple of weeks while the current voicemail setup is still on for daytime, and evaluate before we go further?
+
+Speaker 2: 44:33
+That's exactly how we'd recommend doing it. After-hours soft launch first. The voicemail is still there for daytime during the transition. No cliff edge. You evaluate, you're confident, then you expand.
+
+Speaker 3: 44:43
+Good. Yeah. That's how I need to do it. I can't just flip everything at once on a business that has Priority Response clients expecting thirty-minute callbacks.
+
+Speaker 2: 44:52
+You shouldn't flip everything at once. Staged rollout is the right approach for a business where reliability is a core promise.
+
+Speaker 3: 44:59
+Yeah. Okay. Then that's the plan. After-hours first, prove it, then daytime.
+
+Speaker 2: 45:04
+Perfect. I'll include the soft launch timeline in the proposal. And Kevin — reach out to me directly if any questions come up before we talk again. My email is on the calendar invite.
+
+Speaker 3: 45:12
+Will do. Alright. Thanks Nick, thanks Priya. Really good call. You clearly know this space.
+
+Speaker 2: 45:17
+Thank you Kevin. Really appreciated your questions today. Very thoughtful.
+
+Speaker 4: 45:21
+Yeah Kevin, thank you so much. Really looking forward to working with Guardian Alarm. The Priority Response configuration is going to be a really interesting build.
+
+Speaker 3: 45:28
+Ha. I hope it's not too interesting.
+
+Speaker 4: 45:30
+Ha! The best configurations always have some interesting complexity.
+
+Speaker 3: 45:33
+Ha! Fair enough. Alright. Talk soon.
+
+Speaker 2: 45:35
+Talk soon Kevin. Take care.
+
+Speaker 1: 45:37
+Ending the meeting now. Great call, everyone. Kevin — really well done on the questions today. We're genuinely excited about Guardian Alarm and the Priority Response client story is going to be a compelling one. Looking forward to growing together. See you on the proposal call.
+
+Speaker 3: 45:53
+Thanks very much. And I appreciate that you took the time to understand the alarm business specifically before the call. Most vendors come in generic. You came in knowing what an FACP is and understanding the monitoring versus customer service distinction. That made a real difference in how useful this conversation was.
+
+Speaker 1: 45:55
+Thank you so much. Have a really great rest of your afternoon and we will be in touch very soon. Bye.
+
+Speaker 3: 45:57
+You too. Really appreciate it. Bye bye.
+
+Speaker 1: 45:58
+Bye everyone. Ending the meeting now. Kevin — that was one of our more in-depth demos and you made it so. The alarm industry specifics, the Priority Response client handling, the data privacy question for Riverview, the Spanish bilingual need — every one of those is going to result in a better configured agent for Guardian. Really looking forward to working with you and seeing where Guardian Alarm is in six months with this in place.
+
+---
+[End of Demo Call Recording – Guardian Alarm Systems]
+[Duration: 45 minutes 58 seconds]
+[Note: Kevin Marsh, Owner and Founder, Guardian Alarm Systems, Columbus, Ohio. Eight years in business, twelve years prior industry experience at national security company. Business mix: residential and commercial alarm, access control, camera systems, central station monitoring for commercial clients. Demo attendees: Nick (Clara Sales), Priya (Clara Solutions Specialist). Follow-up proposal scheduled within 24 hours. Proposal call to include Dave (Operations Supervisor). Key configuration priorities identified: eight Priority Response commercial clients, three VIP commercial anchor accounts (Apex Properties Group - office buildings, Metro Retail Solutions - fifteen-store retail chain, Riverview Medical Center - private medical clinic), bilingual Spanish support, access control and camera intake flows, alarm and fire industry-specific vocabulary including FACP, NAC circuits, zone terminology, panel brand types, supervisory versus trouble versus alarm signal categories, monitoring contract renewal outreach automation via dispatcher module (140 residential plus 60 commercial monitoring clients, five to eight percent estimated annual lapse rate to address), credential security policy (no alarm codes over phone), data privacy configuration for Riverview Medical. Soft launch recommended: after-hours only first, daytime to follow after two-week evaluation period. Priority concern from client: reliability of Priority Response callback guarantee and audit log for contractual compliance. Secondary concern: data privacy and credential security for medical facility client. Third concern: Spanish language support for growing residential Hispanic client segment in Columbus metro area.]

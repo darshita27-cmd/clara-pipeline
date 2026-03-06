@@ -1,0 +1,347 @@
+{
+  "name": "Clara Pipeline A \u2014 Demo Call \u2192 v1 Memo + Spec",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "n0-error-trigger",
+      "name": "On Workflow Error",
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [
+        1560,
+        500
+      ]
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "clara/demo",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "n1-webhook",
+      "name": "Webhook: Demo Call Received",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        240,
+        300
+      ],
+      "webhookId": "clara-demo-webhook"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Validate incoming payload\nconst body = $input.first().json.body || $input.first().json;\n\n// \u2500\u2500 Shell-metacharacter sanitiser (F-1 fix) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n// Reject any value containing characters that have special meaning in a shell.\n// Allowed: alphanumerics, path separators, dots, dashes, underscores.\nfunction sanitizeArg(val, fieldName) {\n  if (typeof val !== 'string') return val;\n  if (/[^a-zA-Z0-9_.\\/\\-]/.test(val)) {\n    throw new Error(\n      `Input '${fieldName}' contains disallowed shell characters: ${val}. ` +\n      'Only alphanumerics, path separators (/), dots, dashes and underscores are allowed.'\n    );\n  }\n  return val;\n}\n\n// \u2500\u2500 Path-prefix restriction (F-2 fix) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nconst ALLOWED_PREFIX = '/app/clara_pipeline/data/';\nfunction restrictPath(val, fieldName) {\n  if (!val.startsWith(ALLOWED_PREFIX)) {\n    throw new Error(\n      `'${fieldName}' must be within ${ALLOWED_PREFIX}. Got: ${val}`\n    );\n  }\n  return val;\n}\n\nconst rawTranscriptPath = body.transcript_path;\nconst stage = body.stage || 'demo_call';\nconst rawModel = body.model || process.env.OLLAMA_MODEL || 'mistral';\nconst rawOllamaUrl = body.ollama_url || process.env.OLLAMA_URL || 'http://host.docker.internal:11434';\n\nif (!rawTranscriptPath) {\n  throw new Error('Missing required field: transcript_path');\n}\n\nif (!['demo_call', 'onboarding_call', 'onboarding_form'].includes(stage)) {\n  throw new Error(`Invalid stage: ${stage}. Must be demo_call, onboarding_call, or onboarding_form.`);\n}\n\n// Sanitise and restrict paths\nconst transcriptPath = restrictPath(sanitizeArg(rawTranscriptPath, 'transcript_path'), 'transcript_path');\nconst model = sanitizeArg(rawModel, 'model');\n// ollama_url is a URL \u2014 validate as URL rather than shell-arg\nlet ollamaUrl;\ntry {\n  const u = new URL(rawOllamaUrl);\n  if (!['http:', 'https:'].includes(u.protocol)) throw new Error('protocol');\n  ollamaUrl = rawOllamaUrl;\n} catch {\n  throw new Error(`'ollama_url' is not a valid http/https URL: ${rawOllamaUrl}`);\n}\n\nconst fs = require('fs');\nif (!fs.existsSync(transcriptPath)) {\n  throw new Error(`Transcript file not found: ${transcriptPath}`);\n}\n\nreturn [{\n  json: {\n    transcript_path: transcriptPath,\n    stage,\n    model,\n    ollama_url: ollamaUrl,\n    received_at: new Date().toISOString(),\n    request_id: `req-${Date.now()}`\n  }\n}];"
+      },
+      "id": "n2-validate",
+      "name": "Validate Input",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        460,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "command": "=cd /app/clara_pipeline && python scripts/script1_extract_memo.py --transcript {{ $json.transcript_path }} --stage {{ $json.stage }} --ollama-url {{ $json.ollama_url }} --model {{ $json.model }} 2>&1",
+        "options": {}
+      },
+      "id": "n3-script1",
+      "name": "Script 1: Extract Memo",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        680,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse Script 1 output \u2014 prefers reading .pipeline_meta.json (R-2 fix)\n// Falls back to stdout regex only if the meta file is absent (e.g. old install).\nconst stdout   = $input.first().json.stdout   || '';\nconst stderr   = $input.first().json.stderr   || '';\nconst exitCode = $input.first().json.exitCode;\n\nif (exitCode !== 0) {\n  throw new Error(`Script 1 failed (exit ${exitCode}):\\n${stderr || stdout}`);\n}\n\nconst fs = require('fs');\nconst prevJson = $input.first().json;\n\n// \u2500\u2500 R-2 fix: try reading the stable meta file first \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n// Script 1 writes outputs/accounts/{id}/{version}/.pipeline_meta.json\n// We scan recently-modified subdirectories to locate it, or fall back to stdout.\nlet accountId, confidence, unknowns;\n\n// Attempt to find the latest written meta file under outputs/accounts/\nconst accountsBase = '/app/clara_pipeline/outputs/accounts';\nlet metaData = null;\ntry {\n  if (fs.existsSync(accountsBase)) {\n    // Find the meta file whose mtime is closest to now\n    let latestMtime = 0;\n    const walkDirs = (dir, depth) => {\n      if (depth > 3) return;\n      for (const entry of fs.readdirSync(dir)) {\n        const full = `${dir}/${entry}`;\n        try {\n          const stat = fs.statSync(full);\n          if (stat.isDirectory()) {\n            walkDirs(full, depth + 1);\n          } else if (entry === '.pipeline_meta.json' && stat.mtimeMs > latestMtime) {\n            latestMtime = stat.mtimeMs;\n            metaData = JSON.parse(fs.readFileSync(full, 'utf8'));\n          }\n        } catch(e) { /* skip unreadable entries */ }\n      }\n    };\n    walkDirs(accountsBase, 0);\n  }\n} catch(e) {\n  console.log(`[WARN] Could not scan for meta file: ${e.message}`);\n}\n\nif (metaData && metaData.account_id) {\n  accountId  = metaData.account_id;\n  confidence = metaData.extraction_confidence || 'unknown';\n  unknowns   = metaData.unknowns_count   || 0;\n  console.log(`[INFO] Loaded account_id from .pipeline_meta.json: ${accountId}`);\n} else {\n  // \u2500\u2500 Fallback: stdout regex (kept for backward compatibility) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n  const accountMatch = stdout.match(/Account ID:\\s+(CLARA-\\d{4}-\\d{3})/);\n  if (!accountMatch) {\n    throw new Error(`Could not find account_id in Script 1 output. stdout: ${stdout.slice(0, 500)}`);\n  }\n  accountId  = accountMatch[1];\n  const confMatch    = stdout.match(/Confidence:\\s+(\\w+)/);\n  confidence         = confMatch ? confMatch[1] : 'unknown';\n  const unknownsMatch = stdout.match(/Unknowns:\\s+(\\d+)/);\n  unknowns           = unknownsMatch ? parseInt(unknownsMatch[1]) : 0;\n  console.log(`[WARN] .pipeline_meta.json not found \u2014 fell back to stdout regex for account_id.`);\n}\n\nconst memoPath = `/app/clara_pipeline/outputs/accounts/${accountId}/v1/account_memo.json`;\n\nreturn [{\n  json: {\n    ...prevJson,\n    account_id: accountId,\n    memo_path: memoPath,\n    extraction_confidence: confidence,\n    unknowns_count: unknowns,\n    script1_stdout: stdout,\n    script1_status: 'ok'\n  }\n}];"
+      },
+      "id": "n4-parse-s1",
+      "name": "Parse Script 1 Output",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        900,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "command": "=cd /app/clara_pipeline && python scripts/script2_generate_spec.py --memo {{ $json.memo_path }} --ollama-url {{ $json.ollama_url }} --model {{ $json.model }} 2>&1",
+        "options": {}
+      },
+      "id": "n5-script2",
+      "name": "Script 2: Generate Retell Spec",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        1120,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse Script 2 output and determine spec status\nconst stdout = $input.first().json.stdout || '';\nconst exitCode = $input.first().json.exitCode;\nconst accountId = $input.first().json.account_id;\n\nif (exitCode !== 0) {\n  throw new Error(`Script 2 failed (exit ${exitCode}):\\n${stdout}`);\n}\n\n// Determine if draft or go-live ready\nconst isDraft = stdout.includes('DRAFT') || stdout.includes('NOT READY FOR GO-LIVE');\nconst questionsMatch = stdout.match(/Questions:\\s+(\\d+)/);\nconst questions = questionsMatch ? parseInt(questionsMatch[1]) : 0;\n\nconst specFilename = isDraft ? 'retell_agent_spec.draft.json' : 'retell_agent_spec.json';\nconst specPath = `/app/clara_pipeline/outputs/accounts/${accountId}/v1/${specFilename}`;\n\nconst prevJson = $input.first().json;\n\nreturn [{\n  json: {\n    ...prevJson,\n    spec_path: specPath,\n    spec_status: isDraft ? 'draft' : 'ready',\n    questions_count: questions,\n    script2_stdout: stdout,\n    script2_status: 'ok',\n    pipeline: 'A'\n  }\n}];"
+      },
+      "id": "n6-parse-s2",
+      "name": "Parse Script 2 Output",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1340,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Read the generated memo JSON for logging and task creation\nconst fs = require('fs');\nconst memoPath = $input.first().json.memo_path;\nconst specPath = $input.first().json.spec_path;\n\nlet memo = {};\nlet spec = {};\n\ntry {\n  memo = JSON.parse(fs.readFileSync(memoPath, 'utf8'));\n} catch(e) {\n  console.log(`Warning: could not read memo at ${memoPath}: ${e.message}`);\n}\n\ntry {\n  spec = JSON.parse(fs.readFileSync(specPath, 'utf8'));\n} catch(e) {\n  console.log(`Warning: could not read spec at ${specPath}: ${e.message}`);\n}\n\nconst prevJson = $input.first().json;\n\nreturn [{\n  json: {\n    ...prevJson,\n    company_name: memo.company?.name || '[Unknown]',\n    business_hours_timezone: memo.business_hours?.timezone || null,\n    unknowns: memo.questions_or_unknowns || [],\n    go_live_ready: prevJson.spec_status === 'ready',\n    agent_name: spec.agent_name || `Clara - ${memo.company?.name || 'Unknown'}`,\n    memo_snapshot: {\n      account_id: memo.account_id,\n      version: memo.version,\n      extraction_confidence: memo.extraction_confidence,\n      questions_or_unknowns: memo.questions_or_unknowns?.length || 0\n    }\n  }\n}];"
+      },
+      "id": "n7-read-outputs",
+      "name": "Read Output Files",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1560,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// \u2500\u2500 Task Tracker: Write tracking item to outputs/tasks.json \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n// Fulfills PDF requirement: \"A tracking item created in a task tool\"\n// Using local tasks.json as a zero-cost alternative to Asana/Trello.\n// To upgrade to Asana: replace this node with n8n's native Asana node.\n// To upgrade to Trello: replace with n8n's native Trello node.\n\nconst fs = require('fs');\nconst path = require('path');\n\nconst d = $input.first().json;\nconst tasksPath = '/app/clara_pipeline/outputs/tasks.json';\n\nlet tasks = [];\ntry {\n  if (fs.existsSync(tasksPath)) {\n    tasks = JSON.parse(fs.readFileSync(tasksPath, 'utf8'));\n  }\n} catch(e) {}\n\n// Find existing task for this account (idempotent update)\nconst existing = tasks.findIndex(t => t.account_id === d.account_id);\n\nconst task = {\n  task_id: `TASK-${d.account_id}`,\n  account_id: d.account_id,\n  company_name: d.company_name,\n  agent_name: d.agent_name,\n  status: d.go_live_ready ? 'ready_for_retell_import' : 'pending_onboarding',\n  spec_status: d.spec_status,\n  go_live_ready: d.go_live_ready,\n  unknowns_count: d.unknowns_count,\n  outputs: {\n    memo: d.memo_path,\n    spec: d.spec_path\n  },\n  next_action: d.go_live_ready\n    ? 'Import retell_agent_spec.json into Retell UI (see README: Retell Manual Import Instructions)'\n    : `Schedule onboarding call \u2014 ${d.unknowns_count} unknown(s) to resolve`,\n  created_at: existing >= 0 ? tasks[existing].created_at : new Date().toISOString(),\n  updated_at: new Date().toISOString(),\n  pipeline_run: d.request_id\n};\n\nif (existing >= 0) {\n  tasks[existing] = task;\n} else {\n  tasks.push(task);\n}\n\nfs.mkdirSync(path.dirname(tasksPath), { recursive: true });\nfs.writeFileSync(tasksPath, JSON.stringify(tasks, null, 2));\n\nconsole.log(`Task tracker updated: ${task.task_id} \u2192 ${task.status}`);\n\nreturn [{ json: { ...d, task_id: task.task_id, task_status: task.status } }];"
+      },
+      "id": "n7b-task-tracker",
+      "name": "Create Task Tracker Item",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1780,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Log run to outputs/pipeline_log.json\nconst fs = require('fs');\nconst path = require('path');\n\nconst logPath = '/app/clara_pipeline/outputs/pipeline_log.json';\nlet log = [];\n\ntry {\n  if (fs.existsSync(logPath)) {\n    log = JSON.parse(fs.readFileSync(logPath, 'utf8'));\n  }\n} catch(e) {}\n\nconst entry = {\n  timestamp: new Date().toISOString(),\n  pipeline: 'A',\n  account_id: $input.first().json.account_id,\n  company_name: $input.first().json.company_name,\n  transcript: $input.first().json.transcript_path,\n  stage: $input.first().json.stage,\n  extraction_confidence: $input.first().json.extraction_confidence,\n  spec_status: $input.first().json.spec_status,\n  go_live_ready: $input.first().json.go_live_ready,\n  unknowns_count: $input.first().json.unknowns_count,\n  task_id: $input.first().json.task_id,\n  outputs: {\n    memo: $input.first().json.memo_path,\n    spec: $input.first().json.spec_path\n  }\n};\n\nlog.push(entry);\n\nfs.mkdirSync(path.dirname(logPath), { recursive: true });\nfs.writeFileSync(logPath, JSON.stringify(log, null, 2));\n\nreturn [{ json: { ...($input.first().json), log_entry: entry } }];"
+      },
+      "id": "n8-log",
+      "name": "Write Pipeline Log",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2000,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({\n  status: 'ok',\n  pipeline: 'A',\n  account_id: $json.account_id,\n  company_name: $json.company_name,\n  agent_name: $json.agent_name,\n  extraction_confidence: $json.extraction_confidence,\n  spec_status: $json.spec_status,\n  go_live_ready: $json.go_live_ready,\n  unknowns_count: $json.unknowns_count,\n  task_tracker: {\n    task_id: $json.task_id,\n    status: $json.task_status,\n    file: '/app/clara_pipeline/outputs/tasks.json'\n  },\n  outputs: {\n    memo: $json.memo_path,\n    spec: $json.spec_path\n  },\n  next_step: $json.go_live_ready\n    ? 'Ready for Retell import (see README: Retell Manual Import Instructions)'\n    : 'Resolve unknowns via onboarding call'\n}) }}",
+        "options": {
+          "responseHeaders": {
+            "entries": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        }
+      },
+      "id": "n9-respond",
+      "name": "Respond to Webhook",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [
+        2220,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Capture error and format for response\nconst error = $input.first().json;\nreturn [{\n  json: {\n    message: error.message || 'Unknown error in Pipeline A',\n    node: error.node || 'unknown',\n    timestamp: new Date().toISOString()\n  }\n}];"
+      },
+      "id": "n11-error-handler",
+      "name": "Error Handler",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1780,
+        500
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ status: 'error', message: $json.message, pipeline: 'A' }) }}",
+        "options": {
+          "responseCode": 500,
+          "responseHeaders": {
+            "entries": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        }
+      },
+      "id": "n10-error-respond",
+      "name": "Error Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [
+        2000,
+        500
+      ]
+    }
+  ],
+  "connections": {
+    "Webhook: Demo Call Received": {
+      "main": [
+        [
+          {
+            "node": "Validate Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate Input": {
+      "main": [
+        [
+          {
+            "node": "Script 1: Extract Memo",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Script 1: Extract Memo": {
+      "main": [
+        [
+          {
+            "node": "Parse Script 1 Output",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Script 1 Output": {
+      "main": [
+        [
+          {
+            "node": "Script 2: Generate Retell Spec",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Script 2: Generate Retell Spec": {
+      "main": [
+        [
+          {
+            "node": "Parse Script 2 Output",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Script 2 Output": {
+      "main": [
+        [
+          {
+            "node": "Read Output Files",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read Output Files": {
+      "main": [
+        [
+          {
+            "node": "Create Task Tracker Item",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Task Tracker Item": {
+      "main": [
+        [
+          {
+            "node": "Write Pipeline Log",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Write Pipeline Log": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "On Workflow Error": {
+      "main": [
+        [
+          {
+            "node": "Error Handler",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Error Handler": {
+      "main": [
+        [
+          {
+            "node": "Error Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "errorWorkflow": "",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {},
+  "versionId": "phase3-A-v2",
+  "triggerCount": 0,
+  "tags": [
+    {
+      "name": "clara",
+      "createdAt": "2026-01-01"
+    },
+    {
+      "name": "pipeline-A",
+      "createdAt": "2026-01-01"
+    }
+  ]
+}

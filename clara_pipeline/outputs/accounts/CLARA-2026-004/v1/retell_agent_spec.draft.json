@@ -1,0 +1,100 @@
+{
+  "version": "v1",
+  "timestamp": "2026-03-06T09:51:17Z",
+  "agent_prompt": {
+    "system_prompt": {
+      "content": "... (the rest of the prompt template, with all variables filled in from the memo)"
+    },
+    "retell_agent_spec": {
+      "company_name": "CLARA-2026-004",
+      "business_hours_description": "Monday through Friday, 8:00 AM to 5:00 PM Eastern Time",
+      "timezone": "America/New_York",
+      "emergency_triggers_list": [
+        "intrusion_alarm",
+        "fire_alarm",
+        "system_failure",
+        "priority_response"
+      ],
+      "non_emergency_list": [],
+      "emergency_clarifying_question": "Can you please specify if this is an emergency?",
+      "transfer_announcement": "Let me connect you with the appropriate person.",
+      "during_hours_transfer_target": "internal_transfer",
+      "transfer_timeout_seconds": null,
+      "questions_carried_forward": [
+        "callback_assurance_window",
+        "transfer_fail_notification_action"
+      ],
+      "version_notes": "NOT READY FOR GO-LIVE"
+    },
+    "escalation_chain": [
+      {
+        "role": "Kevin",
+        "phone_number": null,
+        "priority": "high"
+      },
+      {
+        "role": "Dave",
+        "phone_number": null,
+        "priority": "medium"
+      },
+      {
+        "role": "Linda",
+        "phone_number": null,
+        "priority": "low"
+      }
+    ],
+    "callback_assurance_window": null,
+    "transfer_fail_notification_action": null
+  },
+  "account_id": "CLARA-2026-004",
+  "source_memo_version": "v1",
+  "agent_name": "Clara - [COMPANY NAME]",
+  "retell_config": {
+    "voice_id": "eleven_labs_rachel",
+    "voice_speed": 1.0,
+    "voice_temperature": 0.7,
+    "responsiveness": 1.0,
+    "interruption_sensitivity": 0.8,
+    "enable_backchannel": true,
+    "language": "en-US",
+    "max_call_duration_ms": 600000
+  },
+  "tool_placeholders": [
+    {
+      "tool_name": "transfer_call",
+      "trigger": "emergency confirmed and caller info collected",
+      "target": "[UNCONFIRMED]",
+      "note": "Never mention to caller"
+    },
+    {
+      "tool_name": "end_call",
+      "trigger": "caller confirms nothing else needed"
+    },
+    {
+      "tool_name": "log_call_details",
+      "trigger": "any call where transfer fails or non-emergency after-hours",
+      "note": "Silent background logging"
+    }
+  ],
+  "data_collection_fields": {
+    "emergency": [
+      "caller_name",
+      "callback_number",
+      "property_address",
+      "issue_description"
+    ],
+    "non_emergency_after_hours": [
+      "caller_name",
+      "callback_number",
+      "service_description"
+    ],
+    "business_hours": [
+      "caller_name",
+      "callback_number"
+    ]
+  },
+  "questions_carried_forward": [
+    "callback_assurance_window",
+    "transfer_fail_notification_action"
+  ]
+}

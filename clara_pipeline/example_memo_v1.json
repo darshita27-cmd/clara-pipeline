@@ -1,0 +1,191 @@
+{
+  "account_id": "CLARA-2025-001",
+  "version": "v1",
+  "source_stage": "demo_call",
+  "extracted_at": "2025-01-15T14:22:00Z",
+  "extraction_confidence": "medium",
+
+  "confidence_score_breakdown": {
+    "company_name": true,
+    "business_hours_schedule": true,
+    "business_hours_timezone": false,
+    "emergency_triggers": true,
+    "escalation_chain_with_phone": false,
+    "transfer_timeout": false,
+    "transfer_fail_action": false,
+    "after_hours_action": true
+  },
+
+  "company": {
+    "name": "Acme Fire Protection",
+    "industry": "fire_protection",
+    "phone_main": null,
+    "website": null,
+    "office_address": {
+      "street": null,
+      "city": "Dallas",
+      "state": "TX",
+      "zip": null
+    },
+    "additional_locations": []
+  },
+
+  "business_hours": {
+    "timezone": null,
+    "schedule": [
+      {
+        "days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+        "open": "08:00",
+        "close": "17:00",
+        "is_closed": false
+      },
+      {
+        "days": ["saturday", "sunday"],
+        "open": null,
+        "close": null,
+        "is_closed": true
+      }
+    ],
+    "holidays_observed": null
+  },
+
+  "services_supported": [
+    "fire_alarm",
+    "sprinkler_systems",
+    "suppression",
+    "inspection_scheduling"
+  ],
+
+  "emergency_definition": {
+    "triggers": [
+      "active sprinkler leak or discharge",
+      "fire alarm actively sounding",
+      "suppression system activation",
+      "life safety threat"
+    ],
+    "non_triggers": [
+      "routine inspection scheduling",
+      "extinguisher service",
+      "billing questions"
+    ],
+    "ambiguous_cases": [
+      "alarm beeping but not full activation — caller unsure"
+    ],
+    "clarifying_question": "Is this an active emergency, like a sprinkler leak or alarm sounding right now?"
+  },
+
+  "emergency_routing": {
+    "escalation_chain": [
+      {
+        "order": 1,
+        "name": "on-call technician",
+        "role": "technician",
+        "phone": null,
+        "method": "transfer"
+      }
+    ],
+    "transfer_timeout_seconds": null,
+    "transfer_fail_action": null,
+    "callback_assurance_window": null,
+    "transfer_fail_notification_action": null,
+    "data_to_collect_before_transfer": [
+      "caller_name",
+      "callback_number",
+      "property_address",
+      "issue_description"
+    ]
+  },
+
+  "non_emergency_routing": {
+    "during_hours_action": {
+      "action_type": "transfer_to_main_line",
+      "phone": null,
+      "instructions": null
+    },
+    "after_hours_action": "Collect name and callback number, confirm next business day callback",
+    "voicemail_available": null,
+    "servicetrade_ticket_creation": null
+  },
+
+  "integration_constraints": [],
+
+  "call_transfer_protocol": {
+    "warm_transfer": null,
+    "transfer_announcement": "Please hold while I connect you with our team.",
+    "max_retries": null,
+    "retry_delay_seconds": null,
+    "hold_music": null
+  },
+
+  "voice_and_persona": {
+    "agent_name": "Clara",
+    "company_greeting_name": "Acme Fire Protection",
+    "tone_label": "warm_professional",
+    "language": "en-US"
+  },
+
+  "flows": {
+    "office_hours_summary": "Caller is greeted, intent is determined, name and number collected, then transferred to office. Non-emergencies handled same way during hours.",
+    "after_hours_summary": "Emergencies trigger immediate info collection and on-call transfer. Non-emergencies are logged for next business day callback."
+  },
+
+  "questions_or_unknowns": [
+    {
+      "field": "business_hours.timezone",
+      "reason": "not_mentioned",
+      "suggested_question": "What timezone is your office in?"
+    },
+    {
+      "field": "emergency_routing.escalation_chain[0].phone",
+      "reason": "not_mentioned",
+      "suggested_question": "What number should we call first for after-hours emergencies?"
+    },
+    {
+      "field": "emergency_routing.transfer_timeout_seconds",
+      "reason": "not_mentioned",
+      "suggested_question": "How many seconds should Clara wait before trying the next number?"
+    },
+    {
+      "field": "emergency_routing.transfer_fail_action",
+      "reason": "not_mentioned",
+      "suggested_question": "If all transfers fail, what should Clara tell the caller?"
+    },
+    {
+      "field": "emergency_routing.callback_assurance_window",
+      "reason": "not_mentioned",
+      "suggested_question": "If our team can't be reached, how many minutes should Clara promise before a callback?"
+    },
+    {
+      "field": "emergency_routing.transfer_fail_notification_action",
+      "reason": "not_mentioned",
+      "suggested_question": "When all transfers fail, should Clara trigger any system notification — like an SMS to dispatch or a ticket?"
+    },
+    {
+      "field": "non_emergency_routing.during_hours_action.phone",
+      "reason": "not_mentioned",
+      "suggested_question": "What phone number should Clara transfer non-emergency callers to during business hours?"
+    },
+    {
+      "field": "integration_constraints",
+      "reason": "not_mentioned",
+      "suggested_question": "Are there any rules about what types of jobs we should or shouldn't create in ServiceTrade?"
+    },
+    {
+      "field": "company.phone_main",
+      "reason": "not_mentioned",
+      "suggested_question": "What is your main office phone number?"
+    }
+  ],
+
+  "notes": "Demo call — directional only. Client mentioned sprinkler and fire alarm as primary services. No operational details confirmed. Timezone not stated — Dallas TX suggests America/Chicago but must be confirmed.",
+
+  "changelog": [
+    {
+      "version": "v1",
+      "timestamp": "2025-01-15T14:22:00Z",
+      "changed_fields": ["company", "business_hours", "services_supported", "emergency_definition", "non_emergency_routing"],
+      "summary": "Initial extraction from demo call. 9 fields flagged as unknown. primary_contact removed — escalation_chain[0] is now the single source of truth for primary contact.",
+      "source": "demo_call"
+    }
+  ]
+}

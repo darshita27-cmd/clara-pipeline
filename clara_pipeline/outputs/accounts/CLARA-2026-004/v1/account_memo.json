@@ -1,0 +1,78 @@
+{
+  "account_id": "CLARA-2026-004",
+  "version": "v1",
+  "extracted_at": "2026-03-06T09:49:30Z",
+  "extraction_confidence": "low",
+  "business_hours": {
+    "timezone": "America/New_York",
+    "days_open": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "hours_open": [
+      "08:00",
+      "17:00"
+    ],
+    "hours_closed": null
+  },
+  "emergency_routing": {
+    "callback_assurance_window": null,
+    "transfer_fail_notification_action": null,
+    "escalation_chain": [
+      {
+        "role": "Kevin",
+        "phone_number": null,
+        "priority": "high"
+      },
+      {
+        "role": "Dave",
+        "phone_number": null,
+        "priority": "medium"
+      },
+      {
+        "role": "Linda",
+        "phone_number": null,
+        "priority": "low"
+      }
+    ],
+    "services_supported": [
+      "intrusion_alarm",
+      "fire_alarm",
+      "system_failure",
+      "priority_response"
+    ]
+  },
+  "onboarding_notes": [
+    "During onboarding, provide the following information for Priority Response clients: names and associated phone numbers if known."
+  ],
+  "changelog": [
+    {
+      "version": "v1",
+      "timestamp": "2026-03-06T09:49:30Z",
+      "action": "Initial extraction from demo call transcript."
+    }
+  ],
+  "questions_or_unknowns": [
+    {
+      "field": "callback_assurance_window",
+      "reason": "not_explicitly_mentioned"
+    },
+    {
+      "field": "transfer_fail_notification_action",
+      "reason": "not_explicitly_mentioned"
+    }
+  ],
+  "confidence_score_breakdown": {
+    "company_name": false,
+    "business_hours_schedule": false,
+    "business_hours_timezone": true,
+    "emergency_triggers": false,
+    "escalation_chain_with_phone": false,
+    "transfer_timeout": false,
+    "transfer_fail_action": false,
+    "after_hours_action": false
+  }
+}

@@ -1,0 +1,117 @@
+Speaker 1: 00:00
+Alright, looks like we're ready. Let me bring Alex in. Three, two, one — and he's here.
+
+Speaker 2: 00:06
+Hey Alex, can you hear us okay?
+
+Speaker 3: 00:08
+Yeah, I can hear you loud and clear. How's it going?
+
+Speaker 2: 00:11
+Doing well, thanks. And really appreciate you making time today. I know you mentioned you've got a couple of inspections this afternoon, so we'll keep things moving. Quick introductions before we get started. I'm Ethan from the Clara Answers team. We work with service trade businesses — things like alarm companies, HVAC companies, plumbing companies, and fire protection businesses.
+
+And with me today is Maya. She's our solutions specialist and she'll be walking you through the demo portion.
+
+Speaker 3: 00:34
+Hey Maya.
+
+Speaker 4: 00:35
+Hi Alex! Nice to meet you. Looking forward to learning about Coastal Sprinkler.
+
+Speaker 2: 00:39
+Perfect. So Alex, before we jump into the demo, I'd love to learn a bit about the business so we can tailor things properly. Can you walk us through Coastal Sprinkler Co.?
+
+Speaker 3: 00:49
+Sure. So Coastal Sprinkler Co. has been around for about ten years now. I started it after working for a larger fire protection contractor for almost fifteen years. I always wanted to run a smaller operation where we could focus more on reliability and customer relationships.
+
+We're based in Wilmington, North Carolina. Most of our work is within the coastal region — Wilmington, Carolina Beach, Wrightsville Beach, and some of the surrounding counties.
+
+Speaker 2: 01:14
+Nice. And what services do you primarily provide?
+
+Speaker 3: 01:18
+We're focused on fire protection systems — specifically sprinkler systems. So we handle new system installations, inspections, testing, maintenance, and emergency repairs.
+
+On the commercial side, we work with property managers, apartment complexes, warehouses, hotels, and a few hospitals. We also do some residential sprinkler systems for newer homes where they're required by code.
+
+Speaker 4: 01:40
+Got it. So inspections and service are a big part of your business?
+
+Speaker 3: 01:44
+Yeah, absolutely. Inspections are probably about half of our recurring work. Most commercial buildings need quarterly or annual sprinkler inspections, so we have a steady schedule of those.
+
+Speaker 2: 01:54
+And how big is the team right now?
+
+Speaker 3: 01:57
+We're at seven people total. I've got four field technicians, one inspector who focuses mostly on compliance work, and one office manager who handles phones, scheduling, and billing.
+
+Speaker 4: 02:09
+Okay, that's helpful. And how are calls typically handled today?
+
+Speaker 3: 02:14
+During business hours the office manager — Sarah — answers the phone. She handles scheduling inspections, logging service requests, and routing emergency calls to me or one of the techs.
+
+After hours it usually forwards to my phone.
+
+Speaker 2: 02:27
+And how often do you get after-hours calls?
+
+Speaker 3: 02:30
+Probably a few per week. Most of the time it's things like a sprinkler head leaking, a system alarm going off, or a building manager wanting guidance.
+
+Speaker 4: 02:39
+Got it. Those are exactly the kinds of situations our system is designed to handle — answering those calls, collecting the right information, and routing emergencies properly.
+
+Speaker 2: 02:49
+So with that context, Maya will show you how Clara can answer calls for Coastal Sprinkler, book inspections, and route urgent service calls.
+
+Speaker 4: 02:57
+Alright, let me share my screen.
+
+Speaker 3: 03:00
+Sounds good.
+
+Speaker 4: 03:02
+So imagine someone calls Coastal Sprinkler after hours. Instead of going to voicemail, Clara answers immediately and starts by identifying the reason for the call.
+
+If it's something like scheduling an inspection, Clara can collect the building address, the type of system, and the preferred date.
+
+If it's an emergency — like an active leak or system alarm — Clara can escalate the call to the on-call technician.
+
+Speaker 3: 03:26
+That's actually huge. We lose a lot of information when people leave voicemails.
+
+Speaker 2: 03:31
+Exactly. The goal is to capture structured information so your team can act quickly.
+
+Speaker 4: 03:36
+Let me show an example.
+
+If a property manager calls and says, “We need our annual sprinkler inspection,” Clara asks a few quick questions — property name, address, number of risers, and preferred date.
+
+Then it creates a ticket and sends the information to your scheduling system or email.
+
+Speaker 3: 03:54
+That would save Sarah a lot of time.
+
+Speaker 4: 03:58
+Exactly. It reduces the back-and-forth and ensures the information is captured correctly.
+
+Speaker 2: 04:04
+And for emergency calls, Clara follows a different path.
+
+Speaker 4: 04:08
+Right. For example, if someone says “a sprinkler head is spraying water,” Clara recognizes that as urgent and routes the call to the on-call technician immediately.
+
+Speaker 3: 04:18
+Yeah, that’s exactly the type of thing we need to respond to fast.
+
+Speaker 2: 04:23
+Perfect. So that's the high-level overview. If this makes sense, the next step would be an onboarding session where we configure everything specifically for Coastal Sprinkler.
+
+Speaker 3: 04:32
+Yeah, I’d definitely be interested in setting that up.
+
+Speaker 2: 04:36
+Great. We'll schedule that and get everything customized for your workflows.

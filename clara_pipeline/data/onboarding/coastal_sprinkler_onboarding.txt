@@ -1,0 +1,136 @@
+Onboarding Call Recording – Coastal Sprinkler Co.
+[Participants: Daniel (Clara Onboarding), Maya (Clara Sales), Alex Rivera (Owner, Coastal Sprinkler Co.)]
+[Duration: Approx. 42 minutes]
+
+Maya: Alright Alex, can you hear us okay?
+
+Alex Rivera: Yep, loud and clear.
+
+Maya: Great. So as promised, I've got Daniel here with me today. He's the one who will be configuring Clara for Coastal Sprinkler. I’ll let him take the lead.
+
+Daniel: Hey Alex, great to meet you. I went through the notes from the demo call and Coastal Sprinkler looks like a really good fit. The goal today is to gather all the operational details so we can configure your call handling properly.
+
+Alex Rivera: Sounds good.
+
+Daniel: Perfect. We'll go step-by-step — starting with business hours, then after-hours routing, emergency service calls, inspections scheduling, and finally some edge cases.
+
+Alex Rivera: Works for me.
+
+Daniel: Alright, first — business hours. What are your normal operating hours?
+
+Alex Rivera: Monday through Friday, 8 AM to 5 PM.
+
+Daniel: Okay, 8 to 5 Monday through Friday. And your timezone?
+
+Alex Rivera: Eastern Time.
+
+Daniel: Got it. During those hours, who typically answers the phone?
+
+Alex Rivera: Our office manager, Sarah.
+
+Daniel: Perfect. So during business hours the AI should transfer calls to Sarah as the primary destination?
+
+Alex Rivera: Yes.
+
+Daniel: Do you have a direct office line for her?
+
+Alex Rivera: Yeah, it’s our main office number — the same one customers call now.
+
+Daniel: Got it.
+
+Daniel: Now let's talk about after-hours calls. What happens when someone calls after 5 PM?
+
+Alex Rivera: Right now it forwards to my cell phone.
+
+Daniel: Do you want Clara to answer those calls first and determine if they’re emergencies?
+
+Alex Rivera: Yes, that would be ideal.
+
+Daniel: Perfect. So the flow would be: Clara answers, determines if it’s an emergency sprinkler issue, and then forwards to the on-call technician.
+
+Alex Rivera: Exactly.
+
+Daniel: Who is usually on call?
+
+Alex Rivera: Usually either me or our senior technician, Mike.
+
+Daniel: Okay. We can configure a rotation if needed, but for now we’ll set Mike as the primary after-hours contact.
+
+Alex Rivera: That works.
+
+Daniel: Now let's talk about emergencies. What types of situations should be treated as urgent?
+
+Alex Rivera: The big ones are:
+
+• Active sprinkler leaks
+• Broken sprinkler heads spraying water
+• Fire alarm or sprinkler system alarms
+• Major pipe breaks
+
+Daniel: Perfect, that’s helpful.
+
+Daniel: When Clara detects those types of situations, it will immediately escalate the call to the on-call technician.
+
+Alex Rivera: Good.
+
+Daniel: Now let's talk about inspections. You mentioned during the demo that inspections make up a large portion of your work.
+
+Alex Rivera: Yeah, especially quarterly and annual inspections.
+
+Daniel: If someone calls to schedule an inspection, what information do you usually collect?
+
+Alex Rivera: Usually:
+
+• Building name
+• Address
+• Type of inspection needed
+• Contact person
+• Phone number
+
+Daniel: Perfect. Clara can collect all of that automatically.
+
+Alex Rivera: That would be great.
+
+Daniel: After collecting that information, would you like the request sent to Sarah via email or text?
+
+Alex Rivera: Email would be best.
+
+Daniel: Done.
+
+Daniel: Now let’s talk about VIP customers. Are there any accounts where calls should always go directly to you?
+
+Alex Rivera: Yes, actually. We have a few large property management companies.
+
+Daniel: Can you name them?
+
+Alex Rivera: Sure. Harbor Properties, Coastal Commercial Management, and Atlantic Medical Center.
+
+Daniel: Great. We'll mark those as priority accounts so their calls are routed immediately.
+
+Alex Rivera: Perfect.
+
+Daniel: Now a few edge cases.
+
+If someone calls asking for pricing on a new sprinkler installation, what should Clara do?
+
+Alex Rivera: It should collect their contact info and project details, then send it to me.
+
+Daniel: Got it.
+
+Daniel: And if someone calls looking for general information?
+
+Alex Rivera: Basic questions are fine, but anything complicated should go to Sarah during business hours.
+
+Daniel: Perfect.
+
+Daniel: Alright, that covers the main configuration points. I’ll build the Coastal Sprinkler call flows this afternoon.
+
+You should have a testing number by tomorrow morning.
+
+Alex Rivera: Sounds great.
+
+Maya: Awesome. Once it's ready, we’ll do a quick test call and make sure everything behaves exactly how you want.
+
+Alex Rivera: Looking forward to it.
+
+Daniel: Same here. Thanks for the time today.

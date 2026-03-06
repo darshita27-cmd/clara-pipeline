@@ -1,0 +1,39 @@
+{
+  "account_id": "CLARA-2026-003",
+  "version": "v1",
+  "extracted_at": "2026-03-06T09:47:28Z",
+  "extraction_confidence": "low",
+  "business_hours": {
+    "timezone": null,
+    "days_of_week": null,
+    "start_time": null,
+    "end_time": null
+  },
+  "emergency_routing": {
+    "callback_assurance_window": null,
+    "transfer_fail_notification_action": null
+  },
+  "services_supported": null,
+  "triggers": null,
+  "non_triggers": null,
+  "escalation_chain": null,
+  "integration_constraints": null,
+  "changelog": [
+    {
+      "version": "v1",
+      "timestamp": "2026-03-06T09:47:28Z",
+      "action": "Initial extraction from demo call."
+    }
+  ],
+  "questions_or_unknowns": [],
+  "confidence_score_breakdown": {
+    "company_name": false,
+    "business_hours_schedule": false,
+    "business_hours_timezone": false,
+    "emergency_triggers": false,
+    "escalation_chain_with_phone": false,
+    "transfer_timeout": false,
+    "transfer_fail_action": false,
+    "after_hours_action": false
+  }
+}

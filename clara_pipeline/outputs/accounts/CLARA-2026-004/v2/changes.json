@@ -1,0 +1,42 @@
+{
+  "account_id": "CLARA-2026-004",
+  "transition": "v1_to_v2",
+  "generated_at": "2026-03-06T09:54:27Z",
+  "source": "onboarding_call",
+  "go_live_ready": true,
+  "stats": {
+    "fields_changed": 1,
+    "fields_newly_confirmed": 4,
+    "fields_removed": 4,
+    "unknowns_resolved": 2,
+    "unknowns_remaining": 0
+  },
+  "fields_changed": {
+    "business_hours.hours_open[1]": {
+      "old": "17:00",
+      "new": "17:30"
+    }
+  },
+  "fields_newly_confirmed": {
+    "emergency_routing.escalation_chain[0].phone_number": "614-555-0347",
+    "emergency_routing.transfer_fail_notification_action": "Notify dispatch",
+    "emergency_routing.escalation_chain[1].phone_number": "614-555-0219",
+    "emergency_routing.callback_assurance_window": "Two hours during business hours"
+  },
+  "fields_removed": {
+    "questions_or_unknowns[1].field": "transfer_fail_notification_action",
+    "questions_or_unknowns[1].reason": "not_explicitly_mentioned",
+    "questions_or_unknowns[0].field": "callback_assurance_window",
+    "questions_or_unknowns[0].reason": "not_explicitly_mentioned"
+  },
+  "unknowns_resolved": [
+    "callback_assurance_window",
+    "transfer_fail_notification_action"
+  ],
+  "unknowns_remaining": [],
+  "summary_sections_affected": [
+    "business_hours",
+    "emergency_routing",
+    "questions_or_unknowns"
+  ]
+}

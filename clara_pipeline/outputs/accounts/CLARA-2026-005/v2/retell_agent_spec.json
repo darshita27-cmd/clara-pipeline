@@ -1,0 +1,86 @@
+{
+  "version": "v2",
+  "timestamp": "2026-03-06T09:58:46Z",
+  "system_prompt": "...",
+  "retell_agent_spec": {
+    "account_id": "CLARA-2026-005",
+    "company_name": "CLARA ANSWERS",
+    "business_hours_description": "Monday through Friday, seven-thirty AM to five-thirty PM, Mountain Time with daylight saving.",
+    "timezone": "America/Denver",
+    "emergency_triggers_list": [
+      "no-heat",
+      "no-ac",
+      "walk-in cooler failure",
+      "CO alarm",
+      "commercial system failure during operating hours",
+      "commercial refrigeration failure"
+    ],
+    "non_emergency_list": [
+      "tune-up",
+      "repair",
+      "maintenance"
+    ],
+    "emergency_clarifying_question": "Is this an urgent issue requiring immediate attention?",
+    "services_list": [
+      "no-heat",
+      "no-ac",
+      "walk-in cooler failure",
+      "CO alarm",
+      "commercial system failure during operating hours",
+      "commercial refrigeration failure"
+    ],
+    "transfer_announcement": "Let me connect you with the team.",
+    "during_hours_transfer_target": "main line",
+    "transfer_timeout_seconds": 25,
+    "questions_carried_forward": [],
+    "version_notes": "READY FOR GO-LIVE"
+  },
+  "account_id": "CLARA-2026-005",
+  "source_memo_version": "v2",
+  "agent_name": "Clara - [COMPANY NAME]",
+  "retell_config": {
+    "voice_id": "eleven_labs_rachel",
+    "voice_speed": 1.0,
+    "voice_temperature": 0.7,
+    "responsiveness": 1.0,
+    "interruption_sensitivity": 0.8,
+    "enable_backchannel": true,
+    "language": "en-US",
+    "max_call_duration_ms": 600000
+  },
+  "tool_placeholders": [
+    {
+      "tool_name": "transfer_call",
+      "trigger": "emergency confirmed and caller info collected",
+      "target": "[UNCONFIRMED]",
+      "note": "Never mention to caller"
+    },
+    {
+      "tool_name": "end_call",
+      "trigger": "caller confirms nothing else needed"
+    },
+    {
+      "tool_name": "log_call_details",
+      "trigger": "any call where transfer fails or non-emergency after-hours",
+      "note": "Silent background logging"
+    }
+  ],
+  "data_collection_fields": {
+    "emergency": [
+      "caller_name",
+      "callback_number",
+      "property_address",
+      "issue_description"
+    ],
+    "non_emergency_after_hours": [
+      "caller_name",
+      "callback_number",
+      "service_description"
+    ],
+    "business_hours": [
+      "caller_name",
+      "callback_number"
+    ]
+  },
+  "questions_carried_forward": []
+}

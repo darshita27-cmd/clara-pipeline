@@ -1,0 +1,35 @@
+{
+  "account_id": "CLARA-2026-005",
+  "transition": "v1_to_v2",
+  "generated_at": "2026-03-06T09:59:20Z",
+  "source": "onboarding_call",
+  "go_live_ready": true,
+  "stats": {
+    "fields_changed": 1,
+    "fields_newly_confirmed": 5,
+    "fields_removed": 0,
+    "unknowns_resolved": 0,
+    "unknowns_remaining": 0
+  },
+  "fields_changed": {
+    "emergency_routing.escalation_chain[2]": {
+      "old": "on-call tech",
+      "new": "Marcus Chen"
+    }
+  },
+  "fields_newly_confirmed": {
+    "services_supported.triggers[3]": "CO alarm",
+    "services_supported.triggers[4]": "commercial system failure during operating hours",
+    "services_supported.triggers[2]": "walk-in cooler failure",
+    "extraction_rules": "onboarding_call",
+    "services_supported.triggers[5]": "commercial refrigeration failure"
+  },
+  "fields_removed": {},
+  "unknowns_resolved": [],
+  "unknowns_remaining": [],
+  "summary_sections_affected": [
+    "emergency_routing",
+    "extraction_rules",
+    "services_supported"
+  ]
+}

@@ -1,0 +1,229 @@
+(Transcribed by TurboScribe.ai. Go Unlimited to remove this message.)
+
+Onboarding Call Recording – Apex Fire Protection
+[Participants: Pawan (Clara Onboarding), Bharat (Clara Sales), Marcus Webb (Owner, Apex Fire Protection)]
+[Duration: Approx. 38 minutes]
+
+---
+
+Bharat: Alright, Marcus, can you hear us okay?
+
+Marcus Webb: Yep, loud and clear. Good morning.
+
+Bharat: Good morning! Really excited to get things rolling for you. So like I mentioned in the email, I've got Pawan here with me. He's going to be your main point of contact through the configuration process and beyond, and he knows these systems inside and out. I'll hang around in the background but I'll let him lead. Pawan, over to you.
+
+Pawan: Thanks, Bharat. Hey Marcus, really good to connect with you. Got all the context from Bharat about Apex Fire Protection and the conversation you guys had in the demo — the after-hours routing, the VIP accounts, the ServiceTrade integration question. We've already got the base version of the agent roughed out, and today I want to get the specific details confirmed so we can lock in the configuration and get you to testing. Sound good?
+
+Marcus Webb: Sounds great. Yeah, let's do it.
+
+Pawan: Perfect. So the way I like to do this is walk through office hours first, then after hours, because the logic is pretty different. Then we'll talk about the VIP account handling and a few edge cases. And I want to try to have you in testing mode by end of day today or first thing tomorrow. That's the goal.
+
+Marcus Webb: That works for me.
+
+Pawan: Alright. So for office hours — you mentioned your office is open Monday through Friday, eight to four-thirty. Is that still accurate?
+
+Marcus Webb: Yeah. Well, I'd say eight to five is more realistic because Janet and I usually end up working past four-thirty most days. But four-thirty is the official close. Let's use eight to five, actually. I'd rather the agent treat four-thirty to five as still office hours than start routing to the after-hours flow while people are still working.
+
+Pawan: Eight to five, Monday through Friday. Got it. And what timezone?
+
+Marcus Webb: Mountain Standard Time. We're in Phoenix so we don't do daylight saving, just to flag that. We stay on MST year-round.
+
+Pawan: Important to know — I'll make sure we lock that in as MST, no daylight saving adjustment. That affects the clock logic so it's good you flagged it.
+
+Marcus Webb: Yeah, I've had issues with that before with other software. It's a Phoenix thing.
+
+Pawan: Definitely. Okay, so during office hours, the primary behavior is — Clara answers, identifies the caller's needs, and then routes or transfers accordingly. So for the transfer target during office hours, is it Janet's desk line or is it your cell?
+
+Marcus Webb: It should go to the main office line first. That rings at Janet's desk. The number is 602-555-0147. If Janet doesn't pick up within, I'd say twenty seconds, then it should try my cell. My cell is 602-555-0293.
+
+Pawan: Got it. Office line 602-555-0147, twenty second timeout, then failover to your cell at 602-555-0293. And if you don't pick up either — what should Clara do?
+
+Marcus Webb: If nobody picks up, she should tell the caller something like "I wasn't able to connect you with our team right now, but I have your details and someone will call you back within one business day." And she should make sure she's captured their name, number, and what they're calling about before doing that.
+
+Pawan: Perfect. And for something like a quote request or inspection scheduling during office hours — is Clara handling that herself by collecting the info, or is she transferring those to Janet?
+
+Marcus Webb: She should try to transfer all calls during office hours. If someone's calling about a quote, that's still a call Janet or I should handle because it often turns into a conversation. Clara's job during office hours is really to be the first point of contact and make sure the call gets to the right person. She can collect info if the transfer fails, but the first intent should be to transfer.
+
+Pawan: Clear. So during office hours — always attempt transfer, collect and hold info if transfer fails. Got it.
+
+Marcus Webb: Exactly.
+
+Pawan: Okay. Now — pricing. In the demo you mentioned you're okay with Clara sharing the service call fee if someone asks. Can you give me the exact numbers so I can put them in the configuration?
+
+Marcus Webb: Yeah. Service call fee — we call it the call-out fee — is $115. That covers getting the technician to the site. After that it's billed in half-hour increments at $98 an hour. So the first half hour after the call-out is $49. Clara doesn't need to go through the whole breakdown unless someone really pushes, but if someone asks "do you charge a service call fee," the answer is yes, $115 call-out, and then $98 per hour from there.
+
+Pawan: $115 call-out fee, $98 per hour billed in half-hour increments. And Clara only mentions it if someone asks, not proactively.
+
+Marcus Webb: Right. Don't lead with it. Just have it available.
+
+Pawan: Got it. What about the business address? We'll want that for the agent to reference if callers ask, and for the ServiceTrade-adjacent workflow.
+
+Marcus Webb: It's 4821 East McDowell Road, Suite 110, Phoenix, Arizona, 85008.
+
+Pawan: Perfect. And your main business line that we're setting the forwarding up from?
+
+Marcus Webb: 602-555-0147. That's the same as the office line. It's the number on our website and our Google listing.
+
+Pawan: Good. Now let's get into after hours, because this is where I want to make sure we get the logic exactly right. You mentioned emergencies and non-emergencies. Let me run through the emergency definitions with you so I have it right. What counts as an emergency?
+
+Marcus Webb: So — active fire alarm activation, meaning an alarm is currently going off at a property. Sprinkler head discharge — water is flowing. Fire suppression system discharge, like an Ansul system going off in a commercial kitchen. Any situation where there's an active fire. Carbon monoxide alarm activating and the building is occupied. Those are all true emergencies.
+
+Pawan: And what about a fire alarm panel showing a trouble or supervisory signal? You mentioned that in the demo as a grey area.
+
+Marcus Webb: Yeah. Trouble signals during business hours — Janet handles those as a normal callback. After hours — trouble signal is not an emergency unless it's one of our priority accounts. So if it's a regular caller, trouble signal after hours, collect their info and tell them we'll call back next business day. If it's AZ Property Group, Southwest Facilities Group, or Pinnacle Retail Management — treat it like a priority callback. I want a notification for those.
+
+Pawan: Got it. So trouble signals: standard callers = next-business-day callback, priority accounts = priority notification. Who should get the priority notification — you, directly?
+
+Marcus Webb: Text to my cell, yeah. 602-555-0293. I'll decide if I want to call back that night or morning based on the context.
+
+Pawan: Perfect. Now for true emergencies — active alarm, active discharge, active fire, CO — what's the routing chain?
+
+Marcus Webb: Okay. So first attempt should be my cell, 602-555-0293. If I don't pick up within thirty seconds, go to Dave Torres — he's my senior tech and the primary on-call backup. His number is 602-555-0381. If Dave doesn't answer within thirty seconds, go to Renee at 602-555-0204 — she's not a tech but she can get in touch with the rest of the team and she's usually reachable.
+
+Pawan: Marcus at 602-555-0293, thirty seconds. Dave Torres at 602-555-0381, thirty seconds. Renee at 602-555-0204. And if none of the three pick up?
+
+Marcus Webb: If all three fail, Clara should tell the caller: "I was not able to reach our emergency team right now. Please know that your call is being flagged as urgent and someone will contact you within fifteen minutes. If you are in immediate danger or there is an active fire, please call 911 immediately." And I should get a text alert automatically regardless.
+
+Pawan: So the fallback message includes the fifteen-minute callback commitment and the 911 advisory. And you get a text alert on every emergency call regardless of transfer outcome.
+
+Marcus Webb: Yes. Every emergency call, I want to know. Even if I pick up myself.
+
+Pawan: Makes sense. That way you have the log. Now, the info Clara collects during an emergency — before she attempts the transfer — what does she need?
+
+Marcus Webb: Caller's name, their callback number, the property address where the issue is, and a brief description of what they're seeing. "Is the alarm currently sounding? Is there visible water flowing? Is there smoke?" That kind of thing. Enough for our tech to show up knowing what they're walking into.
+
+Pawan: Got it. Name, callback number, property address, situation description. And then she attempts transfer with that info ready to pass through.
+
+Marcus Webb: Exactly. Our techs will ask more when they pick up, but they need that basic picture.
+
+Pawan: Now let me ask about the GNM Pressure Washing account — the property management company you mentioned in the demo that manages the gas stations. You said Shelly is the main contact and she'd be calling about Chevron and SO stations around Phoenix.
+
+Marcus Webb: Yeah. So GNM is unique because they're a commercial client but they call outside business hours regularly because their gas stations are twenty-four-seven properties. So any call from GNM after hours should be treated like a priority call, not an emergency per se, but it shouldn't just be "call back on Monday." I want to know about it. Same text notification to my cell.
+
+Pawan: So GNM after hours — priority notification to your cell, not the full emergency routing chain unless it's an actual emergency.
+
+Marcus Webb: Correct. If Shelly's calling at midnight because a Chevron station's fire suppression system set off, that's an emergency and it goes through the emergency chain. But if she's calling because they need an inspection scheduled, that's just a priority notification to me and I'll handle it in the morning.
+
+Pawan: Got it. How will Clara know it's GNM calling? Do you have a specific number for Shelly?
+
+Marcus Webb: Shelly's number is 602-555-0762. But honestly she has a couple people who work with her who might call too. I'd rather have Clara recognize GNM by name — like if they say "I'm calling from GNM" or "I'm calling about one of GNM's properties."
+
+Pawan: We can configure it so that if the caller's number matches Shelly's directly, or if they identify themselves as calling on behalf of GNM during the conversation, they get the elevated treatment. The name-based recognition is a bit more flexible, which is good since you said other people from her team might call.
+
+Marcus Webb: Yeah that works.
+
+Pawan: Perfect. Now let's talk about the VIP account handling more broadly. You mentioned AZ Property Group, Pinnacle Retail Management, and Southwest Facilities Group. For these three — during office hours, is the handling different or is it just after hours where they get special treatment?
+
+Marcus Webb: During office hours, they go through the same transfer flow as everyone else. Janet knows who they are and handles them appropriately. It's really the after-hours piece where I need Clara to treat them differently.
+
+Pawan: After hours — any call from those three accounts gets treated as priority. Even non-emergencies, you want a notification?
+
+Marcus Webb: Yes. Any call from those three after hours, I want to know. Even if it's just "we need to update a contact in ServiceTrade" — that's not urgent but I want the log and the notification.
+
+Pawan: Got it. How will Clara identify them? Phone numbers or self-identification?
+
+Marcus Webb: It's probably going to be self-identification mostly. I don't have individual numbers for all their contacts. They've got multiple people who might call. If they say "I'm calling from AZ Property Group" or "this is from Pinnacle" or "Southwest Facilities calling," Clara should pick that up.
+
+Pawan: Understood. We'll build that in as keyword recognition in the call flow. And for the notification in those cases — text to your cell, same as the others?
+
+Marcus Webb: Yes. Same number, 602-555-0293.
+
+Pawan: Got it. Now — ServiceTrade. You mentioned in the demo you'd prefer Clara collect the info and then Janet or you enters it into ServiceTrade rather than a direct integration, at least to start.
+
+Marcus Webb: Yeah. I don't want Clara writing directly into ServiceTrade right now. I've had issues with duplicate accounts and address mismatches before, and I'd rather have a human review it before it goes in. So what I'd want is: Clara collects name, number, address, nature of the call, and preferred callback time. That gets sent to Janet in a summary — email works, she's in her email all day. And she can enter it manually.
+
+Pawan: Perfect. We'll have a post-call summary emailed to Janet after every daytime call that involves a new service request or inquiry. What's Janet's email?
+
+Marcus Webb: janet@apexfireprotection.com.
+
+Pawan: And where should the after-hours summaries go — you, Janet, or both?
+
+Marcus Webb: Both. My email is marcus@apexfireprotection.com. I want to see everything that comes in after hours, and Janet should have it waiting for her in the morning.
+
+Pawan: Marcus at marcus@apexfireprotection.com and Janet at janet@apexfireprotection.com for after-hours summaries. Got it.
+
+Marcus Webb: Right.
+
+Pawan: Let's talk about the non-emergency after-hours flow for regular callers. Not GNM, not a priority account, not an emergency. Someone calls at eight PM on a Tuesday saying they want to schedule an annual inspection.
+
+Marcus Webb: So Clara should acknowledge them, be friendly, collect their name, number, company name if it's commercial, the address of the property, and what they need. Then she should tell them we'll be back in touch the next business day, usually within one business hour after eight AM. And that should come through as a standard email to Janet with the summary.
+
+Pawan: "Next business day, within one business hour after eight AM." That's a specific commitment — are you comfortable making that promise consistently?
+
+Marcus Webb: Yeah, that's what we try to do. Janet is usually on top of it. If for some reason she can't get to it by nine, she'd reach out by ten at the latest.
+
+Pawan: Good. And for the greeting — how do you want Clara to identify herself? "Thank you for calling Apex Fire Protection, this is Clara, how can I help you?" Or something different?
+
+Marcus Webb: Yeah, something like that. Maybe "Thank you for calling Apex Fire Protection. I'm Clara, the virtual assistant for Apex. How can I help you today?" Keep it straightforward.
+
+Pawan: Simple and clear. And should she mention she's a virtual assistant or AI upfront, or just introduce as Clara?
+
+Marcus Webb: I think being upfront is better. "Virtual assistant" is fine. I don't want anyone to feel tricked.
+
+Pawan: Understood. That's also generally better for trust in a B2B context. Alright, let me just run through a few more things and I think we'll be in good shape. Holiday handling — you mentioned Thanksgiving, Christmas, New Year's, and Fourth of July as your main closures. Any others?
+
+Marcus Webb: Labor Day. Memorial Day. Those five are our guaranteed closures.
+
+Pawan: I'll program those as full after-hours days. And for partial days — like Christmas Eve or day before Thanksgiving, do you close early?
+
+Marcus Webb: We usually close at noon on Christmas Eve and Thanksgiving Eve. Those aren't official but it's pretty consistent.
+
+Pawan: I'll note those as partial days — noon close — and flag them for you to confirm closer to the dates. We can set them manually in the calendar.
+
+Marcus Webb: Perfect.
+
+Pawan: Now, is there anything you absolutely do not want Clara to do or say? Any hard limits?
+
+Marcus Webb: Yeah, a couple. Don't quote project timelines. If someone asks "how long will it take to install a new fire suppression system," Clara should say she can't estimate that and someone from our team will discuss it with them. Don't give any information that sounds like legal advice — we get occasional calls from contractors or property managers who are asking about code compliance stuff and I don't want Clara speculating. And don't promise that we can take a job before I've had a chance to see what it involves.
+
+Pawan: Three hard limits: no quoting project timelines, no code compliance guidance, no committing to job acceptance. Clara collects and routes, she doesn't commit.
+
+Marcus Webb: Exactly. She's an intake person, not a salesperson or an engineer.
+
+Pawan: That's a great way to frame it. And lastly — is there anything unique about how your phones are set up technically? Any current call forwarding, any voicemail that might conflict?
+
+Marcus Webb: Right now I have a basic voicemail set up on the main line. I'll need to disable that or point the forwarding to Clara before the voicemail kicks in. My IT person can do that — it's just a configuration change on the phone system.
+
+Pawan: That's exactly right. What you'll want is: ring once or twice, then forward to Clara. That way callers don't experience a delay. I can send you the forwarding number and the setup instructions in the email after this call, and you can pass that to your IT person.
+
+Marcus Webb: That would be really helpful, yeah.
+
+Pawan: Perfect. I think that covers everything I needed. Let me just recap the key details back to you so we're both confident before I go build this out. Okay?
+
+Marcus Webb: Please, yeah.
+
+Pawan: Business hours: Monday through Friday, eight AM to five PM, MST, no daylight saving. Business address: 4821 East McDowell Road, Suite 110, Phoenix, AZ 85008. Main line: 602-555-0147. During office hours: transfer to main line first, twenty second timeout, then to your cell at 602-555-0293. Fallback message if both fail: collect details, next business day callback. Service call fee: $115 call-out, $98 per hour in half-hour increments, only mentioned if asked. After-hours emergency triggers: active fire alarm, sprinkler discharge, suppression system discharge, active fire, CO alarm. Emergency routing chain: Marcus cell, thirty seconds; Dave Torres at 602-555-0381, thirty seconds; Renee at 602-555-0204. Fallback message: fifteen-minute callback commitment plus 911 advisory. Text alert to you on every emergency regardless of transfer outcome. GNM Pressure Washing — Shelly at 602-555-0762, and any GNM-identified caller — priority notification to your cell after hours, emergency routing if true emergency. VIP accounts: AZ Property Group, Pinnacle Retail Management, Southwest Facilities Group — any after-hours contact triggers priority text notification to your cell. Non-emergency after-hours: collect name, number, company, property address, need; next-business-day callback commitment, one business hour after eight AM. Post-call summaries emailed to janet@apexfireprotection.com for daytime service requests, and both you and Janet for after-hours calls. Agent greeting: "Thank you for calling Apex Fire Protection. I'm Clara, the virtual assistant for Apex. How can I help you today?" Hard limits: no project timeline quotes, no code compliance guidance, no job commitment. Holidays off: Thanksgiving, Christmas, New Year's, Fourth of July, Labor Day, Memorial Day. Partial closures: noon on Christmas Eve and Thanksgiving Eve. Does all of that sound right?
+
+Marcus Webb: That's — yeah, that's pretty much everything. Really thorough.
+
+Pawan: I want to make sure we don't miss anything because getting it right the first time saves both of us a lot of back and forth. Is there anything I didn't cover that you want to add?
+
+Marcus Webb: One thing — for the greeting on after-hours calls. Can it be a little different from the daytime greeting? Like, acknowledge that we're closed?
+
+Pawan: Absolutely. We can configure it to be something like "Thank you for calling Apex Fire Protection. Our office is currently closed, but I'm Clara and I'm here to help. If you have an emergency, I can connect you with our team. Otherwise, I can take a message and make sure someone follows up with you next business day. What can I help you with?" Something along those lines?
+
+Marcus Webb: Yeah, that's good. Maybe add something like "If this is a life-safety emergency, please call 911 as well." I'd feel better with that in there.
+
+Pawan: Done. We'll include that. Safety disclaimer in the after-hours greeting.
+
+Marcus Webb: Yeah. Okay. I think that really is everything.
+
+Pawan: Great. So here's what happens next: I'll put the final configuration together today, and by end of day you'll get an email from me with the agent's dedicated test number, your dashboard login, and the call forwarding instructions for your IT person. Tomorrow you and whoever else you want — Janet, Dave — can call that test number and run through scenarios. If anything needs adjusting, just reply to my email with the details. Once you're happy, we'll schedule fifteen minutes to flip it live. Does that timeline work?
+
+Marcus Webb: That works perfectly. Can I add Bharat to the email so he stays in the loop?
+
+Bharat: Of course, I'll be on that thread for sure!
+
+Marcus Webb: Great. Okay. I think we're good. Thank you, Pawan. This was really helpful.
+
+Pawan: Thank you, Marcus. Really looking forward to getting Apex set up. Talk soon.
+
+Bharat: Thanks, Marcus. Looking forward to it!
+
+Marcus Webb: Bye, guys.
+
+---
+[End of Onboarding Call Recording – Apex Fire Protection]
+[Duration: 37 minutes 52 seconds]
+
+(Transcribed by TurboScribe.ai. Go Unlimited to remove this message.)

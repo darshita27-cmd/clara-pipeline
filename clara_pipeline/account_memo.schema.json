@@ -1,0 +1,364 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ClaraAnswers_AccountMemo",
+  "description": "Structured account memo extracted from demo/onboarding calls. v1 = demo-derived, v2+ = onboarding-confirmed.",
+  "type": "object",
+  "required": [
+    "account_id",
+    "version",
+    "source_stage",
+    "extracted_at",
+    "questions_or_unknowns",
+    "changelog"
+  ],
+  "properties": {
+
+    "account_id": {
+      "type": "string",
+      "description": "Unique identifier. Format: CLARA-{YYYY}-{NNN}. Auto-assigned by pipeline at ingestion using atomic counter in state.json. Never set manually.",
+      "pattern": "^CLARA-[0-9]{4}-[0-9]{3}$",
+      "example": "CLARA-2025-001"
+    },
+
+    "version": {
+      "type": "string",
+      "description": "v1 = demo-derived preliminary. v2 = onboarding-confirmed. v3+ = subsequent updates. No upper limit.",
+      "pattern": "^v[0-9]+$"
+    },
+
+    "source_stage": {
+      "type": "string",
+      "enum": ["demo_call", "onboarding_call", "onboarding_form", "manual_edit"],
+      "description": "What input produced this version."
+    },
+
+    "extracted_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of extraction."
+    },
+
+    "extraction_confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"],
+      "description": "Computed by pipeline script based on scored field checklist — NOT self-reported by LLM. See confidence_score_breakdown."
+    },
+
+    "confidence_score_breakdown": {
+      "type": "object",
+      "description": "Programmatic scoring of the 8 major fields. Pipeline computes this; LLM does not. Each field is 1 point if non-null and non-empty. high=7-8, medium=4-6, low=0-3.",
+      "properties": {
+        "company_name":               { "type": "boolean" },
+        "business_hours_schedule":    { "type": "boolean" },
+        "business_hours_timezone":    { "type": "boolean" },
+        "emergency_triggers":         { "type": "boolean" },
+        "escalation_chain_with_phone":{ "type": "boolean" },
+        "transfer_timeout":           { "type": "boolean" },
+        "transfer_fail_action":       { "type": "boolean" },
+        "after_hours_action":         { "type": "boolean" }
+      }
+    },
+
+    "company": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "industry": {
+          "type": ["string", "null"],
+          "description": "e.g. fire_protection, sprinkler, alarm, HVAC, electrical, facility_maintenance"
+        },
+        "phone_main": { "type": ["string", "null"] },
+        "website": { "type": ["string", "null"] },
+        "office_address": {
+          "type": ["object", "null"],
+          "description": "Primary office location. For multi-location clients, see additional_locations.",
+          "properties": {
+            "street": { "type": ["string", "null"] },
+            "city":   { "type": ["string", "null"] },
+            "state":  { "type": ["string", "null"] },
+            "zip":    { "type": ["string", "null"] }
+          }
+        },
+        "additional_locations": {
+          "type": "array",
+          "description": "Stub for multi-location clients. Populate if client mentions multiple branches. Each entry has the same shape as office_address plus an optional routing_override note.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label":            { "type": "string", "description": "e.g. 'North Branch', 'Warehouse'" },
+              "street":           { "type": ["string", "null"] },
+              "city":             { "type": ["string", "null"] },
+              "state":            { "type": ["string", "null"] },
+              "zip":              { "type": ["string", "null"] },
+              "routing_override": { "type": ["string", "null"], "description": "Any routing rule specific to this location." }
+            }
+          },
+          "default": []
+        }
+      }
+    },
+
+    "business_hours": {
+      "type": "object",
+      "description": "When the office is staffed and calls are handled live.",
+      "properties": {
+        "timezone": {
+          "type": ["string", "null"],
+          "description": "IANA timezone string. e.g. America/Chicago. REQUIRED for agent to function correctly — flag in questions_or_unknowns if missing. Must match IANA format (Region/City). Display names like 'Eastern Time' or abbreviations like 'ET' are NOT valid — the pipeline must reject them. Validated by pattern constraint.",
+          "pattern": "^(Africa|America|Antarctica|Arctic|Asia|Atlantic|Australia|Europe|Indian|Pacific|Etc)/[A-Za-z0-9_/]+$",
+          "example": "America/New_York"
+        },
+        "schedule": {
+          "type": "array",
+          "description": "Each entry covers one or more consecutive days.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "days": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
+                }
+              },
+              "open":      { "type": ["string", "null"], "description": "24h format HH:MM. null = closed all day." },
+              "close":     { "type": ["string", "null"], "description": "24h format HH:MM. null = closed all day." },
+              "is_closed": { "type": "boolean", "default": false }
+            }
+          }
+        },
+        "holidays_observed": {
+          "type": ["string", "null"],
+          "description": "Free text note. e.g. 'Federal holidays, office closed'. NOTE: Agent cannot programmatically reason about holidays from free text. Flag as known limitation. Phase 3+ improvement: structured holiday list."
+        }
+      }
+    },
+
+    "services_supported": {
+      "type": "array",
+      "description": "What service lines this client handles. Extracted from call. Include only explicitly mentioned services.",
+      "items": { "type": "string" },
+      "example": ["fire_alarm", "sprinkler_systems", "suppression", "inspection_scheduling", "extinguisher_service"]
+    },
+
+    "emergency_definition": {
+      "type": "object",
+      "description": "What qualifies as an emergency for this client.",
+      "properties": {
+        "triggers": {
+          "type": "array",
+          "description": "Explicit phrases or conditions that classify a call as emergency.",
+          "items": { "type": "string" },
+          "example": ["active sprinkler leak", "fire alarm sounding", "suppression system discharge", "life safety issue"]
+        },
+        "non_triggers": {
+          "type": "array",
+          "description": "Things explicitly NOT classified as emergency.",
+          "items": { "type": "string" },
+          "example": ["inspection scheduling", "routine extinguisher service", "general questions"]
+        },
+        "ambiguous_cases": {
+          "type": "array",
+          "description": "Edge cases where classification is unclear. Flag for human review.",
+          "items": { "type": "string" }
+        },
+        "clarifying_question": {
+          "type": ["string", "null"],
+          "description": "The exact question Clara should ask to determine emergency status.",
+          "example": "Is this an active emergency, like a sprinkler leak or alarm sounding right now?"
+        }
+      }
+    },
+
+    "emergency_routing": {
+      "type": "object",
+      "description": "How to route confirmed emergency calls. NOTE: primary_contact has been removed — use escalation_chain[0] as the primary contact. This eliminates the previous dual-update problem.",
+      "properties": {
+        "escalation_chain": {
+          "type": "array",
+          "description": "Ordered list. order=1 is the primary contact. Try each in sequence if previous fails. Pipeline and agent spec generator must always treat order=1 as primary.",
+          "items": {
+            "type": "object",
+            "required": ["order", "method"],
+            "properties": {
+              "order":  { "type": "integer", "description": "1 = primary. Increment for each fallback." },
+              "name":   { "type": ["string", "null"] },
+              "role":   { "type": ["string", "null"] },
+              "phone":  { "type": ["string", "null"] },
+              "method": { "type": "string", "enum": ["transfer", "phone_tree", "sms", "page"] }
+            }
+          }
+        },
+        "transfer_timeout_seconds": {
+          "type": ["integer", "null"],
+          "description": "Seconds before declaring transfer failed and moving to next in chain. Must be confirmed on onboarding — do not default silently."
+        },
+        "transfer_fail_action": {
+          "type": ["string", "null"],
+          "description": "What Clara does if ALL escalation chain entries fail.",
+          "example": "Apologize, collect name/number/address, assure dispatch will call back within [callback_assurance_window]."
+        },
+        "callback_assurance_window": {
+          "type": ["string", "null"],
+          "description": "The specific callback timeframe Clara promises when all transfers fail. e.g. '15 minutes', '30 minutes'. MUST be confirmed on onboarding call — never default to 15 minutes. Flag in questions_or_unknowns if not stated.",
+          "example": "15 minutes"
+        },
+        "transfer_fail_notification_action": {
+          "type": ["string", "null"],
+          "description": "What system action to trigger when all transfers fail. e.g. 'send SMS to dispatch', 'create urgent ServiceTrade ticket', 'page on-call manager'. Maps to {{TRANSFER_FAIL_NOTIFICATION_ACTION}} in agent template.",
+          "example": "send SMS to dispatch manager"
+        },
+        "data_to_collect_before_transfer": {
+          "type": "array",
+          "description": "What to capture from caller before attempting transfer.",
+          "items": { "type": "string" },
+          "example": ["caller_name", "callback_number", "property_address", "issue_description"]
+        }
+      }
+    },
+
+    "non_emergency_routing": {
+      "type": "object",
+      "description": "How to handle non-emergency calls (both during and after hours).",
+      "properties": {
+        "during_hours_action": {
+          "type": ["object", "null"],
+          "description": "Structured routing target for non-emergency callers during business hours. Changed from free-text to object so the agent has an actionable phone number.",
+          "properties": {
+            "action_type": {
+              "type": "string",
+              "enum": ["transfer_to_number", "transfer_to_main_line", "take_message", "voicemail"],
+              "description": "What type of action to perform."
+            },
+            "phone": {
+              "type": ["string", "null"],
+              "description": "Phone number to transfer to, if action_type is transfer_to_number or transfer_to_main_line."
+            },
+            "instructions": {
+              "type": ["string", "null"],
+              "description": "Any additional handling notes. e.g. 'Ask for the scheduling department'."
+            }
+          },
+          "required": ["action_type"]
+        },
+        "after_hours_action": {
+          "type": ["string", "null"],
+          "description": "What happens to non-emergency callers after hours.",
+          "example": "Collect name, number, and service type. Confirm callback during next business day."
+        },
+        "voicemail_available": { "type": ["boolean", "null"] },
+        "servicetrade_ticket_creation": {
+          "type": ["boolean", "null"],
+          "description": "Whether to create a ticket in ServiceTrade for non-emergency after-hours calls."
+        }
+      }
+    },
+
+    "integration_constraints": {
+      "type": "array",
+      "description": "Explicit rules about what Clara must or must NOT do with integrations.",
+      "items": {
+        "type": "object",
+        "required": ["system", "rule", "constraint_type"],
+        "properties": {
+          "system":          { "type": "string", "example": "ServiceTrade" },
+          "rule":            { "type": "string", "example": "Never create sprinkler jobs. Only create inspection jobs." },
+          "constraint_type": { "type": "string", "enum": ["never_do", "always_do", "conditional"] }
+        }
+      }
+    },
+
+    "call_transfer_protocol": {
+      "type": "object",
+      "description": "General transfer mechanics, applicable to all call types.",
+      "properties": {
+        "warm_transfer":         { "type": ["boolean", "null"], "description": "Does Clara announce the caller before connecting?" },
+        "transfer_announcement": {
+          "type": ["string", "null"],
+          "description": "What Clara says to the caller before initiating transfer.",
+          "example": "Please hold while I connect you with our on-call technician."
+        },
+        "max_retries":           { "type": ["integer", "null"], "default": 1 },
+        "retry_delay_seconds":   { "type": ["integer", "null"] },
+        "hold_music":            { "type": ["boolean", "null"] }
+      }
+    },
+
+    "voice_and_persona": {
+      "type": "object",
+      "description": "How Clara should present herself for this client.",
+      "properties": {
+        "agent_name": {
+          "type": "string",
+          "description": "Name Clara introduces herself as.",
+          "example": "Clara"
+        },
+        "company_greeting_name": {
+          "type": ["string", "null"],
+          "description": "Company name used in greeting.",
+          "example": "Acme Fire Protection"
+        },
+        "tone_label": {
+          "type": "string",
+          "enum": ["professional", "warm_professional", "urgent_capable"],
+          "default": "warm_professional",
+          "description": "Internal human-readable tone descriptor. Does NOT map directly to a Retell parameter. The retell_config.voice_id in the agent spec is what controls the actual voice. This field informs prompt style only."
+        },
+        "language": { "type": "string", "default": "en-US" }
+      }
+    },
+
+    "flows": {
+      "type": "object",
+      "description": "High-level flow summaries for context. Detailed flows live in the agent spec.",
+      "properties": {
+        "office_hours_summary": {
+          "type": ["string", "null"],
+          "description": "1-3 sentence summary of how calls are handled during business hours."
+        },
+        "after_hours_summary": {
+          "type": ["string", "null"],
+          "description": "1-3 sentence summary of how calls are handled after hours."
+        }
+      }
+    },
+
+    "questions_or_unknowns": {
+      "type": "array",
+      "description": "REQUIRED. Any field that could not be reliably extracted. Must be present even if empty []. Never silently omit. Pipeline script will reject memos where this key is absent.",
+      "items": {
+        "type": "object",
+        "required": ["field", "reason"],
+        "properties": {
+          "field":              { "type": "string", "description": "Dot-path of the missing field. e.g. business_hours.timezone" },
+          "reason":             { "type": "string", "enum": ["not_mentioned", "unclear", "contradictory"] },
+          "suggested_question": { "type": ["string", "null"], "description": "Question to ask client to resolve this." }
+        }
+      }
+    },
+
+    "notes": {
+      "type": ["string", "null"],
+      "description": "Free-text notes from extraction. Keep under 200 chars. Flag unusual patterns."
+    },
+
+    "changelog": {
+      "type": "array",
+      "description": "REQUIRED. Append-only log of changes across versions. Never overwrite entries. Must be present even for v1 (initial entry). Pipeline script will reject memos where this key is absent.",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["version", "timestamp", "summary", "source"],
+        "properties": {
+          "version":        { "type": "string" },
+          "timestamp":      { "type": "string", "format": "date-time" },
+          "changed_fields": { "type": "array", "items": { "type": "string" } },
+          "summary":        { "type": "string" },
+          "source":         { "type": "string", "enum": ["demo_call", "onboarding_call", "onboarding_form", "manual_edit"] }
+        }
+      }
+    }
+
+  }
+}

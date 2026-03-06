@@ -1,0 +1,49 @@
+{
+  "account_id": "CLARA-2026-001",
+  "transition": "v1_to_v2",
+  "generated_at": "2026-03-06T09:43:39Z",
+  "source": "onboarding_call",
+  "go_live_ready": true,
+  "stats": {
+    "fields_changed": 5,
+    "fields_newly_confirmed": 5,
+    "fields_removed": 0,
+    "unknowns_resolved": 0,
+    "unknowns_remaining": 0
+  },
+  "fields_changed": {
+    "emergency_routing.emergency_definition[2]": {
+      "old": "active fire",
+      "new": "fire suppression system discharge"
+    },
+    "emergency_routing.escalation_chain[1]": {
+      "old": "on-call tech",
+      "new": "602-555-0293"
+    },
+    "emergency_routing.emergency_definition[1]": {
+      "old": "fire alarm panel activation",
+      "new": "sprinkler head discharge"
+    },
+    "emergency_routing.emergency_definition[3]": {
+      "old": "suppression system discharge",
+      "new": "active fire"
+    },
+    "emergency_routing.emergency_definition[0]": {
+      "old": "active sprinkler discharge",
+      "new": "active fire alarm"
+    }
+  },
+  "fields_newly_confirmed": {
+    "emergency_routing.escalation_chain[4]": "Renee",
+    "emergency_routing.vip_accounts[3]": "GNM Pressure Washing",
+    "emergency_routing.escalation_chain[5]": "602-555-0204",
+    "emergency_routing.escalation_chain[3]": "602-555-0381",
+    "emergency_routing.escalation_chain[2]": "Dave Torres"
+  },
+  "fields_removed": {},
+  "unknowns_resolved": [],
+  "unknowns_remaining": [],
+  "summary_sections_affected": [
+    "emergency_routing"
+  ]
+}

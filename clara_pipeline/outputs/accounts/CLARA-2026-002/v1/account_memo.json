@@ -1,0 +1,52 @@
+{
+  "account_id": "CLARA-2026-002",
+  "version": "v1",
+  "extracted_at": "2026-03-06T09:43:39Z",
+  "extraction_confidence": "low",
+  "business_hours": {
+    "timezone": "America/New_York",
+    "days_open": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "hours_open": [
+      "08:00",
+      "17:00"
+    ],
+    "emergency_routing": {
+      "callback_assurance_window": null,
+      "transfer_fail_notification_action": null
+    }
+  },
+  "services_supported": [],
+  "triggers": [],
+  "non_triggers": [],
+  "escalation_chain": [],
+  "integration_constraints": [],
+  "changelog": [
+    {
+      "version": "v1",
+      "extracted_at": "2026-03-06T09:43:39Z",
+      "rule": "onboarding_call",
+      "changes": {
+        "business_hours": {
+          "timezone": "America/New_York"
+        }
+      }
+    }
+  ],
+  "confidence_score_breakdown": {
+    "company_name": false,
+    "business_hours_schedule": false,
+    "business_hours_timezone": true,
+    "emergency_triggers": false,
+    "escalation_chain_with_phone": false,
+    "transfer_timeout": false,
+    "transfer_fail_action": false,
+    "after_hours_action": false
+  },
+  "questions_or_unknowns": []
+}

@@ -1,0 +1,113 @@
+{
+  "account_id": "CLARA-2026-001",
+  "version": "v1",
+  "extracted_at": "2026-03-06T09:36:45Z",
+  "extraction_confidence": "low",
+  "business_hours": {
+    "timezone": "America/Phoenix",
+    "days_open": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "hours_open": [
+      "08:00:00",
+      "17:00:00"
+    ],
+    "days_closed": [],
+    "hours_closed": []
+  },
+  "emergency_routing": {
+    "emergency_definition": [
+      "active sprinkler discharge",
+      "fire alarm panel activation",
+      "active fire",
+      "suppression system discharge",
+      "CO alarm"
+    ],
+    "emergency_callback_assurance_window": null,
+    "transfer_fail_notification_action": null,
+    "escalation_chain": [
+      "Marcus Webb",
+      "on-call tech"
+    ],
+    "vip_accounts": [
+      "AZ Property Group",
+      "Pinnacle Retail Management",
+      "Southwest Facilities Group"
+    ]
+  },
+  "services_supported": [
+    "fire sprinkler systems",
+    "fire alarm systems"
+  ],
+  "integration_constraints": [
+    "ServiceTrade"
+  ],
+  "changelog": [
+    {
+      "version": "v1",
+      "timestamp": "2026-03-06T09:36:45Z",
+      "source": "demo_call",
+      "changes": {
+        "business_hours": {
+          "timezone": "America/Phoenix",
+          "days_open": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "hours_open": [
+            "08:00:00",
+            "17:00:00"
+          ],
+          "days_closed": [],
+          "hours_closed": []
+        },
+        "emergency_routing": {
+          "emergency_definition": [
+            "active sprinkler discharge",
+            "fire alarm panel activation",
+            "active fire",
+            "suppression system discharge",
+            "CO alarm"
+          ],
+          "emergency_callback_assurance_window": null,
+          "transfer_fail_notification_action": null,
+          "escalation_chain": [
+            "Marcus Webb",
+            "on-call tech"
+          ],
+          "vip_accounts": [
+            "AZ Property Group",
+            "Pinnacle Retail Management",
+            "Southwest Facilities Group"
+          ]
+        },
+        "services_supported": [
+          "fire sprinkler systems",
+          "fire alarm systems"
+        ],
+        "integration_constraints": [
+          "ServiceTrade"
+        ]
+      },
+      "reason": "Initial configuration based on demo call."
+    }
+  ],
+  "confidence_score_breakdown": {
+    "company_name": false,
+    "business_hours_schedule": false,
+    "business_hours_timezone": true,
+    "emergency_triggers": false,
+    "escalation_chain_with_phone": false,
+    "transfer_timeout": false,
+    "transfer_fail_action": false,
+    "after_hours_action": false
+  },
+  "questions_or_unknowns": []
+}
